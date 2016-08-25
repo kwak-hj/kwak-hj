@@ -97,11 +97,14 @@ body {background-color: #f5f5f5;}
 
 }
 /* tablet 1024 */
+/* tablet 1024 */
 @media screen and (min-width: 1024px) {
-	.board {width:1004px; height: 262px;margin: 0 auto;}
+	.board {width:1004px; height: 262px;margin: 10px auto;}
+	.board .big_board>>ul>li strong {font-size: 25px; }
 	.board .little_board,
 	.board .little_board>ul {height:100%; }
 	.board .little_board>ul>li {height:50%; }
+	.board .little_board>ul>li strong {font-size: 25px; }
 	.board .little_board>ul>li .img {width:30%; }
 }
 
