@@ -44,15 +44,16 @@ body {background-color: #f5f5f5;}
 .big_board>ul:before {content:''; display: block;position: absolute; top:10px; bottom:10px; left:50%; margin-left: -1px; border-right:1px solid #eee}
 .big_board>ul:after {content:''; display: block; clear: both;}
 .big_board>ul>li {float: left; width:50%;}
-.big_board>ul>li .img {margin-top:7px;padding: 2px;}
+.big_board>ul>li .img {margin-top:7px;padding:2px 3px 0;}
 .big_board>ul>li .txt {margin-top:5px;}
 .big_board>ul>li>strong {font-size:16px; line-height: 1;}
 
-.little_board>ul>li {position: relative; display: table;/* padding-left: 100px;*/ border-top: 1px solid #eee;}
+.little_board>ul>li {position: relative; display: table;border-top: 1px solid #eee;}
 .little_board>ul>li:first-child {border:0 none; }
 .little_board>ul>li>* {display: table-cell !important; vertical-align: top;}
 .little_board>ul>li strong {font-size: 15px;margin-bottom: 3px;}
-.little_board>ul>li .img {width:92px; padding-right:10px;}
+.little_board>ul>li .img {width:82px; }
+.little_board>ul>li .txt {padding-left: 10px}
 
 .banner {position: relative; margin: 0 -10px; background-color: #fff; border-left: 1px solid #eee;border-right: 1px solid #eee }
 .banner .bn {width:300px; margin: 0 auto; padding: 5px 0;font-size:0;}
@@ -107,7 +108,8 @@ body {background-color: #f5f5f5;}
 	.board .little_board>ul>li {border-top: 1px solid #eee;}
 	.board .little_board>ul>li:first-child {border:0 none; }
 	.board .little_board>ul>li strong {font-size:16px;margin-bottom: 3px;}
-	.board .little_board>ul>li .img {width:118px; padding-right:13px;}
+	.board .little_board>ul>li .img {width:105px;}
+	.board .little_board>ul>li .txt {padding-left:13px;}
 	.board .little_board>ul>li p { height: 56px;-webkit-line-clamp:3;}
 
 	/*.notice {margin: 13px -10px;font-size: 0;background-color: #fff; border-left: 1px solid #eee;border-right: 1px solid #eee}
@@ -129,7 +131,8 @@ body {background-color: #f5f5f5;}
 	.board .little_board>ul {height:100%; }
 	.board .little_board>ul>li {height:50%; }
 	.board .little_board>ul>li strong {font-size: 20px; }
-	.board .little_board>ul>li .img {width:142px; padding-right:17px;}
+	.board .little_board>ul>li .img {width:133px;}
+	.board .little_board>ul>li .txt {padding-left:15px;}
 	.board .little_board>ul>li .txt strong{margin-bottom:6px;}
 	.board .little_board>ul>li .txt p{height: 70px;}
 }
