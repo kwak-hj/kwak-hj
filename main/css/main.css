@@ -18,7 +18,7 @@ body {background-color: #f5f5f5;}
 
 /* page css */
 .wrap {width:100%; padding: 0 10px;}
-.visual {margin: 0 -10px; border-bottom: 1px solid #ddd; overflow: hidden;font-size: 0;}
+.visual {margin: 0 -10px; border-bottom: 1px solid #ddd; overflow: hidden;}
 [class$="_board"] {
 	margin: 10px 0 ;
 	background-color: #fff;
@@ -30,7 +30,7 @@ body {background-color: #f5f5f5;}
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
 	box-shadow: 0 0 5px rgba(0,0,0,0.1);: 
 }
-.visual a {display: block;}
+.visual a {display: block;font-size: 0;}
 
 .board {}
 
