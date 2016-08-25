@@ -67,8 +67,9 @@ body {background-color: #f5f5f5;}
 	border-radius: 5px; 
 }
 /* tablet 568 */
-@media screen and (min-width: 568px) {
+@media screen and (orientation : landscape) {
 	/*.little_board>ul>li .img {width:90px; padding-right:10px;}*/
+	body {background-color: pink}
 }
 /* tablet 768 */
 @media screen and (min-width: 768px) {
