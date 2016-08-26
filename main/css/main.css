@@ -72,22 +72,31 @@ body {background-color: #f5f5f5;}
 	-o-border-radius: 5px;
 	border-radius: 5px; 
 }
-/* tablet 568 */
-@media screen and (min-width: 568px) {
+/* tablet 667 */
+@media screen and (min-width: 667px) {
+	.wrap {padding: 0 13px;}
+	.visual,.banner {margin: 0 -13px;}
+	.board [class$="_board"] {margin: 13px 0;}
 	.board [class$="_board"]>ul>li{padding:13px;}
+	.board [class$="_board"]>ul>li strong {line-height: 1.5em; font-size: 18px; }
+	.board [class$="_board"]>ul>li p {font-size:15px; height: 40px;}
+
+	.board .big_board>ul:before {top:13px; bottom: 13px;}
+	
 	.board .little_board>ul {position: relative; font-size: 0}
 	.board .little_board>ul:before {content:''; display: block;position: absolute; top:13px; bottom:13px; left:50%; margin-left: -1px; border-right:1px solid #eee}
 	.board .little_board>ul>li {display: inline-block; width:50%; border: none; }
 	.board .little_board>ul>li .img {width:43%;}
+	.board .little_board>ul>li strong {font-size: 15px}
+	/*.board .little_board>ul>li p {font-size: 16px; height: 42px;}*/
 
 }
 /* tablet 768 */
 @media screen and (min-width: 768px) {
-	.wrap {padding: 0 13px;}
-	.visual,.banner {margin: 0 -13px;}
-	.board [class$="_board"] {margin: 13px 0;}
+	
 	.board [class$="_board"]>ul>li strong {line-height: 1.5em; font-size: 20px; }
 	.board [class$="_board"]>ul>li p {font-size:17px;height: 45px;}
+	
 
 	.board .little_board>ul>li strong {font-size: 17px}
 	.board .little_board>ul>li p {font-size: 16px; height: 42px;}
