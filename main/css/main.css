@@ -18,9 +18,9 @@ body {background-color: #f5f5f5;}
 
 /* page css */
 .wrap {width:100%; padding: 0 10px;}
-.wrap.fixed [class$="_board"] {max-width:741px; margin-right:auto; margin-left:auto;}
-.wrap.fixed .bn {max-width:765px; margin-right:auto; margin-left:auto;}
-.wrap.fixed .visual a img {position: relative; top:0; left:50%;    transform: translateX(-50%); }
+.wrap.fixed [class$="_board"] {max-width:774px; margin-right:auto; margin-left:auto;}
+.wrap.fixed .visual a img {position: relative; top:0; left:50%; transform: translateX(-50%); }
+.wrap.fixed .bn {max-width:798px; margin-right:auto; margin-left:auto;}
 
 .visual {margin: 0 -10px; border-bottom: 1px solid #ddd; overflow: hidden;}
 [class$="_board"] {
@@ -79,7 +79,7 @@ body {background-color: #f5f5f5;}
 /* tablet 667 */
 @media screen and (min-width: 667px) {
 	.wrap {padding: 0 13px;}
-	.wrap.fixed .visual img {max-height: 374px; width:auto;}
+	.wrap.fixed .visual img {max-height: 390px; width:auto;}
 	.visual,.banner {margin: 0 -13px;}
 	[class$="_board"] {margin: 13px 0;}
 	[class$="_board"]>ul>li{padding:13px;}
