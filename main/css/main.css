@@ -37,7 +37,7 @@ body {background-color: #f5f5f5;}
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
 	box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
-[class$="_board"]>ul>li{padding:8px 13px;}
+[class$="_board"]>ul>li{padding:7px 13px;}
 [class$="_board"]>ul>li .img,
 [class$="_board"]>ul>li .txt {display: block;overflow: hidden;font-size: 0; vertical-align: middle;}
 [class$="_board"]>ul>li strong {display: inline-block; width:95%; font-weight: bold; white-space: nowrap; text-overflow:ellipsis; overflow: hidden;}
@@ -45,11 +45,11 @@ body {background-color: #f5f5f5;}
 
 .big_board {}
 .big_board>ul {position: relative; }
-.big_board>ul:before {content:''; display: block;position: absolute; top:13px; bottom:13px; left:50%; margin-left: -1px; border-right:1px solid #eee}
+.big_board>ul:before {content:''; display: block;position: absolute; top:11px; bottom:11px; left:50%; margin-left: -1px; border-right:1px solid #eee}
 .big_board>ul:after {content:''; display: block; clear: both;}
 .big_board>ul>li {float: left; width:50%;}
 .big_board>ul>li>strong {font-size:14px; }
-.big_board>ul>li .img {margin-top:4px;padding:0 2px;}
+.big_board>ul>li .img {margin-top:4px; padding:0 2px;}
 .big_board>ul>li .txt {margin-top:5px;}
 
 .little_board>ul>li {position: relative; display: table;border-top: 1px solid #eee;}
@@ -64,11 +64,11 @@ body {background-color: #f5f5f5;}
 	box-shadow: 0 0 5px rgba(0,0,0,0.1);
  }
 .banner .bn {margin: 0 auto; font-size:0;}
-.banner a {display:inline-block; width:50%; height:50px; padding:7px 10px; overflow: hidden; text-align: center; }
+.banner a {display:inline-block; width:50%; height:50px; padding:8px 10px; overflow: hidden; text-align: center; }
 .banner a img {width:auto; height: 100%;}
 .banner:before {content:''; display: block;position: absolute; top:10px; bottom:10px; left:50%; margin-left: -1px; border-right:1px solid #eee}
 
-.btn_go {display: block; margin: 10px 0 ; text-align: center; 
+.btn_go {display: block; margin: 10px 0 0; text-align: center; 
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
@@ -87,7 +87,7 @@ body {background-color: #f5f5f5;}
 	
 	.big_board {border-bottom: 1px solid #eee;}
 	.big_board>ul>li{padding-top:11px;}
-	.big_board>ul:before {top:15px; bottom: 15px;}
+	.big_board>ul:before {top:13px; bottom: 13px;}
 
 	.little_board>ul {position: relative; font-size: 0}
 	.little_board>ul:before {content:''; display: block;position: absolute; top:15px; bottom:15px; left:50%; margin-left: -1px; border-right:1px solid #eee}
