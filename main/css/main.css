@@ -16,27 +16,18 @@ a:hover,a:active,a:visited {color:inherit; text-decoration: none;}
 html,body {background-color: #f5f5f5;}
 
 /* page css */
-.wrap {width:100%; padding:0 15px;}
-.wrap.fixed [class$="_board"] {max-width:774px; margin-right:auto; margin-left:auto;}
-.wrap.fixed .visual a img {position: relative; top:0; left:50%; transform: translateX(-50%); }
-.wrap.fixed .bn {max-width:798px; margin-right:auto; margin-left:auto;}
+.wrap {width:100%; }
 
-.visual {margin: 0 -15px; border-bottom: 1px solid #ddd; overflow: hidden;}
-
+.visual {border-bottom: 1px solid #ddd; overflow: hidden;}
 .visual a {position: relative; display: block; background-color: gray; font-size: 0;}
 
-.board {
-	margin: 13px 0 ;
+[class$="_board"] {
+	margin: 8px 0 ;
 	background-color: #fff;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	border-radius: 5px; 
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
 	box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
-[class$="_board"]>ul>li{padding:13px;}
+[class$="_board"]>ul>li{padding-right:13px;padding-left: 13px;}
 [class$="_board"]>ul>li .img,
 [class$="_board"]>ul>li .txt {display: block;overflow: hidden;font-size: 0; vertical-align: middle;}
 [class$="_board"]>ul>li strong {display: inline-block; width:95%; font-weight: bold; white-space: nowrap; text-overflow:ellipsis; overflow: hidden;}
@@ -46,23 +37,23 @@ html,body {background-color: #f5f5f5;}
 .big_board>ul {position: relative; }
 .big_board>ul:before {content:''; display: block;position: absolute; top:11px; bottom:11px; left:50%; margin-left: -1px; border-right:1px solid #eee}
 .big_board>ul:after {content:''; display: block; clear: both;}
-.big_board>ul>li {float: left; width:50%; padding-top:10px;padding-bottom:10px;}
+.big_board>ul>li {float: left; width:50%;padding-top:7px;padding-bottom:7px;}
 .big_board>ul>li>strong {font-size:15px; }
-.big_board>ul>li .img {margin-top:5px; padding:0 2px;}
-.big_board>ul>li .txt {margin-top:7px;}
+.big_board>ul>li .img {margin-top:3px; padding:0 2px;}
+.big_board>ul>li .txt {margin-top:5px;}
 
-.little_board>ul>li {position: relative; display: table;padding-top:11px;padding-bottom:11px;border-top: 1px solid #eee;}
+.little_board>ul>li {position: relative; display: table;padding-top:7px;padding-bottom:7px;border-top: 1px solid #eee;}
 .little_board>ul>li>* {display: table-cell !important; vertical-align: top;}
 .little_board>ul>li strong {font-size: 13px;margin-bottom: 3px;}
 .little_board>ul>li .img {width:25%; }
 .little_board>ul>li .txt {padding-left: 10px}
 
-.banner {position: relative; margin: 0 -15px; background-color: #fff; border-left: 1px solid #eee;border-right: 1px solid #eee;
+.banner {position: relative; background-color: #fff; border-left: 1px solid #eee;border-right: 1px solid #eee;
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
 	box-shadow: 0 0 5px rgba(0,0,0,0.1);
  }
 .banner .bn {margin: 0 auto; font-size:0;}
-.banner a {display:inline-block; width:50%; height:50px; padding:8px 10px; overflow: hidden; text-align: center; }
+.banner a {display:inline-block; width:50%; height:45px; padding:7px 10px; overflow: hidden; text-align: center; }
 .banner a img {width:auto; height: 100%;}
 .banner:before {content:''; display: block;position: absolute; top:10px; bottom:10px; left:50%; margin-left: -1px; border-right:1px solid #eee}
 
@@ -75,10 +66,6 @@ html,body {background-color: #f5f5f5;}
 }
 /* tablet 667 */
 @media screen and (min-width: 667px) {
-	.wrap {padding: 0 15px;}
-	.wrap.fixed .visual img {max-height: 390px; width:auto;}
-	.visual,.banner {margin: 0 -15px;}
-	/*[class$="_board"] {margin: 15px 0;}*/
 	[class$="_board"]>ul>li{padding:15px;}
 	[class$="_board"]>ul>li strong {line-height: 1.5em; font-size: 18px; }
 	[class$="_board"]>ul>li p {font-size:15px; height: 40px;}
@@ -92,13 +79,4 @@ html,body {background-color: #f5f5f5;}
 	.little_board>ul>li {display: inline-block; width:50%; border: none; }
 	.little_board>ul>li .img {width:43%;}
 	.little_board>ul>li strong {font-size: 15px}
-}
-
-/* tablet 768 */
-@media screen and (min-width: 768px) {
-	[class$="_board"]>ul>li strong {line-height: 1.5em; font-size: 20px; }
-	[class$="_board"]>ul>li p {font-size:17px;height: 45px;}
-
-	.little_board>ul>li strong {font-size: 17px}
-	.little_board>ul>li p {font-size: 16px; height: 42px;}
 }
