@@ -1,0 +1,180 @@
+/* noto sans */
+@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+
+/* reset css */
+html,body {height: 100%;}
+html,body,header,footer,section,article,div,p,table,td,th,thead,tbody,tfoot,form,dl,dt,dd,ul,ol,li,img,a,span,strong,em,i,h1,h2,h3,h4,h5,h6
+{
+	font-family:'Noto Sans Korean',sans-serif; font-size:30px; font-style: normal; font-weight: normal; line-height: 1em; word-break: keep-all; letter-spacing: -1px; 
+	padding:0; margin: 0; border:0; background-color: transparent; text-align: left;
+	-webkit-text-size-adjust: none;
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+select,input {padding:0; margin: 0;}
+img {max-width:100%;}
+ul,ol,li {list-style: none;}
+a,
+a:hover,a:active,a:visited {color:inherit; text-decoration: none;}
+
+/* base */
+body {
+	position: relative;
+	background: #f0f0f0 url('../images/nexol-wizvil-bg.png') no-repeat 0 0;
+	-webkit-background-size: cover;
+	background-size: cover; 
+}
+/* custom */
+[class^="form-"] {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	vertical-align: middle;
+}
+[class^="form-"] input {
+	-webkit-appearance: none;
+	appearance: none;
+}
+/* custom : checkbox */
+.form-checkbox input {
+	width: 26px;
+	height: 26px;
+	margin:0 0 -2px 30px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 2px solid #eee;
+	background-color: #fff;
+	outline: 0 none;
+}
+.form-checkbox input:checked {
+	border: 2px solid #1786d4;
+	background: #1786d4 url('../images/checked.png') no-repeat 50% 50%;
+}
+.form-checkbox:first-child input {
+	margin-left: 0;
+}	
+/*  --------
+	page css 
+	--------  */	
+#wrap {
+	height: 100%;
+}
+/* login */
+.login-wrap {
+	position: relative;
+	max-width: 982px;/*922px*/
+	height: 694px;/*634px*/
+	position: relative;
+	top:50%;
+	margin: -347px auto 0;
+	padding: 20px;
+}
+.login {
+	position: relative;
+	height: 100%;
+	padding:24px 72px 0;
+	background-color: #fff;
+	overflow: hidden;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+.corp-name * {text-align: center;}
+.corp-name h1 span {
+	display: inline-block;
+	width:120px;
+	height: 40px;
+	background: url("../images/nexol-wizvil-logo.png") no-repeat 0 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	font-size: 1px;
+	text-indent:-100px;
+	text-align: left;
+}
+.corp-name h2 {
+	margin-top: 18px;
+	font-size: 45px;
+	color:#1763d4;
+	letter-spacing: -4px;
+	font-weight: 500;
+}
+.login-info {
+	margin-top: 11px;
+}
+.login-info li {
+	height: 86px;
+	padding-top: 28px;
+	font-size: 30px;
+	border-bottom: 1px solid #c5c5c5;
+	color:#1763d4;
+}
+.login-info li label {
+	display: inline-block;
+	width:154px;
+}
+.login-info li input {
+	width: 50%;
+	height: 46px;
+	border: none;
+	font-size: 30px;
+}
+.login-setting {
+	margin-top: 50px;
+	text-align: center;
+}
+.login-setting input{
+	margin-right: 5px;
+}
+.login-setting label {
+	color: #1786d4;
+	font-weight: 300;
+	letter-spacing: -2px;
+}
+.login-action {
+	height: 86px;
+	position: absolute;
+	right:0;
+	bottom:0;
+	left:0; 
+}
+.login-action [class^="btn-"] {
+	display: block;
+	float: left;
+	width:50%;
+	height: 100%;
+	padding-top: 23px;
+	font-size: 37px;
+	text-align: center;
+}
+.login-action .btn-join {
+	background-color: #f3f3f3;
+	color: #1763d4;
+}
+.login-action .btn-login {
+	background-color: #1763d4;
+	color: #fefefe;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
