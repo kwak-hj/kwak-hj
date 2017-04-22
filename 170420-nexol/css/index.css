@@ -446,9 +446,15 @@ body {
 	box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.09);
 	background-color: #fff;
 }
+.select-info .form-checkbox ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
 .select-info .form-checkbox li {
+	float: left;
 	display: inline-block;
-	min-width:19k0px;
+	min-width:19%;
 	padding: 17px 45px 17px 0;
 }
 .select-info .form-checkbox input{
