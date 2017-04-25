@@ -56,6 +56,9 @@ body {
 	margin-left: 0;
 }	
 
+.tal { text-align: left !important; }
+.tac { text-align: center !important; }
+.tar { text-align: right !important; }
 /*  --------
 	page css 
 	--------  */	
@@ -76,7 +79,7 @@ body {
 .login {
 	position: relative;
 	height: 100%;
-	padding:24px 72px 0;
+	padding:10px 72px 0;
 	background-color: #fff;
 	overflow: hidden;
 	-webkit-border-radius:5px;
@@ -84,7 +87,7 @@ body {
 }
 .corp-name * {text-align: center;}
 .corp-name h2 {
-	margin-top: 18px;
+	margin-top: 5px;
 	font-size: 45px;
 	color:#1763d4;
 	letter-spacing: -4px;
@@ -166,8 +169,8 @@ body {
 }
 .search-wrap h1 {
 	position: absolute;
-	top:24px;
-	left:80px;
+	top:18px;
+	left:55px;
 }
 .search-step {
 }
@@ -280,23 +283,28 @@ body {
 .table{
 	-webkit-box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.09);
 	box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.09);
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	overflow: hidden;
 }
 .table table{
 	width: 100%;
-	table-layout: fixed;
+	/*table-layout: fixed;*/
 	border-collapse: collapse;
 }
 .table td {
 	height: 66px;
-	padding-left: 22px;
+	padding:0 15px;
 	color:#6c6c6c;
 	font-size: 25px;
+	text-align: center;
 	border: 1px solid #f1f1f1;
 	background-color: #fff;
 	font-weight: 300;
 }
 .table td a {
 	font-size: inherit;
+	display: block;
 }
 .table .select td {
 	color:#fff;
@@ -305,6 +313,22 @@ body {
 	background: -webkit-linear-gradient(top, rgba(41,201,226,1) 0%, rgba(41,170,226,1) 100%); /* Chrome10+,Safari5.1+ */
 	background: linear-gradient(to bottom, rgba(41,201,226,1) 0%, rgba(41,170,226,1) 100%);/* W3C */
 }
+.table.add-action {
+	position: relative;
+	width:400px;
+	padding-bottom: 70px;
+}
+.table.add-action table+a {
+	position: absolute;
+	width:100%;
+	height: 70px;
+	padding-top: 21px;
+	text-align: center;
+	font-size: 23px;
+	color:#6c6c6c;
+	background-color: #fff;
+}
+
 /* step 01 */
 .step-contents-wrap.step01 {
 	padding: 22px 18px 0;
@@ -400,10 +424,12 @@ body {
 	width: 100%;
 	border-collapse: separate;
 	border-spacing:10px;
+	/*table-layout: fixed;*/
 }
 .car-info ul li {
+	min-width:90px;
 	height: 106px;
-	padding: 10px 15px;
+	padding: 10px;
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
@@ -420,7 +446,7 @@ body {
 .car-info ul li>span {
 	color: #102443;
 	font-size: 20px;
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
 }
 .car-info ul li>strong {
 	color:#1763d4;
@@ -438,12 +464,22 @@ body {
 .car-info .imp strong {
 	color:#fdff6e;
 }
+
+.step-contents-wrap.step02 .car-info ul {table-layout: fixed}
+.step-contents-wrap.step02 .car-info .info-01 {width:11%;}
+.step-contents-wrap.step02 .car-info .info-03,
+.step-contents-wrap.step02 .car-info .info-04 {width:17%;}
+.step-contents-wrap.step02 .car-info .info-05,
+.step-contents-wrap.step02 .car-info .info-06 {width:15.5%;}
 .select-info {
 	padding: 25px;
 	border: 1px solid #e6e6e6;
 	-webkit-box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.09);
 	box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.09);
 	background-color: #fff;
+}
+.select-info .form-checkbox {
+	display: block;
 }
 .select-info .form-checkbox ul:after {
 	content: "";
@@ -453,13 +489,13 @@ body {
 .select-info .form-checkbox li {
 	float: left;
 	display: inline-block;
-	min-width:19%;
-	padding: 17px 45px 17px 0;
+	width:33%;
+	padding: 17px 0;
 }
 .select-info .form-checkbox input{
 	width:27px;
 	height:27px;
-	margin-right: 5px;
+	margin-right: 13px;
 	border: 2px solid #29abe2;
 	background-color: #fff;
 	border-radius: 0;
@@ -476,10 +512,49 @@ body {
 	color:#29abe2;
 }
 
+/* step 03 */
 .oil-list tr td:first-child {
 	background-color: #fcfcfc;
 }
-
+.total-money h3 {
+	display: inline-block;
+	margin-right: 60px;
+}
+.total-money .money-box {
+	display: inline-block;
+	width:280px;
+	height:60px;
+	padding-top:14px;
+	text-align: center;
+	color: #1763d4;
+    font-size: 26px;
+    background-color: #fff;
+	-webkit-box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.09);
+	box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.09);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+.step-contents-wrap.step03 .car-info ul {table-layout: fixed}
+.step-contents-wrap.step03 .car-info li.info-03 {
+	width:160px;
+}
+.step-contents-wrap.step03 .car-info li.info-05 {
+	width:160px;
+}
+.step-contents-wrap.step03 .car-info li.info-05 strong{
+	margin-left: 5px;
+}
+.step-contents-wrap.step03 .car-info li span {
+	/*display: inline-block;*/
+	color:#868f95;
+	font-size: 26px;
+	padding-bottom: 8px;
+}
+.step-contents-wrap.step03 .car-info li strong {
+	/*display: inline-block;*/
+	font-size: 22px;
+	color:#1763d4;
+}
 /*popup*/
 .popup-wrap {
 	position: absolute;
