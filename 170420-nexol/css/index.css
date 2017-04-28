@@ -635,6 +635,9 @@ body {
 	text-align: center;
 	
 }
+.tar .gray-2 td:first-child {
+	font-weight: 500;
+}
 .tar .gray-2 td:first-child+td {
 	background-color: #fcfcfc
 } 
