@@ -5,7 +5,7 @@
 html,body {height: 100%;}
 html,body,header,footer,section,article,div,p,table,td,th,thead,tbody,tfoot,form,dl,dt,dd,ul,ol,li,img,a,span,strong,em,i,h1,h2,h3,h4,h5,h6
 {
-	font-family:'Noto Sans Korean',sans-serif; font-size:30px; font-style: normal; font-weight: normal; line-height: 1em; word-break: keep-all; letter-spacing: -1px; 
+	font-family:'Noto Sans Korean',sans-serif; font-size:30px; font-style: normal; font-weight: normal; line-height: 1em; word-wrap:break-word;word-break: keep-all; letter-spacing: -1px; 
 	padding:0; margin: 0; border:0; background-color: transparent; text-align: left;
 	-webkit-text-size-adjust: none;
 	-webkit-box-sizing: border-box; 
@@ -59,6 +59,8 @@ body {
 .tal { text-align: left !important; }
 .tac { text-align: center !important; }
 .tar { text-align: right !important; }
+
+
 /*  --------
 	page css 
 	--------  */	
@@ -298,9 +300,13 @@ body {
 	color:#6c6c6c;
 	font-size: 25px;
 	text-align: center;
-	border: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+	border-left: 1px solid #f1f1f1;
 	background-color: #fff;
 	font-weight: 300;
+}
+.table td:first-child {
+	border-left: 0 none;
 }
 .table td a {
 	font-size: inherit;
@@ -615,8 +621,23 @@ body {
 	border-top: 1px solid #d1d1d1;
 }
 
-
-
+.tar h3 {
+	display: inline-block;
+	margin-right: 20px;
+}
+.tar .gray-2 {
+	display: inline-block;
+	width:400px;
+	margin:20px 0 -20px;
+}
+.tar .gray-2 td,
+.tar .gray-2 td a {
+	text-align: center;
+	
+}
+.tar .gray-2 td:first-child+td {
+	background-color: #fcfcfc
+} 
 
 
 
