@@ -2,14 +2,15 @@
 @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
 
 /* reset css */
-html,body {height: 100%;}
+html,body {height: 100%; font-size:10px; }
 html,body,header,footer,section,article,div,p,table,td,th,thead,tbody,tfoot,form,dl,dt,dd,ul,ol,li,img,a,span,strong,em,i,h1,h2,h3,h4,h5,h6
 {
-	font-family:'Noto Sans Korean',sans-serif; font-size:30px; font-style: normal; font-weight: normal; line-height: 1em; word-wrap:break-word;word-break: keep-all; letter-spacing: -1px; 
-	padding:0; margin: 0; border:0; background-color: transparent; text-align: left;
+	font-family:'Noto Sans Korean',sans-serif; font-style: normal; font-weight: normal; line-height: 1em; word-wrap:break-word;word-break: keep-all; letter-spacing:0; 
+	padding:0; margin: 0; border:0; background-color: transparent; text-align: left; 
 	-webkit-text-size-adjust: none;
 	-webkit-box-sizing: border-box; 
 	box-sizing: border-box; 
+
 }
 h1,h2,h3,h4,h5,h6 {font-weight: normal;}
 select,input {padding:0; margin: 0;}
@@ -25,7 +26,8 @@ body {
 	background-size: cover; 
 }
 /* custom */
-[class^="form-"] {
+button {border: 0 none; background-color: transparent;}
+/*[class^="form-"] {
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
@@ -34,9 +36,9 @@ body {
 [class^="form-"] input {
 	-webkit-appearance: none;
 	appearance: none;
-}
+}*/
 /* custom : checkbox */
-.form-checkbox input {
+/*.form-checkbox input {
 	width: 26px;
 	height: 26px;
 	margin:0 0 -2px 30px;
@@ -51,32 +53,59 @@ body {
 	background-color: #1786d4;
 	background-position: 60% -60%;
 }
-.form-checkbox:first-child input { margin-left: 0; }
+.form-checkbox:first-child input { margin-left: 0; }*/
 
+/* 정렬 */
 .tal { text-align: left !important; }
 .tac { text-align: center !important; }
 .tar { text-align: right !important; }
+
+.range:after {content: ""; display: block; clear: both;}
+.range .left {float: left;}
+.range .right {float: right;}
+
+/* icon */
+[class^="ico"] {display: inline-block; overflow: hidden; text-indent: -999px;}
+/* sns */
+.sns-area {padding: 20px 0;text-align: center; font-size: 0;}
+[class^="ico-sns-"] {width:35px; height: 35px; margin: 0 7px; background: url("../images/ico-sns.png") no-repeat 0 0;
+	-webkit-background-size: 140px;
+	background-size: 140px;}
+.ico-sns-facebook {background-position: 0 0;}
+.ico-sns-story {background-position: -35px 0;}
+.ico-sns-blog {background-position: -70px 0;}
+.ico-sns-cafe {background-position: -105px 0;}
 
 /*  --------
 	page css 
 	--------  */	
 #wrap {position: relative; height: 100%; }
+.ico-top {position: fixed; bottom:17px; right:10px; z-index: 100; width:42px; height: 42px;
+	border: 1px solid #ff9100;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+	background: #fff url("../images/ico-home-basic.png") no-repeat -114px 6px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+
 #header {position: relative; z-index: 10;}
 #header header {position: relative; height: 50px; border-bottom: 1px solid #dadada; background-color: #f5f5f5; text-align: center;}
-#header header [class^="hd"] {position: absolute;  top:50%; margin-top: -15px; width:30px; height: 30px;
-	background: transparent url("../images/header-bar.png") no-repeat 0 0;
-	-webkit-background-size: 117px;
-	background-size: 117px;
-	overflow: hidden; text-indent: -9999px;
+#header header [class^="ico"] {position: absolute;  top:50%; margin-top: -15px; width:30px; height: 30px;
+	background: transparent url("../images/ico-home-basic.png") no-repeat 0 0;
+	-webkit-background-size: 147px;
+	background-size: 147px;
 }
-#header header a.hd-member-info {left:16px;} 
-#header header a.hd-total-search {right:16px; background-position: -30px 0 ;} 
+#header header a.ico-member-info {left:16px;} 
+#header header a.ico-total-search {right:16px; background-position: -30px 0 ;} 
 #header header h1 {width:104px; display: inline-block; margin-top: 6px;}
 #header header h1 a {display: block;font-size: 0;}
 #header nav.menu {overflow: hidden; background-color: #fff; box-shadow: 0 5px 5px rgba(0,0,0,0.05);}
-#header nav.menu ul {width:545px; height: 40px;}
+#header nav.menu ul {width:574px; height: 40px;}
 #header nav.menu ul li {float: left; height: 100%;}
-#header nav.menu ul li a {display: block; height: 100%; padding: 12px 15px 0; font-size: 13px; color:#000; border-bottom:3px solid #fff;}
+#header nav.menu ul li a {display: block; height: 100%; padding: 12px 13px 0; font-size: 13px; color:#000; border-bottom:3px solid #fff;}
 #header nav.menu ul li.on a {color:#ff8711; border-bottom:3px solid #ff8711;}
 
 [class^="bn-area"] a {display: block; font-size: 0; }
@@ -98,3 +127,104 @@ body {
 .slide-info * {font-size: inherit;}
 .slide-info strong,.slide-info span {padding: 0 4px;}
 .slide-info i {opacity: 0.5}
+
+.home-menu {margin-bottom: 10px; border-top: 1px solid #dadada;background-color: #fff;}
+.home-menu ul {height: 127px;}
+.home-menu ul li {width:20%; height: 50%; float: left; border-left: 1px solid #f5f5f5; border-bottom: 1px solid #f5f5f5}
+.home-menu ul li a {position: relative; display: block;width:100%; height: 100%; padding-top: 42px; text-align: center; font-size: 10px; color:#000;}
+.home-menu ul li a:before {content: ""; display: block; position: absolute;  top:15px; left:50%; 
+	background: url("../images/ico-menus.png") no-repeat 0 0; overflow: hidden;
+	-webkit-background-size: 167px;
+	background-size: 167px;
+    letter-spacing: 0px;
+}
+.home-menu ul li:nth-child(1),
+.home-menu ul li:nth-child(6) {border-left: 0 none;}
+.home-menu .h-menu01 a:before {width:22px; height: 17px; margin-left: -11px; background-position:0 0 }
+.home-menu .h-menu02 a:before {width:17px; height: 20px; margin-left: -8px; background-position:-39px 0 }
+.home-menu .h-menu03 a:before {width:22px; height: 20px; margin-left: -11px; background-position:-73px 0 }
+.home-menu .h-menu04 a:before {width:24px; height: 21px; margin-left: -12px; background-position:-109px 0 }
+.home-menu .h-menu05 a:before {width:19px; height: 20px; margin-left: -8px; background-position:-148px 0 }
+.home-menu .h-menu06 a:before {width:26px; height: 19px; margin-left: -14px; background-position:-3px -30px }
+.home-menu .h-menu07 a:before {width:19px; height: 19px; margin-left: -8px; background-position:-42px -30px }
+.home-menu .h-menu08 a:before {width:15px; height: 24px; margin-left: -8px; background-position:-80px -26px; top:11px; }
+.home-menu .h-menu09 a:before {width:18px; height: 19px; margin-left: -9px; background-position:-114px -30px }
+.home-menu .h-menu10 a:before {width:18px; height: 19px; margin-left: -9px; background-position:-150px -30px }
+
+.list-area {margin: 10px 7px;}
+.list-area>div>ul>li {margin-bottom: 10px;}
+.badge {display: block; width:40px; height: 39px; padding-top: 12px; border: 2px solid #ed1b24; color:#ed1b24; font-weight: bold; font-size: 11px; text-align: center;
+	background-color: #fff;
+	border-radius:50%; 
+	-webkit-border-radius:50%;
+}
+.label.purple {background-color: #77246c; color:#fff;}
+.label.light-purple {background-color: #8064ea; color:#fff;}
+.label.green {background-color: #b0dc03; color:#000;}
+.label.yellow {background-color: #ffd801; color:#000;}
+.label.pink {background-color: #ff7a7b; color:#fff;}
+.label.mint {background-color: #76ccc3; color:#fff;}
+
+.list-area .img-area {position: relative; font-size: 0;}
+.list-area .img-area .label-area {position: absolute; height: 30px; }
+.list-area .img-area .label-area.left {bottom: 10px; left:16px;}
+.list-area .img-area .label-area.right {bottom: 0; right:0;}
+.list-area .img-area .label-area .label {display: inline-block; min-width:40px; height: 100%; padding: 10px 7px 5px; float: left; font-size: 10px; text-align: center;}
+.info-area {background-color:#fff ; border-width:0 1px 1px 1px; border-style:solid; border-color:#dadada;}
+.list-v .info-area>div{padding:0 16px;}
+.list-v .info-area .imp-info {padding-top:12px; padding-bottom:12px;}
+.list-v .info-area .imp-info .title {padding:0 0 12px 50px; position: relative;}
+.list-v .info-area .imp-info .title .badge {position: absolute; left:0; top:0;}
+.list-v .info-area .imp-info .title .little-title {padding-top: 4px; color:#797979; font-size: 10px;}
+.list-v .info-area .imp-info .title .import-title {padding-top: 3px; font-size: 17px; line-height: 1.1em;font-weight: bold;
+ white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.list-v .info-area .imp-info .price-info {font-size: 12px;}
+.list-v .info-area .imp-info .price-info .price-name {padding-right: 5px; color:#f27935; letter-spacing: 1px;} 
+.list-v .info-area .imp-info .price-info .price {font-size: 17px; font-weight: bold;} 
+.list-v .info-area .imp-info .price-info .price.red {color:#ed1b24;} 
+.list-v .info-area .imp-info .price-info .interest {display: inline-block; padding: 5px 0 0 17px; color:#b9b9b9; font-size: 11px; background: url("../images/ico-heart.png") no-repeat 0 6px;
+-webkit-background-size: 12px;
+background-size: 12px;} 
+.list-v .info-area .etc-info {padding-top: 8px; padding-bottom: 8px; border-top: 1px solid #eeeeee;}
+.list-v .info-area .etc-info .feature {display: inline-block; padding: 3px 4px; float: left; margin-right: 5px; border: 1px solid #dadada; color:#797979; font-size: 9px;}
+.list-v .info-area .etc-info .feature.red {color:#fb5b61;}
+.list-v .info-area .etc-info .date {padding-top: 3px; font-size: 11px; color:#797979;}
+
+.beteen-bn a {display: block; font-size: 0;}
+/* footer */
+.footer {background-color: #fff;}
+.site-menu {text-align: center; background-color: #2d2d2d; color:#fff; font-weight: bold; overflow: hidden;}
+.site-menu a {float: left; position: relative; display:block; width:25%; height: 44px; padding-top: 15px; text-align: center; font-size: 12px;}
+.site-menu a:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #fff; position: absolute; top:50%; left:0; margin-top: -5px;}
+.site-menu a:first-child:before {content: none;}
+
+.footer address {padding: 0 23px; font-size: 11px; color:#666666;}
+.footer address p {line-height: 1.6em;}
+
+.site-info {text-align: center; padding: 22px  0;}
+.site-info a {position: relative; display:inline-block; padding: 0 18px; color:#666666; font-size: 12px; font-weight: bold;}
+.site-info a:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #b3b3b3; position: absolute; top:50%; left:0; margin-top: -5px;}
+.site-info a:first-child:before {content: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
