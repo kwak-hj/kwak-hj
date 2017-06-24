@@ -297,7 +297,7 @@ background-size: 12px;}
 	-webkit-border-radius: 0;
 	border-radius: 0;
 	width:auto; height: auto; padding: 0 3px; font-size: 7px;
-	font-size: 10px; font-weight: normal; border-width: 1px;
+	font-weight: normal; border-width: 1px;
 }
 .list-h .info-area .imp-info .title .date {color:#9d9d9d; font-size: 7px;}
 .list-h .info-area .imp-info .price-info {display: table; width:100%;}
