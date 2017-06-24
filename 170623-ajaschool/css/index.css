@@ -76,6 +76,19 @@ button {border: 0 none; background-color: transparent;}
 .ico-sns-blog {background-position: -70px 0;}
 .ico-sns-cafe {background-position: -105px 0;}
 
+.ico-share {position: absolute; bottom:0; right:0; z-index: 10;}
+.ico-share:before {content: ""; position: absolute; top:50%; left:50%; display: block; width:19px; height: 20px; margin:-10px 0 0 -10px;  
+	background: url("../images/ico-share.png") no-repeat 100% 0;
+	-webkit-background-size: 50px;
+	background-size: 50px;}
+.play {position: relative;}
+.play:before {content:''; display: block; position: absolute; top:50%; left:50%; width:64px; height: 64px; margin: -32px 0 0 -32px;
+	background: url("../images/ico-play.png") no-repeat 0 0;
+	-webkit-background-size: 64px;
+	background-size: 64px;
+}
+
+
 .feature {display: inline-block; padding: 3px 4px; float: left; margin-right: 5px; border: 1px solid #dadada; color:#797979; font-size: 9px;}
 .feature.red {color:#fb5b61;}
 
@@ -132,6 +145,8 @@ button {border: 0 none; background-color: transparent;}
 #header nav.menu ul li a {display: block; height: 100%; padding: 12px 13px 0; font-size: 13px; color:#000; border-bottom:3px solid #fff;}
 #header nav.menu ul li.on a {color:#ff8711; border-bottom:3px solid #ff8711;}
 
+#content>.home-menu:first-child {margin-top: 10px;}
+
 [class^="bn-area"] a {display: block; font-size: 0; }
 .bn-area-top {margin-bottom: 10px; border-bottom: 1px solid #dadada;}
 /*.bn-area-between a {display: block; font-size: 0;}*/
@@ -176,20 +191,38 @@ button {border: 0 none; background-color: transparent;}
 .home-menu .h-menu09 a:before {width:18px; height: 19px; margin-left: -9px; background-position:-114px -30px }
 .home-menu .h-menu10 a:before {width:18px; height: 19px; margin-left: -9px; background-position:-150px -30px }
 
+.home-menu ul li.on a {background-color:#ff8711; color:#fff; }
+
 .list-area {margin: 10px 7px 10px 0;}
-.list-area>div>ul>li {margin-top:10px; padding-left: 7px;}
+.list-area>div>ul>li {position: relative; margin-top:10px; padding-left: 7px;}
 
 .list-area .img-area {position: relative; font-size: 0;}
 
 .info-area {background-color:#fff ; border-width:0 1px 1px 1px; border-style:solid; border-color:#dadada;}
 .list-v .info-area>div{padding:0 16px;}
-.list-v .info-area .imp-info {padding-top:12px; padding-bottom:12px;}
+.list-v .info-area .imp-info {padding-top:11px; padding-bottom:11px;}
 .list-v .info-area .imp-info .title {padding:0 0 12px 50px; position: relative;}
 .list-v .info-area .imp-info .title.no-badge {padding-left: 0;}
 .list-v .info-area .imp-info .title .badge {position: absolute; left:0; top:0;}
 .list-v .info-area .imp-info .title .little-title {padding-top: 4px; color:#797979; font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .list-v .info-area .imp-info .title .import-title {padding-top: 3px; font-size: 17px; line-height: 1.1em; font-weight: bold;
  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.list-v .info-area .imp-info .title .time-info {padding-top: 6px; text-align: center; color:#888888; overflow: hidden;}
+.list-v .info-area .imp-info .title .time-info span {float: left; position: relative; display:block; padding-right:9px; text-align: center; font-size: 10px;}
+.list-v .info-area .imp-info .title .time-info span:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #d9d9d9; position: absolute; top:50%; left:0; margin-top: -5px;}
+.list-v .info-area .imp-info .title .time-info span:first-child:before {content: none;}
+.list-v .info-area .imp-info .title .time-info span:after {content:""; display: block; position: absolute; top:1px; left:6px; 
+	background: url("../images/ico-share.png") no-repeat 0 0;
+	-webkit-background-size: 50px;
+	background-size: 50px;
+}
+.list-v .info-area .imp-info .title .time-info .time {padding-left: 13px;}
+.list-v .info-area .imp-info .title .time-info .time:after {width:10px; height: 9px; left:0; background-position: 0 0}
+.list-v .info-area .imp-info .title .time-info .view {padding-left: 22px;}
+.list-v .info-area .imp-info .title .time-info .view:after {width:12px; height: 9px; background-position: -10px 0}
+.list-v .info-area .imp-info .title .time-info .date {padding-left: 17px;}
+.list-v .info-area .imp-info .title .time-info .date:after {width:9px; height: 9px; background-position: -23px 0}
+
 .list-v .info-area .imp-info .price-info {font-size: 12px;}
 .list-v .info-area .imp-info .price-info .price-name {padding-right: 5px; color:#f27935; letter-spacing: 1px;} 
 .list-v .info-area .imp-info .price-info .price {font-size: 17px; font-weight: bold;} 
@@ -201,8 +234,10 @@ button {border: 0 none; background-color: transparent;}
 -webkit-background-size: 12px;
 background-size: 12px;} 
 .list-v .info-area .etc-info {padding-top: 8px; padding-bottom: 8px; border-top: 1px solid #eeeeee;}
-
 .list-v .info-area .etc-info .date {padding-top: 3px; font-size: 11px; color:#797979;}
+
+.list-v.list-share .info-area .imp-info .title {padding-right:50px;padding-bottom: 5px;}
+.list-v.list-share .ico-share {width:50px; height: 66px;}
 
 .list-v.line-2>ul {overflow: hidden;}
 .list-v.line-2>ul>li {width:50%; float: left;}
@@ -213,7 +248,7 @@ background-size: 12px;}
 .list-v.line-2 .info-area .imp-info .title .import-title {font-size: 13px;}
 .list-v.line-2 .info-area .etc-info .feature {font-size: 7px;}
 .list-v.line-2 .img-area .label-area {height: 22px;}
-.list-v.line-2 .img-area .label-area .label {min-width:0; padding:6px 5px; letter-spacing: -1px; font-weight: 300;}
+.list-v.line-2 .img-area .label-area .label {font-size: 7px; min-width:0; padding:6px 5px; letter-spacing: -1px; font-weight: 300;}
 
 .list-total-info {background-color: #fff; padding: 12px 10px; color:#797979;border-bottom: 1px solid #dadada}
 .list-total-info .list-link a {float: left; position: relative; display:block; padding: 0 10px; text-align: center; }
@@ -245,17 +280,49 @@ background-size: 12px;}
 .list-slide-li .list-area .list-v .info-area .imp-info .title {padding-bottom: 6px;}
 .list-slide-li .price-title {margin-top: 2px;}
 .list-slide-li .feature {margin-right: 2px;}
-/*.list-slide-li .list-area .list-v>ul>li:first-child {padding-left: 0;}*/
+
+/* category */
+.category-area:first-child {margin-top: 17px;}
+.category-area [class^="category-list"] {border-bottom: 1px solid #dadada;}
+.category-area [class^="category-list"]+[class^="category-list"] {margin-top:10px;}
+.category-area .category-list-pink .title-area {background-color:#f3cfd7; }
+.category-area .category-list-blue .title-area {background-color:#def8fe; }
+.category-area .category-list-green .title-area {background-color:#e4e7c7; }
+.category-area .category-list-orange .title-area {background-color:#ffc692; }
+
+.category-area .title-area {
+	padding: 10px 10px 0; text-align: center;
+	border-radius: 18px 18px 0 0;
+	-webkit-border-radius: 18px 18px 0 0;
+}
+
+
+.category-area .title-area .title {display: inline-block; width:124px; margin: 11px  11px 14px; font-weight: 500; font-size: 21px; border-bottom: 2px solid #000; text-align: center; line-height: 1.6em;}
+.category-area .detail-list {background-color: #fff}
+.category-area .detail-list:after {content: ""; display: block; width: 1px; height: 1px;}
+.category-area .detail-list>ul {margin-right: 10px; overflow: hidden;}
+.category-area .detail-list>ul>li {float: left; width:50%; padding-left:10px; margin-top: 10px; font-size: 0;}
+.category-area .detail-list>ul>li:nth-child(1),
+.category-area .detail-list>ul>li:nth-child(2) {margin-top: 0;}
+.category-area .detail-list .ico-more {display: block; margin: 17px 45px; padding: 7px; border: 1px solid #d9d9d9;text-indent: 0; text-align: center;}
+.category-area .detail-list .ico-more span {position: relative; display: inline-block; padding-right: 20px; font-size: 11px; letter-spacing: 3px; color:#5f5f5f;}
+.category-area .detail-list .ico-more span:after {content: ""; display: block; width:9px; height: 9px;
+	position: absolute; right:0; top:50%; margin-top: -4px;
+	background: url("../images/ico-home-basic.png") no-repeat 0 -44px;
+	-webkit-background-size: 147px;;
+	background-size: 147px;;
+}
+
 
 /* footer */
-.footer {background-color: #fff;}
+#footer {background-color: #fff;}
 .site-menu {text-align: center; background-color: #2d2d2d; color:#fff; font-weight: bold; overflow: hidden;}
 .site-menu a {float: left; position: relative; display:block; width:25%; height: 44px; padding-top: 15px; text-align: center; font-size: 12px;}
 .site-menu a:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #fff; position: absolute; top:50%; left:0; margin-top: -5px;}
 .site-menu a:first-child:before {content: none;}
 
-.footer address {padding: 0 23px; font-size: 11px; color:#666666;}
-.footer address p {line-height: 1.6em;}
+#footer address {padding: 0 23px; font-size: 11px; color:#666666;}
+#footer address p {line-height: 1.6em;}
 
 .site-info {text-align: center; padding: 22px  0;}
 .site-info a {position: relative; display:inline-block; padding: 0 18px; color:#666666; font-size: 12px; font-weight: bold;}
