@@ -76,6 +76,27 @@ button {border: 0 none; background-color: transparent;}
 .ico-sns-blog {background-position: -70px 0;}
 .ico-sns-cafe {background-position: -105px 0;}
 
+.feature {display: inline-block; padding: 3px 4px; float: left; margin-right: 5px; border: 1px solid #dadada; color:#797979; font-size: 9px;}
+.feature.red {color:#fb5b61;}
+
+.badge {display: block; width:40px; height: 39px; padding-top: 12px; border: 2px solid #ed1b24; color:#ed1b24; font-weight: bold; font-size: 11px; text-align: center;
+	background-color: #fff;
+	border-radius:50%; 
+	-webkit-border-radius:50%;
+}
+
+.label-area {position: absolute; height: 30px; }
+.label-area.left {bottom: 10px; left:16px;}
+.label-area.right {bottom: 0; right:0;}
+.label-area .label {display: inline-block; min-width:40px; height: 100%; padding: 10px 7px 5px; float: left; font-size: 10px; text-align: center;}
+
+.label.purple {background-color: #77246c; color:#fff;}
+.label.light-purple {background-color: #8064ea; color:#fff;}
+.label.green {background-color: #b0dc03; color:#000;}
+.label.yellow {background-color: #ffd801; color:#000;}
+.label.pink {background-color: #ff7a7b; color:#fff;}
+.label.mint {background-color: #76ccc3; color:#fff;}
+
 /*  --------
 	page css 
 	--------  */	
@@ -102,7 +123,10 @@ button {border: 0 none; background-color: transparent;}
 #header header a.ico-total-search {right:16px; background-position: -30px 0 ;} 
 #header header h1 {width:104px; display: inline-block; margin-top: 6px;}
 #header header h1 a {display: block;font-size: 0;}
-#header nav.menu {overflow: hidden; background-color: #fff; box-shadow: 0 5px 5px rgba(0,0,0,0.05);}
+#header nav.menu {overflow: hidden; background-color: #fff; 
+	box-shadow:0 2px 3px rgba(0,0,0,0.13); 
+	-webkit-box-shadow:0 2px 3px rgba(0,0,0,0.13);
+}
 #header nav.menu ul {width:574px; height: 40px;}
 #header nav.menu ul li {float: left; height: 100%;}
 #header nav.menu ul li a {display: block; height: 100%; padding: 12px 13px 0; font-size: 13px; color:#000; border-bottom:3px solid #fff;}
@@ -154,46 +178,74 @@ button {border: 0 none; background-color: transparent;}
 
 .list-area {margin: 10px 7px 10px 0;}
 .list-area>div>ul>li {margin-top:10px; padding-left: 7px;}
-.badge {display: block; width:40px; height: 39px; padding-top: 12px; border: 2px solid #ed1b24; color:#ed1b24; font-weight: bold; font-size: 11px; text-align: center;
-	background-color: #fff;
-	border-radius:50%; 
-	-webkit-border-radius:50%;
-}
-.label.purple {background-color: #77246c; color:#fff;}
-.label.light-purple {background-color: #8064ea; color:#fff;}
-.label.green {background-color: #b0dc03; color:#000;}
-.label.yellow {background-color: #ffd801; color:#000;}
-.label.pink {background-color: #ff7a7b; color:#fff;}
-.label.mint {background-color: #76ccc3; color:#fff;}
 
 .list-area .img-area {position: relative; font-size: 0;}
-.list-area .img-area .label-area {position: absolute; height: 30px; }
-.list-area .img-area .label-area.left {bottom: 10px; left:16px;}
-.list-area .img-area .label-area.right {bottom: 0; right:0;}
-.list-area .img-area .label-area .label {display: inline-block; min-width:40px; height: 100%; padding: 10px 7px 5px; float: left; font-size: 10px; text-align: center;}
+
 .info-area {background-color:#fff ; border-width:0 1px 1px 1px; border-style:solid; border-color:#dadada;}
 .list-v .info-area>div{padding:0 16px;}
 .list-v .info-area .imp-info {padding-top:12px; padding-bottom:12px;}
 .list-v .info-area .imp-info .title {padding:0 0 12px 50px; position: relative;}
 .list-v .info-area .imp-info .title.no-badge {padding-left: 0;}
 .list-v .info-area .imp-info .title .badge {position: absolute; left:0; top:0;}
-.list-v .info-area .imp-info .title .little-title {padding-top: 4px; color:#797979; font-size: 10px;}
-.list-v .info-area .imp-info .title .import-title {padding-top: 3px; font-size: 17px; line-height: 1.1em;font-weight: bold;
+.list-v .info-area .imp-info .title .little-title {padding-top: 4px; color:#797979; font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.list-v .info-area .imp-info .title .import-title {padding-top: 3px; font-size: 17px; line-height: 1.1em; font-weight: bold;
  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .list-v .info-area .imp-info .price-info {font-size: 12px;}
 .list-v .info-area .imp-info .price-info .price-name {padding-right: 5px; color:#f27935; letter-spacing: 1px;} 
 .list-v .info-area .imp-info .price-info .price {font-size: 17px; font-weight: bold;} 
 .list-v .info-area .imp-info .price-info .price.red {color:#ed1b24;} 
+.list-v .info-area .imp-info .price-info .before-price {display: block; padding-bottom: 3px; color:#9fa2a9; font-size: 8px; text-decoration:line-through;} 
+.list-v .info-area .imp-info .price-info .before-price+.price {font-size: 18px;} 
+
 .list-v .info-area .imp-info .price-info .interest {display: inline-block; padding: 5px 0 0 17px; color:#b9b9b9; font-size: 11px; background: url("../images/ico-heart.png") no-repeat 0 6px;
 -webkit-background-size: 12px;
 background-size: 12px;} 
 .list-v .info-area .etc-info {padding-top: 8px; padding-bottom: 8px; border-top: 1px solid #eeeeee;}
-.list-v .info-area .etc-info .feature {display: inline-block; padding: 3px 4px; float: left; margin-right: 5px; border: 1px solid #dadada; color:#797979; font-size: 9px;}
-.list-v .info-area .etc-info .feature.red {color:#fb5b61;}
+
 .list-v .info-area .etc-info .date {padding-top: 3px; font-size: 11px; color:#797979;}
 
 .list-v.line-2>ul {overflow: hidden;}
 .list-v.line-2>ul>li {width:50%; float: left;}
+.list-v.line-2>ul>li:nth-child(1),
+.list-v.line-2>ul>li:nth-child(2) {margin-top: 0;}
+.list-v.line-2 .info-area>div {padding-left: 10px;padding-right: 10px;}
+.list-v.line-2 .info-area .imp-info .title .little-title {font-size: 9px;}
+.list-v.line-2 .info-area .imp-info .title .import-title {font-size: 13px;}
+.list-v.line-2 .info-area .etc-info .feature {font-size: 7px;}
+.list-v.line-2 .img-area .label-area {height: 20px;}
+.list-v.line-2 .img-area .label-area .label {padding:5px 7px;}
+
+.list-total-info {background-color: #fff; padding: 12px 10px; color:#797979;border-bottom: 1px solid #dadada}
+.list-total-info .list-link a {float: left; position: relative; display:block; padding: 0 10px; text-align: center; }
+.list-total-info .list-link a:before {content:""; display: block; width:0; height: 8px; border-left: 1px solid #dadada; position: absolute; top:50%; left:0; margin-top: -4px;}
+.list-total-info .list-link a:first-child:before {content: none;}
+.list-total-info .list-link a.on {color:#ff8711;}
+
+.list-slide {margin: 10px 0 17px; border-top:1px solid #dadada; border-bottom:1px solid #dadada; background-color: #fff;}
+.list-slide .list-slide-title {padding: 10px 18px 0; margin-bottom: 10px;}
+.list-slide .list-slide-title .title {display: inline-block; padding-top: 2px; font-size: 13px;}
+.list-slide .list-slide-title .list-slide-info {min-width:50px; padding: 3px 13px; border: 1px solid #dadada; 
+	border-radius: 9px;
+	-webkit-border-radius: 9px; 
+	font-size: 9px; color:#b8b7b7;
+}
+.list-slide .list-slide-title .list-slide-info>* {padding: 0 3px;}
+.list-slide .list-slide-title .list-slide-info strong {color: #000;}
+
+.list-slide-li {overflow: hidden;}
+.list-slide-li .list-area {margin:0 20px 10px;}
+.list-slide-li .list-area .list-v {position: relative; width:600%;}
+.list-slide-li .list-area .list-v>ul {position: relative;}
+.list-slide-li .list-area .list-v>ul:after {content: ""; display: block; clear: both;}
+.list-slide-li .list-area .list-v>ul>li {float: left; width:16.66%; padding: 0 5px; margin: 0;}
+.list-slide-li .list-area .list-v .info-area .imp-info {padding-left: 11px; padding-right: 9px;}
+.list-slide-li .list-area .list-v .info-area .imp-info .title .import-title {font-size: 15px;}
+.list-slide-li .list-area .list-v .info-area .imp-info .price-info .price-name {font-size: 10px;}
+.list-slide-li .list-area .list-v .info-area .imp-info .price-info .price {font-size: 13px;}
+.list-slide-li .list-area .list-v .info-area .imp-info .title {padding-bottom: 6px;}
+.list-slide-li .price-title {margin-top: 2px;}
+.list-slide-li .feature {margin-right: 2px;}
+/*.list-slide-li .list-area .list-v>ul>li:first-child {padding-left: 0;}*/
 
 /* footer */
 .footer {background-color: #fff;}
