@@ -199,56 +199,59 @@ button {border: 0 none; background-color: transparent;}
 .list-area .img-area {position: relative; font-size: 0;}
 
 .info-area {background-color:#fff ; border-width:0 1px 1px 1px; border-style:solid; border-color:#dadada;}
-.list-v .info-area>div{padding:0 16px;}
-.list-v .info-area .imp-info {padding-top:11px; padding-bottom:11px;}
-.list-v .info-area .imp-info .title {padding:0 0 12px 50px; position: relative;}
-.list-v .info-area .imp-info .title.no-badge {padding-left: 0;}
-.list-v .info-area .imp-info .title .badge {position: absolute; left:0; top:0;}
-.list-v .info-area .imp-info .title .little-title {padding-top: 4px; color:#797979; font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.list-v .info-area .imp-info .title .import-title {padding-top: 3px; font-size: 17px; line-height: 1.1em; font-weight: bold;
+ .info-area>div{padding:0 16px;}
+ .info-area .imp-info {padding-top:11px; padding-bottom:11px;}
+ .info-area .imp-info .title {padding:0 0 12px 50px; position: relative;}
+ .info-area .imp-info .title.no-badge {padding-left: 0;}
+ .info-area .imp-info .title .badge {position: absolute; left:0; top:0;}
+ .info-area .imp-info .title .little-title {padding-top: 4px; color:#797979; font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+ .info-area .imp-info .title .import-title {padding-top: 3px; font-size: 17px; line-height: 1.1em; font-weight: bold;
  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.list-v .info-area .imp-info .title .time-info {padding-top: 6px; text-align: center; color:#888888; overflow: hidden;}
-.list-v .info-area .imp-info .title .time-info span {float: left; position: relative; display:block; padding-right:9px; text-align: center; font-size: 10px;}
-.list-v .info-area .imp-info .title .time-info span:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #d9d9d9; position: absolute; top:50%; left:0; margin-top: -5px;}
-.list-v .info-area .imp-info .title .time-info span:first-child:before {content: none;}
-.list-v .info-area .imp-info .title .time-info span:after {content:""; display: block; position: absolute; top:1px; left:6px; 
+ .info-area .imp-info .title .time-info {padding-top: 6px; text-align: center; color:#888888; overflow: hidden;}
+ .info-area .imp-info .title .time-info span {float: left; position: relative; display:block; padding-right:9px; text-align: center; font-size: 10px;}
+ .info-area .imp-info .title .time-info span:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #d9d9d9; position: absolute; top:50%; left:0; margin-top: -5px;}
+ .info-area .imp-info .title .time-info span:first-child:before {content: none;}
+ .info-area .imp-info .title .time-info span:after {content:""; display: block; position: absolute; top:1px; left:6px; 
 	background: url("../images/ico-share.png") no-repeat 0 0;
 	-webkit-background-size: 50px;
 	background-size: 50px;
 }
-.list-v .info-area .imp-info .title .time-info .time {padding-left: 13px;}
-.list-v .info-area .imp-info .title .time-info .time:after {width:10px; height: 9px; left:0; background-position: 0 0}
-.list-v .info-area .imp-info .title .time-info .view {padding-left: 22px;}
-.list-v .info-area .imp-info .title .time-info .view:after {width:12px; height: 9px; background-position: -10px 0}
-.list-v .info-area .imp-info .title .time-info .date {padding-left: 17px;}
-.list-v .info-area .imp-info .title .time-info .date:after {width:9px; height: 9px; background-position: -23px 0}
+ .info-area .imp-info .title .time-info .time {padding-left: 13px;}
+ .info-area .imp-info .title .time-info .time:after {width:10px; height: 9px; left:0; background-position: 0 0}
+ .info-area .imp-info .title .time-info .view {padding-left: 22px;}
+ .info-area .imp-info .title .time-info .view:after {width:12px; height: 9px; background-position: -10px 0}
+ .info-area .imp-info .title .time-info .date {padding-left: 17px;}
+ .info-area .imp-info .title .time-info .date:after {width:9px; height: 9px; background-position: -23px 0}
 
-.list-v .info-area .imp-info .price-info {font-size: 12px;}
-.list-v .info-area .imp-info .price-info .price-name {padding-right: 5px; color:#f27935; letter-spacing: 1px;} 
-.list-v .info-area .imp-info .price-info .price {font-size: 17px; font-weight: bold;} 
-.list-v .info-area .imp-info .price-info .price.red {color:#ed1b24;} 
-.list-v .info-area .imp-info .price-info .before-price {display: block; padding-bottom: 3px; color:#9fa2a9; font-size: 8px; text-decoration:line-through;} 
-.list-v .info-area .imp-info .price-info .before-price+.price {font-size: 18px;} 
+ .info-area .imp-info .price-info {font-size: 12px;}
+ .info-area .imp-info .price-info .sale {margin-right: 7px; float: left; font-size:32px; letter-spacing: -1px; color:#ed1b24;font-weight: bold;
+}
+ .info-area .imp-info .price-info .sale span {padding-left: 1px; font-size:15px; }
+ .info-area .imp-info .price-info .price-name {padding-right: 5px; color:#f27935; letter-spacing: 1px;} 
+ .info-area .imp-info .price-info .price {font-size: 17px; font-weight: bold;} 
+ .info-area .imp-info .price-info .price.red {color:#ed1b24;} 
+ .info-area .imp-info .price-info .before-price {display: block; padding-bottom: 3px; color:#9fa2a9; font-size: 8px; text-decoration:line-through;} 
+ .info-area .imp-info .price-info .before-price+.price {font-size: 18px;} 
 
-.list-v .info-area .imp-info .price-info .interest {display: inline-block; padding: 5px 0 0 17px; color:#b9b9b9; font-size: 11px; background: url("../images/ico-heart.png") no-repeat 0 6px;
+ .info-area .imp-info .price-info .interest {display: inline-block; padding: 5px 0 0 17px; color:#b9b9b9; font-size: 11px; background: url("../images/ico-heart.png") no-repeat 0 6px;
 -webkit-background-size: 12px;
 background-size: 12px;} 
-.list-v .info-area .etc-info {padding-top: 8px; padding-bottom: 8px; border-top: 1px solid #eeeeee;}
-.list-v .info-area .etc-info .date {padding-top: 3px; font-size: 11px; color:#797979;}
+ .info-area .etc-info {padding-top: 8px; padding-bottom: 8px; border-top: 1px solid #eeeeee;}
+ .info-area .etc-info .date {padding-top: 3px; font-size: 11px; color:#797979;}
 
-.list-v.list-share .info-area .imp-info .title {padding-right:50px;padding-bottom: 5px;}
-.list-v.list-share .ico-share {width:50px; height: 66px;}
+.list-share .info-area .imp-info .title {padding-right:50px;padding-bottom: 5px;}
+.list-share .ico-share {width:50px; height: 66px;}
 
-.list-v.line-2>ul {overflow: hidden;}
-.list-v.line-2>ul>li {width:50%; float: left;}
-.list-v.line-2>ul>li:nth-child(1),
-.list-v.line-2>ul>li:nth-child(2) {margin-top: 0;}
-.list-v.line-2 .info-area>div {padding-left: 10px;padding-right: 10px;}
-.list-v.line-2 .info-area .imp-info .title .little-title {font-size: 9px;}
-.list-v.line-2 .info-area .imp-info .title .import-title {font-size: 13px;}
-.list-v.line-2 .info-area .etc-info .feature {font-size: 7px;}
-.list-v.line-2 .img-area .label-area {height: 22px;}
-.list-v.line-2 .img-area .label-area .label {font-size: 7px; min-width:0; padding:6px 5px; letter-spacing: -1px; font-weight: 300;}
+.line-2>ul {overflow: hidden;}
+.line-2>ul>li {width:50%; float: left;}
+.line-2>ul>li:nth-child(1),
+.line-2>ul>li:nth-child(2) {margin-top: 0;}
+.line-2 .info-area>div {padding-left: 10px;padding-right: 10px;}
+.line-2 .info-area .imp-info .title .little-title {font-size: 9px;}
+.line-2 .info-area .imp-info .title .import-title {font-size: 13px;}
+.line-2 .info-area .etc-info .feature {font-size: 7px;}
+.line-2 .img-area .label-area {height: 22px;}
+.line-2 .img-area .label-area .label {font-size: 7px; min-width:0; padding:6px 5px; letter-spacing: -1px; font-weight: 300;}
 
 .list-total-info {background-color: #fff; padding: 12px 10px; color:#797979;border-bottom: 1px solid #dadada}
 .list-total-info .list-link a {float: left; position: relative; display:block; padding: 0 10px; text-align: center; }
@@ -280,6 +283,37 @@ background-size: 12px;}
 .list-slide-li .list-area .list-v .info-area .imp-info .title {padding-bottom: 6px;}
 .list-slide-li .price-title {margin-top: 2px;}
 .list-slide-li .feature {margin-right: 2px;}
+
+.list-h>ul>li>a {position: relative; display: block; padding-left: 133px; height: 133px;}
+.list-h>ul>li>a>div {height: 100%;}
+.list-h .img-area {width:133px; position: absolute; top:0; left:0; }
+.list-h .info-area {position: relative; padding-bottom: 29px; border-left: 0 none; border-top-width: 1px;}
+.list-h .info-area>div {padding-left: 10px; padding-right: 10px;}
+.list-h .info-area .imp-info {padding-top: 8px; padding-bottom: 8px;}
+.list-h .info-area .imp-info .title {padding-left: 0; padding-bottom: 8px;}
+.list-h .info-area .imp-info .title .range {padding-bottom: 3px;}
+.list-h .info-area .imp-info .title .import-title {font-size: 14px;}
+.list-h .info-area .imp-info .title .badge {position:static; 
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	width:auto; height: auto; padding: 0 3px; font-size: 7px;
+	font-size: 10px; font-weight: normal; border-width: 1px;
+}
+.list-h .info-area .imp-info .title .date {color:#9d9d9d; font-size: 7px;}
+.list-h .info-area .imp-info .price-info {display: table; width:100%;}
+.list-h .info-area .imp-info .price-info .price-title {display: table-cell; height: 31px; vertical-align: middle;}
+.list-h .info-area .imp-info .price-info .price.red {font-size: 20px;}
+.list-h .info-area .etc-info {position: absolute; bottom:0; left:0; width:100%; padding-top: 5px; padding-bottom: 5px;}
+.list-h .label-area {height: auto;}
+.list-h .label-area .label {min-width:0; height: auto; padding: 5px 7px 5px; font-weight: 300; letter-spacing: -1px; }
+
+.find-list {padding:17px 25px;}
+.find-list ul {overflow: hidden;}
+.find-list li {float: left; width:33.33%; padding: 0 2px; margin: 2px 0; }
+.find-list li a {display: block; padding:8px 9px; border: 1px solid #dadada; background-color: #fff; text-align: center;
+	font-size: 12px; color:#8c8c8c; }
+.find-list li.on a {background-color: #ff8711; border-color: #ff8711; color:#fff;}
+
 
 /* category */
 .category-area:first-child {margin-top: 17px;}
