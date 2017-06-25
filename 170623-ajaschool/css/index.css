@@ -165,6 +165,7 @@ button {border: 0 none; background-color: transparent;}
 }
 
 .label-area {position: absolute; height: 30px; }
+.label-area.top {top: 0; left:0;}
 .label-area.left {bottom: 10px; left:16px;}
 .label-area.right {bottom: 0; right:0;}
 .label-area .label {display: inline-block; min-width:40px; height: 100%; padding: 10px 7px 5px; float: left; font-size: 10px; text-align: center;}
@@ -175,6 +176,7 @@ button {border: 0 none; background-color: transparent;}
 .label.yellow {background-color: #ffd801; color:#000;}
 .label.pink {background-color: #ff7a7b; color:#fff;}
 .label.mint {background-color: #76ccc3; color:#fff;}
+.label.black-alpha {height: 27px; padding: 7px 12px; background-color: rgba(0,0,0,0.25); color:#fff; font-size: 11px; letter-spacing: 1px;}
 
 .tab-area {background-color: #fff;}
 .tab-area>ul {display: table; width:100%; table-layout: fixed;}
@@ -419,37 +421,42 @@ background-size: 12px;}
 
 /* coupon */
 .list-coupon>ul>li {margin: 10px 19px;}
-.coupon-area {position: relative; 
-	overflow: hidden;
-}
-.coupon-area .coupon {position: relative; padding:14px 63px 16px 17px;  background-color: #fff; overflow: hidden;
+.coupon-area .coupon {position: relative; padding-right:63px;  background-color: #fa464c; overflow: hidden;
 	border: 3px solid #fa464c; 
 	-webkit-border-radius: 13px;
 	border-radius: 13px;
 }
-.coupon-area .coupon .coupon-title {line-height: 1.3em; font-size: 12px; font-weight: bold; color:#fa464c;}
-.coupon-area .coupon .coupon-import {margin-top: 6px; font-size: 23px;}
-.coupon-area .coupon .coupon-import .imp {font-weight: bold;}
-.coupon-area .coupon .coupon-import span {font-size: 16px;}
-.coupon-area .coupon .coupon-cont {margin-top: 18px;}
-.coupon-area .coupon .coupon-cont li {position: relative; padding-left: 6px; font-size: 11px; color:#888888; line-height: 1.3em; }
-.coupon-area .coupon .coupon-cont li:before {content: ""; position: absolute; left:0; top:6px; display: block; width: 2px; height: 2px; 
+.coupon-area .coupon-post {position: relative; padding:14px 17px 16px 17px;  background-color: #fff;
+	-webkit-border-radius:11px 0 0 11px;
+	border-radius: 11px 0 0 11px;
+}
+.coupon-area .coupon-post .coupon-title {line-height: 1.3em; font-size: 12px; font-weight: bold; color:#fa464c;}
+.coupon-area .coupon-post .coupon-import {margin-top: 6px; font-size: 23px;}
+.coupon-area .coupon-post .coupon-import .imp {font-weight: bold;}
+.coupon-area .coupon-post .coupon-import span {font-size: 16px;}
+.coupon-area .coupon-post .coupon-cont {margin-top: 18px;}
+.coupon-area .coupon-post .coupon-cont li {position: relative; padding-left: 6px; font-size: 11px; color:#888888; line-height: 1.4em; }
+.coupon-area .coupon-post .coupon-cont li:before {content: ""; position: absolute; left:0; top:6px; display: block; width: 2px; height: 2px; 
 	background-color: #888888; 
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 }
-.coupon-area .coupon .txt-coupon-detail {margin: 6px 0 0 6px;}
+.coupon-area .coupon-post .txt-coupon-detail {margin: 6px 0 0 6px;}
 .coupon-area .ico-coupon-down {width:64px; height: 100%; background-color: #fa464c;}
-.coupon-area .coupon-detail {padding: 20px 20px 17px; border: 1px solid #ddd; border-top: 0 none; background-color: #fff;}
-.coupon-area .coupon-detail .detail-txt li {display: table; table-layout: fixed; position: relative; padding-left: 6px; font-size: 11px; color:#888888; line-height: 1.3em; }
-.coupon-area .coupon-detail .detail-txt li>span {display: table-cell; vertical-align: top}
-.coupon-area .coupon-detail .detail-txt li .title {width:50px;}
-.coupon-area .coupon-detail .detail-txt li {}
+.coupon-area .coupon-detail {margin-top: -10px; padding: 25px 20px 18px; border: 1px solid #ddd; border-top: 0 none; background-color: #fff;}
+.coupon-area .coupon-detail .detail-txt li {display: table; table-layout: fixed; position: relative; padding-left: 6px;  }
 .coupon-area .coupon-detail .detail-txt li:before {content: ""; position: absolute; left:0; top:6px; display: block; width: 2px; height: 2px; 
 	background-color: #888888; 
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 }
+.coupon-area .coupon-detail .detail-txt li>span {display: table-cell; vertical-align: top; font-size: 11px; color:#888888; line-height: 1.4em;}
+.coupon-area .coupon-detail .detail-txt li .title {position: relative; width:50px; padding-right: 9px;}
+.coupon-area .coupon-detail .detail-txt li .title:before {content: ":"; position: absolute; right:4px; top:-1px; display: block; }
+
+.info-simple .title.no-badge {padding-bottom: 6px;}
+.event-date {padding-top: 5px; font-size: 13px; color:#797979; font-weight: 300;}
+
 
 /* footer */
 #footer {background-color: #fff;}
