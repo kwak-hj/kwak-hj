@@ -80,7 +80,73 @@ button {border: 0 none; background-color: transparent;}
 .ico-share:before {content: ""; position: absolute; top:50%; left:50%; display: block; width:19px; height: 20px; margin:-10px 0 0 -10px;  
 	background: url("../images/ico-share.png") no-repeat 100% 0;
 	-webkit-background-size: 50px;
-	background-size: 50px;}
+	background-size: 50px;
+}
+.ico-top {position: fixed; bottom:17px; right:10px; z-index: 100; width:42px; height: 42px;
+	border: 1px solid #ff9100;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+	background: #fff url("../images/ico-home-basic.png") no-repeat -114px 6px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+
+.ico-coupon-down {position: absolute; top:0; right:0; z-index: 10;}
+.ico-coupon-down:before {content: ""; position: absolute; top:50%; left:50%; display: block; width:31px; height: 32px; margin:-16px 0 0 -16px;  
+	background: url("../images/ico-home-basic.png") no-repeat -76px -35px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+
+[class^="txt-"] {display: inline-block; }
+.txt-more {
+	position: relative;	background-color: #fff;	font-size: 7px; color:#797979 !important; border: 1px solid #dadada; 
+	padding: 2px 21px 2px 13px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+.txt-more:after {content: ""; display: block; position: absolute; right:7px; top:50%; margin-top: -3px;
+	width:6px; height: 7px; overflow: hidden;
+	background: #fff url("../images/ico-home-basic.png") no-repeat 0 -60px;
+	-webkit-background-size: 147px;
+	background-size: 147px;	
+}
+
+.txt-more-bar {display: block; margin: 17px 45px; padding: 7px; border: 1px solid #d9d9d9;text-indent: 0; text-align: center;}
+.txt-more-bar span {position: relative; display: inline-block; padding-right: 20px; font-size: 11px; letter-spacing: 3px; color:#5f5f5f;}
+.txt-more-bar span:after {content: ""; display: block; width:9px; height: 9px;
+	position: absolute; right:0; top:50%; margin-top: -4px;
+	background: url("../images/ico-home-basic.png") no-repeat 0 -44px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+
+.txt-more-bar-02 {display: block; margin: 10px 7px 17px; padding: 11px; background-color: #fff; border-bottom: 1px solid #d9d9d9; text-indent: 0; text-align: center;}
+.txt-more-bar-02 span {position: relative; display: inline-block; padding-right: 23px; font-size: 11px; color:#949494; }
+.txt-more-bar-02 span:after {content: ""; display: block; width:13px; height: 8px;
+	position: absolute; right:0; top:50%; margin-top: -4px;
+	background: url("../images/ico-home-basic.png") no-repeat -14px -59px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+.txt-more-bar-02 span strong {color:#000;}
+
+.list-area .txt-more-bar-02 {margin-right: 0;}
+
+.txt-coupon-detail {position: relative; padding: 2px 20px 2px 6px; color:#888 !important; font-size: 7px;
+	border: 1px solid #dadada; background-color: #fff;
+}
+.txt-coupon-detail:after {content: ""; display: block; width:5px; height: 3px;
+	position: absolute; right:7px; top:50%; margin-top: -2px;
+	background: url("../images/ico-home-basic.png") no-repeat -33px -59px;
+	-webkit-background-size: 148px;
+	background-size: 148px;
+}
+.txt-coupon-detail.on:after {background-position: -33px -64px;}
+
+
 .play {position: relative;}
 .play:before {content:''; display: block; position: absolute; top:50%; left:50%; width:64px; height: 64px; margin: -32px 0 0 -32px;
 	background: url("../images/ico-play.png") no-repeat 0 0;
@@ -110,20 +176,20 @@ button {border: 0 none; background-color: transparent;}
 .label.pink {background-color: #ff7a7b; color:#fff;}
 .label.mint {background-color: #76ccc3; color:#fff;}
 
+.tab-area {background-color: #fff;}
+.tab-area>ul {display: table; width:100%; table-layout: fixed;}
+.tab-area>ul>li {display: table-cell;}
+.tab-area>ul>li>a {display: block; text-align: center; border-bottom: 4px; border-style: solid; border-color: #fff;}
+
+.tab-area.type01 {margin-bottom: 12px; border-bottom: 1px solid #dadada;}
+.tab-area.type01>ul {margin: 0 7px;}
+.tab-area.type01>ul>li>a {padding: 11px 0; color:#555555; font-size: 13px; font-weight: bold;}
+.tab-area.type01>ul>li.on>a {color:#fa464c; border-color:#fa464c; }
+
 /*  --------
 	page css 
 	--------  */	
 #wrap {position: relative; height: 100%; }
-.ico-top {position: fixed; bottom:17px; right:10px; z-index: 100; width:42px; height: 42px;
-	border: 1px solid #ff9100;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
-	background: #fff url("../images/ico-home-basic.png") no-repeat -114px 6px;
-	-webkit-background-size: 147px;
-	background-size: 147px;
-}
 
 #header {position: relative; z-index: 10;}
 #header header {position: relative; height: 50px; border-bottom: 1px solid #dadada; background-color: #f5f5f5; text-align: center;}
@@ -149,11 +215,8 @@ button {border: 0 none; background-color: transparent;}
 
 [class^="bn-area"] a {display: block; font-size: 0; }
 .bn-area-top {margin-bottom: 10px; border-bottom: 1px solid #dadada;}
-/*.bn-area-between a {display: block; font-size: 0;}*/
 
-.img-slide {position: relative;}					
-.img-slide ul {}					
-.img-slide ul li {}					
+.img-slide {position: relative; margin-bottom: 10px;}					
 .img-slide a {display: block;font-size: 0;}					
 .slide-info {position: absolute; bottom:10px; right:7px; width:70px; height: 23px;
 	padding: 4px 0 0 3px; font-size: 12px; line-height: 0;
@@ -310,10 +373,27 @@ background-size: 12px;}
 .find-list {padding:17px 25px;}
 .find-list ul {overflow: hidden;}
 .find-list li {float: left; width:33.33%; padding: 0 2px; margin: 2px 0; }
-.find-list li a {display: block; padding:8px 9px; border: 1px solid #dadada; background-color: #fff; text-align: center;
-	font-size: 12px; color:#8c8c8c; }
-.find-list li.on a {background-color: #ff8711; border-color: #ff8711; color:#fff;}
+.find-list li a {display: block; padding:8px 9px; border: 1px solid #dadada; background-color: #fff; text-align: center;	 }
+.find-list li a span {position: relative; display: inline-block; padding-right: 15px; font-size: 12px; color:#8c8c8c; }
+.find-list li a span:after {content: ''; display: block; width:8px; height: 8px; 
+	position: absolute;	top:3px; right:0; overflow: hidden;
+	background: url("../images/ico-home-basic.png") no-repeat -16px -44px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+.find-list li.on a {background-color: #ff8711; border-color: #ff8711; }
+.find-list li.on a span {color:#fff; }
+.find-list li.on a span:after {background-position: -29px -44px; }
 
+.find-title {margin: 16px 10px 0;}
+.find-title .title {position: relative; padding-left: 30px; font-size: 13px;}
+.find-title .title:after {content: ''; display: block; width:23px; height: 15px; 
+	position: absolute;	top:2px; left:0; overflow: hidden;
+	background: url("../images/ico-home-basic.png") no-repeat -48px -50px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+/*.find-title .ico-more {margin-top: -3px;}*/
 
 /* category */
 .category-area:first-child {margin-top: 17px;}
@@ -329,8 +409,6 @@ background-size: 12px;}
 	border-radius: 18px 18px 0 0;
 	-webkit-border-radius: 18px 18px 0 0;
 }
-
-
 .category-area .title-area .title {display: inline-block; width:124px; margin: 11px  11px 14px; font-weight: 500; font-size: 21px; border-bottom: 2px solid #000; text-align: center; line-height: 1.6em;}
 .category-area .detail-list {background-color: #fff}
 .category-area .detail-list:after {content: ""; display: block; width: 1px; height: 1px;}
@@ -338,15 +416,40 @@ background-size: 12px;}
 .category-area .detail-list>ul>li {float: left; width:50%; padding-left:10px; margin-top: 10px; font-size: 0;}
 .category-area .detail-list>ul>li:nth-child(1),
 .category-area .detail-list>ul>li:nth-child(2) {margin-top: 0;}
-.category-area .detail-list .ico-more {display: block; margin: 17px 45px; padding: 7px; border: 1px solid #d9d9d9;text-indent: 0; text-align: center;}
-.category-area .detail-list .ico-more span {position: relative; display: inline-block; padding-right: 20px; font-size: 11px; letter-spacing: 3px; color:#5f5f5f;}
-.category-area .detail-list .ico-more span:after {content: ""; display: block; width:9px; height: 9px;
-	position: absolute; right:0; top:50%; margin-top: -4px;
-	background: url("../images/ico-home-basic.png") no-repeat 0 -44px;
-	-webkit-background-size: 147px;;
-	background-size: 147px;;
-}
 
+/* coupon */
+.list-coupon>ul>li {margin: 10px 19px;}
+.coupon-area {position: relative; 
+	overflow: hidden;
+}
+.coupon-area .coupon {position: relative; padding:14px 63px 16px 17px;  background-color: #fff; overflow: hidden;
+	border: 3px solid #fa464c; 
+	-webkit-border-radius: 13px;
+	border-radius: 13px;
+}
+.coupon-area .coupon .coupon-title {line-height: 1.3em; font-size: 12px; font-weight: bold; color:#fa464c;}
+.coupon-area .coupon .coupon-import {margin-top: 6px; font-size: 23px;}
+.coupon-area .coupon .coupon-import .imp {font-weight: bold;}
+.coupon-area .coupon .coupon-import span {font-size: 16px;}
+.coupon-area .coupon .coupon-cont {margin-top: 18px;}
+.coupon-area .coupon .coupon-cont li {position: relative; padding-left: 6px; font-size: 11px; color:#888888; line-height: 1.3em; }
+.coupon-area .coupon .coupon-cont li:before {content: ""; position: absolute; left:0; top:6px; display: block; width: 2px; height: 2px; 
+	background-color: #888888; 
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.coupon-area .coupon .txt-coupon-detail {margin: 6px 0 0 6px;}
+.coupon-area .ico-coupon-down {width:64px; height: 100%; background-color: #fa464c;}
+.coupon-area .coupon-detail {padding: 20px 20px 17px; border: 1px solid #ddd; border-top: 0 none; background-color: #fff;}
+.coupon-area .coupon-detail .detail-txt li {display: table; table-layout: fixed; position: relative; padding-left: 6px; font-size: 11px; color:#888888; line-height: 1.3em; }
+.coupon-area .coupon-detail .detail-txt li>span {display: table-cell; vertical-align: top}
+.coupon-area .coupon-detail .detail-txt li .title {width:50px;}
+.coupon-area .coupon-detail .detail-txt li {}
+.coupon-area .coupon-detail .detail-txt li:before {content: ""; position: absolute; left:0; top:6px; display: block; width: 2px; height: 2px; 
+	background-color: #888888; 
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
 
 /* footer */
 #footer {background-color: #fff;}
