@@ -101,6 +101,12 @@ button {border: 0 none; background-color: transparent;}
 	background-size: 147px;
 }
 
+.ico-list {position: absolute;  top:50%; left:16px; margin-top: -15px; width:30px; height: 30px;
+	background: transparent url("../images/ico-home-basic.png") no-repeat 0 0;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+
 .ico-del {width:38px; height: 37px; margin-left: 8px;
 	background: #fff url("../images/ico-del.png") no-repeat 7px 50%;
 	-webkit-background-size: 12px;
@@ -197,6 +203,13 @@ button {border: 0 none; background-color: transparent;}
 .tab-area.type02>ul>li>a {color:#555555; font-size: 13px; }
 .tab-area.type02>ul>li.on>a {color:#000; border-color:#ff8711; font-weight: bold;}
 
+.tab-area.type03 {border-top: 1px solid #dadada; margin-bottom: 0;}
+.tab-area.type03>ul {padding: 0;}
+.tab-area.type03>ul>li>a {position: relative; color:#888888; font-size: 13px; }
+.tab-area.type03>ul>li.on>a {color:#ff8711; border-color:#ff8711; font-weight: 500;}
+.tab-area.type03>ul>li>a:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #d7d7d7; position: absolute; top:50%; left:0; margin-top: -5px;}
+.tab-area.type03>ul>li:first-child>a:before {content: none;}
+
 
 /*  --------
 	page css 
@@ -210,8 +223,8 @@ button {border: 0 none; background-color: transparent;}
 	-webkit-background-size: 147px;
 	background-size: 147px;
 }
-#header header a.ico-member-info {left:16px;} 
-#header header a.ico-total-search {right:16px; background-position: -30px 0 ;} 
+#header header a.ico-member-info {left:16px; background-position: -1px -1px; border: 1px solid #c4c4c4} 
+#header header a.ico-total-search {right:16px; background-position: -30px 0;} 
 #header header h1 {width:104px; display: inline-block; margin-top: 6px;}
 #header header h1 a {display: block;font-size: 0;}
 #header nav.menu {overflow: hidden; background-color: #fff; 
@@ -282,38 +295,39 @@ button {border: 0 none; background-color: transparent;}
  .info-area .imp-info .title .little-title {padding-top: 4px; color:#797979; font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
  .info-area .imp-info .title .import-title {padding-top: 3px; font-size: 17px; line-height: 1.1em; font-weight: bold;
  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
- .info-area .imp-info .title .time-info {padding-top: 6px; text-align: center; color:#888888; overflow: hidden;}
- .info-area .imp-info .title .time-info span {float: left; position: relative; display:block; padding-right:9px; text-align: center; font-size: 10px;}
- .info-area .imp-info .title .time-info span:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #d9d9d9; position: absolute; top:50%; left:0; margin-top: -5px;}
- .info-area .imp-info .title .time-info span:first-child:before {content: none;}
- .info-area .imp-info .title .time-info span:after {content:""; display: block; position: absolute; top:1px; left:6px; 
+.time-info {padding-top: 6px; text-align: center; color:#888888; overflow: hidden;}
+.time-info span {float: left; position: relative; display:block; padding-right:9px; text-align: center; font-size: 10px;}
+.time-info span:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #d9d9d9; position: absolute; top:50%; left:0; margin-top: -5px;}
+.time-info span:first-child:before {content: none;}
+.time-info span:after {content:""; display: block; position: absolute; top:1px; left:6px; 
 	background: url("../images/ico-share.png") no-repeat 0 0;
 	-webkit-background-size: 50px;
 	background-size: 50px;
 }
- .info-area .imp-info .title .time-info .time {padding-left: 13px;}
- .info-area .imp-info .title .time-info .time:after {width:10px; height: 9px; left:0; background-position: 0 0}
- .info-area .imp-info .title .time-info .view {padding-left: 22px;}
- .info-area .imp-info .title .time-info .view:after {width:12px; height: 9px; background-position: -10px 0}
- .info-area .imp-info .title .time-info .date {padding-left: 17px;}
- .info-area .imp-info .title .time-info .date:after {width:9px; height: 9px; background-position: -23px 0}
+.time-info .time {padding-left: 13px;}
+.time-info .time:after {width:10px; height: 9px; left:0; background-position: 0 0}
+.time-info .view {padding-left: 22px;}
+.time-info .view:after {width:12px; height: 9px; background-position: -10px 0}
+.time-info .date {padding-left: 17px;}
+.time-info .date:after {width:9px; height: 9px; background-position: -23px 0}
 
- .info-area .imp-info .price-info {font-size: 12px;}
- .info-area .imp-info .price-info .sale {margin-right: 7px; float: left; font-size:32px; letter-spacing: -1px; color:#ed1b24;font-weight: bold;
+.info-area .imp-info .price-info {font-size: 12px;}
+.info-area .imp-info .price-info .sale {margin-right: 7px; float: left; font-size:32px; letter-spacing: -1px; color:#ed1b24;font-weight: bold;
 }
- .info-area .imp-info .price-info .sale span {padding-left: 1px; font-size:15px; }
- .info-area .imp-info .price-info .price-name {padding-right: 5px; color:#f27935; letter-spacing: 1px;} 
- .info-area .imp-info .price-info .price {font-size: 17px; font-weight: bold;} 
- .info-area .imp-info .price-info .price.red {color:#ed1b24;} 
- .info-area .imp-info .price-info .before-price {display: block; padding-bottom: 3px; color:#9fa2a9; font-size: 8px; text-decoration:line-through;} 
- .info-area .imp-info .price-info .before-price+.price {font-size: 18px;} 
+.info-area .imp-info .price-info .sale span {padding-left: 1px; font-size:15px; }
+.info-area .imp-info .price-info .price-name {padding-right: 5px; color:#f27935; letter-spacing: 1px;} 
+.info-area .imp-info .price-info .price {font-size: 17px; font-weight: bold;} 
+.info-area .imp-info .price-info .price.red {color:#ed1b24;} 
+.info-area .imp-info .price-info .before-price {display: block; padding-bottom: 3px; color:#9fa2a9; font-size: 8px; text-decoration:line-through;} 
+.info-area .imp-info .price-info .before-price+.price {font-size: 18px;} 
 
- .info-area .imp-info .price-info .interest {display: inline-block; padding: 5px 0 0 17px; color:#b9b9b9; font-size: 11px; background: url("../images/ico-heart.png") no-repeat 0 6px;
+.info-area .imp-info .price-info .interest {display: inline-block; padding: 5px 0 0 17px; color:#b9b9b9; font-size: 11px; background: url("../images/ico-heart.png") no-repeat 0 6px;
 -webkit-background-size: 12px;
 background-size: 12px;} 
- .info-area .etc-info {padding-top: 8px; padding-bottom: 8px; border-top: 1px solid #eeeeee;}
- .info-area .etc-info .date {padding-top: 3px; font-size: 11px; color:#797979;}
+.info-area .etc-info {padding-top: 8px; padding-bottom: 8px; border-top: 1px solid #eeeeee;}
+.info-area .etc-info .date {padding-top: 3px; font-size: 11px; color:#797979;}
 
+.list-share {position: relative;}
 .list-share .info-area .imp-info .title {padding-right:50px;padding-bottom: 5px;}
 .list-share .ico-share {width:50px; height: 66px;}
 
@@ -359,8 +373,8 @@ background-size: 12px;}
 .list-slide-li .price-title {margin-top: 2px;}
 .list-slide-li .feature {margin-right: 2px;}
 
-.list-h>ul>li>a {position: relative; display: block; padding-left: 133px; height: 133px;}
-.list-h>ul>li>a>div {height: 100%;}
+.list-h>ul>li>* {position: relative; display: block; padding-left: 133px; height: 133px;}
+.list-h>ul>li>*>div {height: 100%;}
 .list-h .img-area {width:133px; position: absolute; top:0; left:0; }
 .list-h .info-area {position: relative; padding-bottom: 29px; border-left: 0 none; border-top-width: 1px;}
 .list-h .info-area>div {padding-left: 10px; padding-right: 10px;}
@@ -380,7 +394,7 @@ background-size: 12px;}
 .list-h .info-area .imp-info .price-info .price.red {font-size: 20px;}
 .list-h .info-area .etc-info {position: absolute; bottom:0; left:0; width:100%; padding-top: 5px; padding-bottom: 5px;}
 .list-h .label-area {height: auto;}
-.list-h .label-area .label {min-width:0; height: auto; padding: 5px 7px 5px; font-weight: 300; letter-spacing: -1px; }
+.list-h .label-area .label {min-width:0; height: auto; padding: 5px 7px 5px; line-height: 1em; font-weight: 300; letter-spacing: -1px; }
 
 .find-list {padding:17px 25px;}
 .find-list ul {overflow: hidden;}
@@ -405,7 +419,54 @@ background-size: 12px;}
 	-webkit-background-size: 147px;
 	background-size: 147px;
 }
-/*.find-title .ico-more {margin-top: -3px;}*/
+
+/* movie */
+.movie-view {margin-bottom: 10px;}
+.movie-view .info-area {border-width: 0 0 1px 0;}
+.movie-title-area {position: relative; height: 50px; padding: 9px 48px 0 55px; border-bottom: 1px solid #dadada; background-color: #fff;}
+.movie-title-area .ico-list {}
+.movie-title-area p {padding-top: 7px; font-size: 18px; color:#000; letter-spacing: -1px;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+[class^="movie-detail-"] {padding: 15px; margin-bottom: 15px; border-top: 1px solid #dadada; border-bottom: 1px solid #dadada; background-color: #fff;}
+.movie-detail-info {margin-top: -1px;}
+.movie-detail-info .detail-txt li {padding-left: 0;}
+.movie-detail-info .detail-txt li:before {content: none;}
+.movie-detail-info .detail-txt li>span {font-size: 13px;}
+.movie-detail-info .detail-txt li .title {width:auto; color:#000; font-weight: 500;}
+.movie-detail-info .detail-txt li .title:before {right:3px; color:#888;}
+.movie-detail-info .movie-txt {margin-top: 15px; font-size: 13px; line-height: 1.4em; color:#000;}
+
+.best-total-info {margin-bottom: 5px; background-color: #fff; color:#797979;}
+.best-total-info .title {font-size: 13px; color:#000;}
+.best-total-info .title+span {position: relative; display: inline-block; padding-left: 6px; margin-left: 5px; font-size: 13px;}
+.best-total-info .title+span:before {content:""; display: block; width:0; height: 8px; border-left: 1px solid #dadada; position: absolute; top:50%; left:0; margin-top: -4px;}
+.best-total-info .list-link a {float: left; position: relative; display:block; padding: 0 10px; text-align: center; }
+.best-total-info .list-link a:before {content:""; display: block; width:0; height: 8px; border-left: 1px solid #dadada; position: absolute; top:50%; left:0; margin-top: -4px;}
+.best-total-info .list-link a:first-child:before {content: none;}
+.best-total-info .list-link a:last-child {padding-right: 0;}
+.best-total-info .list-link a.on {color:#ff8711;}
+
+.movie-detail-best .best-movie {margin: 0; padding-left: 0;}
+.movie-detail-best .best-movie>div>ul>li {margin: 0; padding: 10px 0;}
+.movie-detail-best .best-movie .list-h .info-area {border: 0 none; padding-top: 0;padding-bottom: 0}
+.movie-detail-best .best-movie .list-h>ul>li>* {height: 84px; padding-left: 153px;}
+.movie-detail-best .best-movie .img-area {width: 153px;}
+.movie-detail-best .best-movie .img-area.play:before {width:22px; height: 22px; left:7px; bottom:7px; top:initial; margin: 0;
+	-webkit-background-size: 22px;
+	background-size: 22px;
+}
+.movie-detail-best .best-movie .info-area>div {position: relative; height: 100%; padding: 4px 0 20px 10px; }
+.movie-detail-best .best-movie .info-area .time-info {position: absolute; bottom:0; left:0; width:100%; height: 16px; padding-top: 0; padding-left: 10px;}
+.movie-detail-best .best-movie .info-area .imp-info .title .import-title a {font-weight: bold; line-height: 1.25em; white-space: normal;word-break: break-all; word-wrap:break-word;}
+.movie-detail-best .best-movie .ico-share {right: -7px; top: 1px; bottom:initial; width: 19px; height: 17px; }
+.movie-detail-best .best-movie .ico-share:before {width: 19px; height: 17px; 
+	background-position:  -21px 3px;
+	-webkit-background-size: 33px;
+	background-size: 33px;
+}
+
+.movie-detail-best .best-movie>div>ul>li {border-top: 1px solid #d9d9d9;}
+.movie-detail-best .best-movie>div>ul>li:first-child {border-top:0 none;}
 
 /* category */
 .category-area:first-child {margin-top: 17px;}
@@ -456,15 +517,15 @@ background-size: 12px;}
 .coupon-area .coupon-post .txt-coupon-detail {margin: 6px 0 0 6px;}
 .coupon-area .ico-coupon-down {width:64px; height: 100%; background-color: #fa464c;}
 .coupon-area .coupon-detail {margin-top: -10px; padding: 25px 20px 18px; border: 1px solid #ddd; border-top: 0 none; background-color: #fff;}
-.coupon-area .coupon-detail .detail-txt li {display: table; table-layout: fixed; position: relative; padding-left: 6px;  }
-.coupon-area .coupon-detail .detail-txt li:before {content: ""; position: absolute; left:0; top:6px; display: block; width: 2px; height: 2px; 
+.detail-txt li {display: table; table-layout: fixed; position: relative; padding-left: 6px;  }
+.detail-txt li:before {content: ""; position: absolute; left:0; top:6px; display: block; width: 2px; height: 2px; 
 	background-color: #888888; 
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 }
-.coupon-area .coupon-detail .detail-txt li>span {display: table-cell; vertical-align: top; font-size: 11px; color:#888888; line-height: 1.4em;}
-.coupon-area .coupon-detail .detail-txt li .title {position: relative; width:50px; padding-right: 9px;}
-.coupon-area .coupon-detail .detail-txt li .title:before {content: ":"; position: absolute; right:4px; top:-1px; display: block; }
+.detail-txt li>span {display: table-cell; vertical-align: top; font-size: 11px; color:#888888; line-height: 1.4em;}
+.detail-txt li .title {position: relative; width:50px; padding-right: 9px;}
+.detail-txt li .title:before {content: ":"; position: absolute; right:4px; top:-1px; display: block; }
 
 .info-simple .title.no-badge {padding-bottom: 6px;}
 .event-date {padding-top: 5px; font-size: 13px; color:#797979; font-weight: 300;}
@@ -479,6 +540,9 @@ background-size: 12px;}
 }
 .search-area .ico-prev {left:10px; background-position: -87px 0 ;} 
 .search-area .ico-search {right:10px; background-position: -59px 0 ;} 
+
+.search-area.result {margin-bottom: 10px; background-color: #fff; }
+.search-area.result .center p {padding: 7px 40px 0 0;font-size: 18px; color:#000; letter-spacing: -1px;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
 [class^="search-list-"] {margin: 7px; background-color: #fff;}
 [class^="search-list-"]>* {border: 1px solid #dadada;}
