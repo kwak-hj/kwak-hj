@@ -645,7 +645,7 @@ background-size: 12px;}
 .search-info .right .txt-close:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #c8c8c8; position: absolute; top:50%; left:0; margin-top: -5px;}
 
 /* popup */
-.deam {position: absolute; top:0; right:0; bottom:0; left:0; background-color: rgba(0,0,0,0.6);	z-index: 0;}
+.deam {position: absolute; top:0; right:0; bottom:0; left:0; min-height: 500px; background-color: rgba(0,0,0,0.6);	z-index: 0;}
 .layer-popup-area {position: absolute; top:50px; right:0; bottom:0; left:0; overflow: auto; }
 .layer-popup-area .popup-content {position: relative; z-index: 100;}
 .layer-popup-area .notice-popup {position: absolute; right: 15px; left: 15px; top:50%; margin: -68px auto 0;
