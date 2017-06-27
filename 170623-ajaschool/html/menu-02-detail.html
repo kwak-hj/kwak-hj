@@ -40,14 +40,14 @@
 			<div class="movie-etc-content">
 				<div class="tab-area type03">
 					<ul>
-						<li class="on"><a href="#none">상세정보</a></li>
-						<li><a href="#none">추천영상</a></li>
-						<li><a href="#none">댓글</a></li>
+						<li class="on"><a href="#movie-detail-info">상세정보</a></li>
+						<li><a href="#movie-detail-best">추천영상</a></li>
+						<li><a href="#movie-detail-reply">댓글</a></li>
 					</ul>
 				</div>
 				<div class="tab-content">
 					<!-- 상세정보 -->
-					<div class="movie-detail-info">
+					<div class="movie-detail-info" id="movie-detail-info">
 						<ul class="detail-txt">
 							<li><span class="title">교육명</span><span class="cont">유스내비 회원을위한 청소년 진로탐색</span></li>
 							<li><span class="title">교육일</span><span class="cont">2016년 9월 27일</span></li>
@@ -59,10 +59,10 @@
 						<p class="movie-txt">
 							서울시립청소년미디어센터와 아자스쿨이 함께 진행한 청소년 진로탐색 비전로드맵 프로그램입니다. 청소년들의 진로 고민을 함께 생각해보고 해결책을 제시해줍니다.
 						</p>
-					</div>
+					</div><!-- //상세정보 -->
 					<!-- 추천영상 -->
-					<div class="movie-detail-best">
-						<div class="best-total-info">
+					<div class="movie-detail-best" id="movie-detail-best">
+						<div class="total-info">
 							<div class="range">
 								<div class="left"><strong class="title">추천영상</strong><span>123</span></div>
 								<div class="right list-link">
@@ -93,7 +93,6 @@
 													<div class="time-info">
 														<span class="time">42:02</span>
 														<span class="view">234,532</span>
-														<!-- <span class="date">16.05.31</span> -->
 													</div>
 												</div>
 											</div>
@@ -154,8 +153,55 @@
 									</li>
 								</ul>
 							</div>
+							<a class="txt-more-bar-03"><span>추천영상</span></a>
 						</div>
-					</div>
+					</div><!-- //추천영상 -->
+					<!-- 덧글 -->
+					<div class="movie-detail-reply" id="movie-detail-reply">
+						<div class="total-info">
+							<div class="range">
+								<div class="left"><strong class="title">덧글</strong><span>23</span></div>
+							</div>
+						</div>
+						<div class="write-reply">
+							<input type="text" class="txt-reply" name="" placeholder="덧글쓰기">
+						</div>
+						<div class="reply-list">
+							<ul>
+								<li>
+									<div class="member"><img src="../images/@img-profile-01.png"></div>
+									<p class="reply">작년 11월 체험 후기를 이제 올립니다. 저는 원래 후기를 잘안쓰는 타입인데.. 곰디학교를 몇번의씩 갔었지만 그때마다 놀라워서 이렇게 직접 후기를 남깁니다.</p>
+									<div class="reply-info"><span class="name">홍길동</span><span class="date">2017-02-19</span></div>
+									<div class="reply-02-num on"><a href="#none">답글<span>2</span></a></div>
+									<div class="reply-list-02">
+										<ul>
+											<li>
+												<p class="reply-02">사는냐? 죽는냐? 그것이 문제로다!<br>To Be Or Not To Be!</p>
+												<div class="reply-info"><span class="name">홍길동</span><span class="date">2017-02-19</span></div>
+											</li>
+											<li>
+												<p class="reply-02">그들은 하루 24시간을 바쁘게 살아가는 과정에서 문득자신이 행복하다는걸 깨닫는다.</p>
+												<div class="reply-info"><span class="name">홍길동</span><span class="date">2017-02-19</span></div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="member"><img src="../images/@img-profile-02.png"></div>
+									<p class="reply">작년 11월 체험 후기를 이제 올립니다. 저는 원래 후기를 잘안쓰는 타입인데.. 곰디학교를 몇번의씩 갔었지만 그때마다 놀라워서 이렇게 직접 후기를 남깁니다.</p>
+									<div class="reply-info"><span class="name">홍길동</span><span class="date">2017-02-19</span></div>
+									<div class="reply-02-num"><a href="#none">답글<span>0</span></a></div>
+								</li>
+								<li>
+									<div class="member"><img src="../images/img-profile-default.png"></div>
+									<p class="reply">작년 11월 체험 후기를 이제 올립니다. 저는 원래 후기를 잘안쓰는 타입인데.. 곰디학교를 몇번의씩 갔었지만 그때마다 놀라워서 이렇게 직접 후기를 남깁니다.</p>
+									<div class="reply-info"><span class="name">홍길동</span><span class="date">2017-02-19</span></div>
+									<div class="reply-02-num"><a href="#none">답글<span>0</span></a></div>
+								</li>
+							</ul>
+						</div>
+						<a class="txt-more-bar-03"><span>덧글 더보기</span></a>
+					</div><!--//덧글 -->
 				</div>
 			</div>
 		</div><!--//content-->

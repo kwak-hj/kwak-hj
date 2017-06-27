@@ -127,26 +127,35 @@ button {border: 0 none; background-color: transparent;}
 	background-size: 147px;	
 }
 
-.txt-more-bar {display: block; margin: 17px 45px; padding: 7px; border: 1px solid #d9d9d9;text-indent: 0; text-align: center;}
-.txt-more-bar span {position: relative; display: inline-block; padding-right: 20px; font-size: 11px; letter-spacing: 3px; color:#5f5f5f;}
-.txt-more-bar span:after {content: ""; display: block; width:9px; height: 9px;
-	position: absolute; right:0; top:50%; margin-top: -4px;
+[class^="txt-more-bar"] {display: block; text-align: center;}
+[class^="txt-more-bar"] span {position: relative; display: inline-block; }
+[class^="txt-more-bar"] span:after  {content: ""; display: block; position: absolute; right:0; top:50%;  }
+
+.txt-more-bar { margin: 17px 45px; padding: 7px; border: 1px solid #d9d9d9; }
+.txt-more-bar span {padding-right: 20px; font-size: 11px; letter-spacing: 3px; color:#5f5f5f;}
+.txt-more-bar span:after {width:9px; height: 9px; margin-top: -4px;
 	background: url("../images/ico-home-basic.png") no-repeat 0 -44px;
 	-webkit-background-size: 147px;
 	background-size: 147px;
 }
 
-.txt-more-bar-02 {display: block; margin: 10px 7px 17px; padding: 11px; background-color: #fff; border-bottom: 1px solid #d9d9d9; text-indent: 0; text-align: center;}
-.txt-more-bar-02 span {position: relative; display: inline-block; padding-right: 23px; font-size: 11px; color:#949494; }
-.txt-more-bar-02 span:after {content: ""; display: block; width:13px; height: 8px;
-	position: absolute; right:0; top:50%; margin-top: -4px;
+.txt-more-bar-02 {margin: 10px 7px 17px; padding: 11px; background-color: #fff; border-bottom: 1px solid #d9d9d9; }
+.txt-more-bar-02 span {padding-right: 23px; font-size: 11px; color:#949494; }
+.txt-more-bar-02 span:after {width:13px; height: 8px; margin-top: -4px;
 	background: url("../images/ico-home-basic.png") no-repeat -14px -59px;
 	-webkit-background-size: 147px;
 	background-size: 147px;
 }
 .txt-more-bar-02 span strong {color:#000;}
-
 .list-area .txt-more-bar-02 {margin-right: 0;}
+
+.txt-more-bar-03 {margin-top:5px; padding: 11px; background-color: #fff; border-top: 1px solid #d9d9d9; }
+.txt-more-bar-03 span {padding-right: 23px; font-size: 13px; color:#acacac; }
+.txt-more-bar-03 span:after {width:13px; height: 8px; margin-top: -3px;
+	background: url("../images/ico-home-basic.png") no-repeat -48px -41px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
 
 .txt-coupon-detail {position: relative; padding: 2px 20px 2px 6px; color:#888 !important; font-size: 7px;
 	border: 1px solid #dadada; background-color: #fff;
@@ -427,8 +436,8 @@ background-size: 12px;}
 .movie-title-area .ico-list {}
 .movie-title-area p {padding-top: 7px; font-size: 18px; color:#000; letter-spacing: -1px;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
-[class^="movie-detail-"] {padding: 15px; margin-bottom: 15px; border-top: 1px solid #dadada; border-bottom: 1px solid #dadada; background-color: #fff;}
-.movie-detail-info {margin-top: -1px;}
+[class^="movie-detail-"] {padding: 15px 15px 0 15px; margin-bottom: 15px; border-top: 1px solid #dadada; border-bottom: 1px solid #dadada; background-color: #fff;}
+.movie-detail-info {margin-top: -1px; padding-bottom: 15px; }
 .movie-detail-info .detail-txt li {padding-left: 0;}
 .movie-detail-info .detail-txt li:before {content: none;}
 .movie-detail-info .detail-txt li>span {font-size: 13px;}
@@ -436,15 +445,15 @@ background-size: 12px;}
 .movie-detail-info .detail-txt li .title:before {right:3px; color:#888;}
 .movie-detail-info .movie-txt {margin-top: 15px; font-size: 13px; line-height: 1.4em; color:#000;}
 
-.best-total-info {margin-bottom: 5px; background-color: #fff; color:#797979;}
-.best-total-info .title {font-size: 13px; color:#000;}
-.best-total-info .title+span {position: relative; display: inline-block; padding-left: 6px; margin-left: 5px; font-size: 13px;}
-.best-total-info .title+span:before {content:""; display: block; width:0; height: 8px; border-left: 1px solid #dadada; position: absolute; top:50%; left:0; margin-top: -4px;}
-.best-total-info .list-link a {float: left; position: relative; display:block; padding: 0 10px; text-align: center; }
-.best-total-info .list-link a:before {content:""; display: block; width:0; height: 8px; border-left: 1px solid #dadada; position: absolute; top:50%; left:0; margin-top: -4px;}
-.best-total-info .list-link a:first-child:before {content: none;}
-.best-total-info .list-link a:last-child {padding-right: 0;}
-.best-total-info .list-link a.on {color:#ff8711;}
+.total-info {margin-bottom: 5px; background-color: #fff; color:#797979;}
+.total-info .title {font-size: 13px; color:#000;}
+.total-info .title+span {position: relative; display: inline-block; padding-left: 6px; margin-left: 5px; font-size: 13px;}
+.total-info .title+span:before {content:""; display: block; width:0; height: 8px; border-left: 1px solid #dadada; position: absolute; top:50%; left:0; margin-top: -4px;}
+.total-info .list-link a {float: left; position: relative; display:block; padding: 0 10px; text-align: center; }
+.total-info .list-link a:before {content:""; display: block; width:0; height: 8px; border-left: 1px solid #dadada; position: absolute; top:50%; left:0; margin-top: -4px;}
+.total-info .list-link a:first-child:before {content: none;}
+.total-info .list-link a:last-child {padding-right: 0;}
+.total-info .list-link a.on {color:#ff8711;}
 
 .movie-detail-best .best-movie {margin: 0; padding-left: 0;}
 .movie-detail-best .best-movie>div>ul>li {margin: 0; padding: 10px 0;}
@@ -467,6 +476,46 @@ background-size: 12px;}
 
 .movie-detail-best .best-movie>div>ul>li {border-top: 1px solid #d9d9d9;}
 .movie-detail-best .best-movie>div>ul>li:first-child {border-top:0 none;}
+
+.movie-detail-reply	.total-info	{padding-bottom: 15px; border-bottom: 1px solid #d9d9d9;}
+.movie-detail-reply	.write-reply {position: relative; margin-top: 20px;}
+.movie-detail-reply	.write-reply:after {content: ""; position: absolute; right:14px; top:50%; margin-top: -7px;
+	display: block; width:13px; height: 14px;
+	background: url("../images/ico-home-basic.png") no-repeat -113px -52px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+.movie-detail-reply	.write-reply .txt-reply	{display: block; width:100%; padding: 4px 32px 4px 14px; border: 1px solid #dadada;}
+.movie-detail-reply	.reply-list>ul>li {position: relative; padding: 14px 0 14px 57px; border-top: 1px solid #d9d9d9;}
+.movie-detail-reply	.reply-list>ul>li:first-child {border-top: 0 none;}
+.movie-detail-reply	.reply-list>ul>li .member {position: absolute; top:14px; left:5px; width:41px; height: 41px; overflow: hidden;}
+.movie-detail-reply	.reply-list>ul>li .reply {font-size: 13px; color:#444444; line-height: 1.3em;}
+.movie-detail-reply	.reply-list>ul>li .reply-02-num {margin-top: 8px;}
+.movie-detail-reply	.reply-list>ul>li .reply-02-num a {position: relative; padding-right: 11px; font-size: 9px; color:#444444;}
+.movie-detail-reply	.reply-list>ul>li .reply-02-num a:after {content: ""; position: absolute; top:50%; right:0;
+	display: block;	width:6px; height: 4px; margin-top: -1px;
+	background: url("../images/ico-home-basic.png") no-repeat -113px -35px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+.movie-detail-reply	.reply-list>ul>li .reply-02-num.on a:after {background-position: -113px -43px;}
+.movie-detail-reply	.reply-list>ul>li .reply-02-num a span {padding-left: 5px;}
+
+/*.movie-detail-reply	.reply-list .reply-list-02 {margin-top: 13px; }*/
+.movie-detail-reply	.reply-list .reply-list-02>ul>li {position: relative; margin-top: 13px; padding:10px 0 0 23px; border-top: 1px solid #d9d9d9;}
+.movie-detail-reply	.reply-list .reply-list-02>ul>li:before {content: ""; display: block; position: absolute; top:13px; left:9px;
+	width:7px; height: 7px; border-width:  0 0 1px 1px; border-style: solid; border-color: #797979;
+}
+.movie-detail-reply	.reply-list .reply-list-02>ul>li .reply-02 {font-size: 13px; color:#444444; line-height: 1.3em;}
+
+
+
+.movie-detail-reply	.reply-info	{margin-top: 8px; overflow: hidden;}
+.movie-detail-reply	.reply-info span {float: left; position: relative; display:block; padding: 0 5px 0 7px; color:#84a4d3; font-size: 9px;}
+.movie-detail-reply	.reply-info span:before {content:""; display: block; width:0; height: 7px; border-left: 1px solid #dadada; position: absolute; top:50%; left:0; margin-top: -3px;}
+.movie-detail-reply	.reply-info span:first-child {padding-left: 0;}
+.movie-detail-reply	.reply-info span:first-child:before {content: none;}
+
 
 /* category */
 .category-area:first-child {margin-top: 17px;}
