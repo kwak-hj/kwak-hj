@@ -13,7 +13,9 @@ html,body,header,footer,section,article,div,p,table,td,th,thead,tbody,tfoot,form
 
 }
 h1,h2,h3,h4,h5,h6 {font-weight: normal;}
-select,input {padding:0; margin: 0;}
+select,input {padding:0; margin: 0;
+	-webkit-appearance:none;
+}
 img {max-width:100%;}
 ul,ol,li {list-style: none;}
 a,
@@ -643,6 +645,89 @@ background-size: 12px;}
 .search-info .right .txt-del {height: 100%;}
 .search-info .right .txt-close {position: relative; width:40px; height: 100%; margin-left: 7px; padding-left:7px;}
 .search-info .right .txt-close:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #c8c8c8; position: absolute; top:50%; left:0; margin-top: -5px;}
+
+/* sidebar*/
+.side-bar-area {position: absolute; top:0; right:0; left:0; bottom: 0;}
+.side-bar-area .ico-popup-close {top:13px; right:15px;}
+.side-bar {position: absolute; top:0; right:48px; left:0; bottom: 0; z-index: 100; background-color: #ecebeb; overflow: auto;}
+.personal-info {background-color: #36467a;}
+.personal-info * {color: #fff;}
+.personal-info .side-info {padding: 16px 11px 16px 21px; border-bottom: 1px solid #7785b2;}
+.personal-info .side-info p {font-size: 14px; font-weight: 300;}
+.personal-info .side-info [class^="txt-btn-"] {margin: -1px 0 0 2px; padding: 4px 10px; font-size: 9px;  font-weight: bold;
+	-webkit-border-radius: 9px;
+	border-radius: 9px; 
+}
+.personal-info .side-info .txt-btn-white {background-color: #fff; color:#202f5e; }
+.personal-info .side-info .txt-btn-blue {background-color: #202f5e; color:#b0bada; font-weight: normal; }
+
+.personal-info .profile {height: 120px; border-bottom: 1px solid #7785b2;}
+.personal-info .profile .img-area {width: 50%; height: 100%; float: left;}
+.personal-info .profile .img-area .img {width:80px; height: 80px; margin:20px auto 0; overflow: hidden;
+	-webkit-border-radius: 50%;
+	 border-radius: 50%; 
+}
+
+.personal-info .profile ul {width: 50%; height: 100%; float: right; overflow: hidden; border-left: 1px solid #7785b2;}
+.personal-info .profile ul>li {height: 33.33%; border-top: 1px solid #7785b2;}
+.personal-info .profile ul>li:first-child {border-top:0 none;}
+.personal-info .profile ul>li .info {display: block; padding: 11px 10px 10px 30px; }
+.personal-info .profile ul>li .info .title {width:70px; display: inline-block; font-size: 11px; color:#b0bada;}
+.personal-info .profile ul>li .info strong {color:#fff17d; font-size: 15px; font-weight: bold;}
+.personal-info .profile ul>li .info strong span {margin-left: 3px; font-size: 11px; color:inherit; font-weight: 300;}
+
+.personal-info .point-area>div {width:50%; height: 67px; border-left: 1px solid #7785b2;}
+.personal-info .point-area>div:first-child {border-left:0 none;}
+.personal-info .point-area>div .info {display: block; height: 100%; text-align: center;}
+.personal-info .point-area>div .info .title  {display: block; padding-top: 12px; text-align: center; font-size: 11px; color:#b0bada;}
+.personal-info .point-area>div .info strong {position: relative; display: inline-block; margin-top: 10px;  font-size: 17px; color:#fff; }
+.personal-info .point-area>div .info strong:before {content:""; display: block; height: 12px; 
+	position: absolute; top:5px; left:0;
+	background: url("../images/ico-home-basic.png") no-repeat 0 0;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+.personal-info .point-area .p-coupon .info strong {padding-left: 33px;}
+.personal-info .point-area .p-coupon .info strong:before {width:23px; background-position: 0 -74px;}
+.personal-info .point-area .p-mileage .info strong {padding-left: 24px;}
+.personal-info .point-area .p-mileage .info strong:before {width:17px; background-position: -31px -74px;}
+.personal-info .point-area>div .info strong span {margin-left: 3px; font-size: 11px; color:inherit; font-weight: 300; letter-spacing: 1px;}
+
+.personal-content {padding: 0 10px 17px 10px}
+.personal-content .content-title {padding:14px 0 12px 10px; font-size: 13px;}
+.personal-content .content-box-white {border-bottom: 1px solid #dadada; background-color: #fff;}
+.personal-content .edu-info-area ul {overflow: hidden;}
+.personal-content .edu-info-area li {width:25%; float: left; border-left: 1px solid #efefef;}
+.personal-content .edu-info-area li:first-child {border: 0 none;}
+.personal-content .edu-info-area li .edu-info {display: block; height: 67px; }
+.personal-content .edu-info-area li .edu-info .title {display: block; padding-top: 14px; text-align: center; font-size: 9px; color:#797979;}
+.personal-content .edu-info-area li .edu-info strong {display: block; padding-top: 10px; text-align: center; font-size: 17px; color:#f97e06;}
+.personal-content .notice {padding: 12px 11px 15px;}
+.personal-content .notice * {font-size: 11px; color:#666666; line-height: 1.3em;}
+.personal-content .notice .txt,
+.personal-content .notice .detail-txt li {margin-top: 5px; }
+.personal-content .notice .detail-txt li:before {background-color: #444444;}
+.personal-content .benefit-list li {margin-top: 10px;}
+.personal-content .benefit-list li:first-child {margin-top:0;}
+
+.personal-content .share-ico-lists {padding: 10px 0 8px;}
+.personal-content .share-ico-lists ul {padding: 0 3px; overflow: hidden;}
+.personal-content .share-ico-lists li {width:14.2%; float: left; margin: 0; padding: 0;}
+.personal-content .share-ico-lists li a {width: 30px; height: 30px;
+    background: url(../images/ico-sns-medium.png) no-repeat 0 0;
+    -webkit-background-size: 272px;
+    background-size: 272px;
+}
+
+.personal-content .share-ico-lists a.ico-sns-medium-facebook {background-position:0 0 }
+.personal-content .share-ico-lists a.ico-sns-medium-instagram {background-position: -40px 0 }
+.personal-content .share-ico-lists a.ico-sns-medium-cafe {background-position: -81px 0 }
+.personal-content .share-ico-lists a.ico-sns-medium-blog {background-position: -121px 0 }
+.personal-content .share-ico-lists a.ico-sns-medium-p {background-position: -162px 0 ;}
+.personal-content .share-ico-lists a.ico-sns-medium-story {background-position:-202px 0 ; }
+.personal-content .share-ico-lists a.ico-sns-medium-kakao {background-position: -242px 0 ; }
+
+
 
 /* popup */
 .deam {position: absolute; top:0; right:0; bottom:0; left:0; min-height: 500px; background-color: rgba(0,0,0,0.6);	z-index: 0;}
