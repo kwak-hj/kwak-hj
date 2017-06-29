@@ -3,7 +3,7 @@
 
 /* reset css */
 html,body {height: 100%; font-size:10px; }
-html,body,header,footer,section,article,div,p,table,td,th,thead,tbody,tfoot,form,dl,dt,dd,ul,ol,li,img,a,span,strong,em,i,input,h1,h2,h3,h4,h5,h6,button
+html,body,header,footer,section,article,div,p,table,td,th,thead,tbody,tfoot,form,dl,dt,dd,ul,ol,li,img,a,span,strong,em,i,input,label,h1,h2,h3,h4,h5,h6,button
 {
 	font-family:'Noto Sans Korean',sans-serif; font-style: normal; font-weight: normal; line-height: 1em; word-wrap:break-word;word-break: keep-all; letter-spacing:0; 
 	padding:0; margin: 0; border:0; background-color: transparent; text-align: left; 
@@ -39,11 +39,22 @@ button {border: 0 none; background-color: transparent;}
 	-webkit-appearance: none;
 	appearance: none;
 }
-[class^="form-"] .f {display: block; min-height: 16px; margin: 6px 0; padding-left: 20px; position: relative;}
+[class^="form-"] .f {position: relative; display: block; min-height: 16px; margin: 6px 0; padding-left: 20px; }
 [class^="form-"] .f input[type="radio"] {position: absolute; top:0; left:0;}
 [class^="form-"] .f label {display: inline-block; line-height: 1.5em;}
-[class^="form-"].left .f {float: left; margin-right: 10px;}
+[class^="form-"].left .f {float: left; padding-right: 6px;}
+[class^="form-"].ea4 .f {width:25%;}
 /* checkbox */
+.form-box {margin-top: -10px;}
+.form-box .f {position: relative; height: 33px; margin: 10px 0 0 0 !important; padding: 0 3px;}
+.form-box .f input {position: absolute; top:50% !important; left:50% !important; z-index: 1 !important; width:2px; height: 2px !important; display: block; height: 100%; background-color: #ededed; color:#444; font-size: 11px ; font-weight: 500;}
+.form-box .f input+label {position: relative; z-index: 10; display: block; width:100%; height: 100%; padding-top: 9px; text-align: center;
+	 background-color: #ededed; color:#444; font-size: 11px ; font-weight: 500;
+     -webkit-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.form-box .f input:checked+label {background-color: #ff8711; color:#fff; }
 /*.form-checkbox input {
 	width: 26px;
 	height: 26px;
@@ -84,7 +95,14 @@ button {border: 0 none; background-color: transparent;}
 .form-radio input+label {color:#444444; font-size:11px }
 .form-radio input:checked+label {color:#ff8711; }
 
-/*.form-radio:first-child input { margin-left: 0; }*/
+.date-area {height: 33px;}
+.date-area * {height: 100%; display: block; float: left; }
+.date-area [class$="-day"] {position: relative; width: 46%; padding-right: 36px;}
+.date-area [class$="-day"] input {width:100%; padding-left: 21px; border: 1px solid #cbcaca; }
+.date-area [class$="-day"] button { }
+.date-area .first-day {}
+.date-area .last-day {}
+.date-area .span {width: 8%; font-size: 17px; font-weight: bold; padding-top: 8px; text-align: center; }
 
 /* 정렬 */
 .tal { text-align: left !important; }
@@ -169,6 +187,14 @@ button {border: 0 none; background-color: transparent;}
 	-webkit-background-size: 147px;
 	background-size: 147px;
 }
+
+.ico-cal {
+	width:36px; height: 33px; position: absolute; top:0; right:0; z-index: 100;
+	background: url("../images/ico-home-basic.png") no-repeat -109px -74px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+
 
 [class^="txt-"] {display: inline-block; }
 .txt-more {
@@ -277,7 +303,11 @@ button {border: 0 none; background-color: transparent;}
 .tab-area.type03>ul>li:first-child>a:before {content: none;}
 
 .btn-area {display: table; width:100%; table-layout: fixed; border-collapse: separate; border-spacing: 5px;}
-.btn-area [class^="btn"] {display: table-cell; height: 34px; padding-top: 8px; font-size: 18px; text-align: center;}
+.btn-area [class^="btn"] {display: table-cell; height: 46px; padding-top: 14px; font-size: 18px; text-align: center;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	overflow: hidden; 
+}
 .btn-area .btn-white {background-color: #fff; color:#797979;}
 .btn-area .btn-w-orange {background-color: #fff; color:#ff8711;}
 .btn-area .btn-orange {background-color: #ff8711; color:#fff;}
@@ -807,10 +837,11 @@ background-size: 12px;}
 
 .layer-popup-area.page {top:0; }
 
+/* 맞춤검색 */
 .page-title-area {height: 50px; padding: 15px 44px 0; background-color: #fff; border-bottom: 1px solid #dadada;}
 .page-title-area h2 {text-align: center; font-size: 18px; letter-spacing: -1px;}
 .page-title-area [class^="ico-"] {top:17px;}
-.search-condition {padding: 6px 16px;background-color: #ecebeb; border-bottom: 1px solid #dadada;}
+.search-condition {padding: 6px 16px;background-color: #e7e7e7; border-bottom: 1px solid #dadada;}
 .search-condition .sc-word {display: inline-block; position: relative; padding:9px 38px 9px 10px; margin:4px 14px 4px 0; 
 	background-color: #fff;
 	-webkit-border-radius: 17px;
@@ -819,10 +850,12 @@ background-size: 12px;}
 }
 .search-condition .sc-word strong {color:#444; font-size: 13px; white-space: nowrap; }
 
-.condition-area .content-box-white {padding: 17px 15px;}
+.condition-area .content-box-white {padding: 17px 0;}
+.condition-area .content-box-white .date-area {padding: 0 15px;}
 .big-title {font-size: 17px; padding: 16px 15px;}
-
-
+.condition-area .form-box.ea4 {margin-right:12px; margin-left: 12px;}
+.condition-area .form-radio.ea4 {margin-right:12px; margin-left: 12px;}
+.condition-area .btn-area {padding: 10px 10px 40px; background-color: #fff; margin-top: -2px; }
 
 .share-popup {margin: 0 32px;}
 .share-title {padding: 14px; margin: 75px 13px 0; border-bottom:3px solid #fff; font-size: 21px; color:#fff; font-weight: bold; text-align: center;}
