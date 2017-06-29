@@ -746,6 +746,7 @@ background-size: 12px;}
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
  }
+ .layer-popup-area .btn-area-popup a.orange {color:#ff8711; border-color:#ff8711 }
 
 .share-popup {margin: 0 32px;}
 .share-title {padding: 14px; margin: 75px 13px 0; border-bottom:3px solid #fff; font-size: 21px; color:#fff; font-weight: bold; text-align: center;}
