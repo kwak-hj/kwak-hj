@@ -15,6 +15,9 @@ html,body,header,footer,section,article,div,p,table,td,th,thead,tbody,tfoot,form
 h1,h2,h3,h4,h5,h6 {font-weight: normal;}
 select,input {padding:0; margin: 0;
 	-webkit-appearance:none;
+	appearance:none;
+	-webkit-border-radius: 0 ;
+	border-radius: 0 ;
 }
 img {max-width:100%;}
 ul,ol,li {list-style: none;}
