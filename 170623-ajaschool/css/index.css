@@ -505,8 +505,8 @@ background-size: 12px;}
 .list-h .info-area .imp-info .price-info .price-title {display: table-cell; height: 31px; vertical-align: middle;}
 .list-h .info-area .imp-info .price-info .price.red {font-size: 20px;}
 .list-h .info-area .etc-info {position: absolute; bottom:0; left:0; width:100%; padding-top: 5px; padding-bottom: 5px;}
-.list-h .label-area {height: auto;}
-.list-h .label-area .label {min-width:0; height: auto; padding: 5px 7px 5px; line-height: 1em; font-weight: 300; letter-spacing: -1px; }
+.list-h .label-area {height: 20px;}
+.list-h .label-area .label {min-width:0; padding: 5px 7px 5px; line-height: 1em; font-weight: 300; letter-spacing: -1px; }
 
 .find-list {padding:17px 25px;}
 .find-list ul {overflow: hidden;}
