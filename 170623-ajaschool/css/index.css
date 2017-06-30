@@ -113,6 +113,22 @@ button {border: 0 none; background-color: transparent;}
 .date-area .last-day {}
 .date-area .span {width: 8%; font-size: 17px; font-weight: bold; padding-top: 8px; text-align: center; }
 
+/* list */
+.detail-txt li {display: table; table-layout: fixed; position: relative; padding-left: 6px;  }
+.detail-txt li:before {content: ""; position: absolute; left:0; top:6px; display: block; width: 2px; height: 2px; 
+	background-color: #888888; 
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.detail-txt li>span {display: table-cell; vertical-align: top; font-size: 11px; color:#888888; line-height: 1.4em;}
+.detail-txt li .title {position: relative; width:50px; padding-right: 9px;}
+.detail-txt li .title:before {content: ":"; position: absolute; right:4px; top:-1px; display: block; }
+
+.detail-txt.dash li:before { width:3px; height: 1px; top:4px;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
 /* 정렬 */
 .tal { text-align: left !important; }
 .tac { text-align: center !important; }
@@ -179,8 +195,15 @@ button {border: 0 none; background-color: transparent;}
 	background-size: 147px;
 }
 
-.ico-close {width:15px; height: 15px; position: absolute; top:24px; right:24px; z-index: 100;
+.ico-close {width:50px; height:100%; position: absolute; top:0; right:0; z-index: 100;}
+.ico-close:before {content:''; width:15px; height: 15px; position: absolute; top:17px; left:16px; 
 	background: url("../images/ico-home-basic.png") no-repeat -52px -74px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
+}
+.ico-close.dark {width:50px; height:100%; position: absolute; top:0; right:0; z-index: 100;}
+.ico-close.dark:before {content:''; width:16px; height: 16px; position: absolute; top:16px; left:15px; 
+	background: url("../images/ico-home-basic.png") no-repeat -52px -94px;
 	-webkit-background-size: 147px;
 	background-size: 147px;
 }
@@ -191,7 +214,8 @@ button {border: 0 none; background-color: transparent;}
 	background-size: 147px;
 }
 
-.ico-prev-02 {width:15px; height: 15px; position: absolute; top:24px; left:16px; z-index: 100;
+.ico-prev-02 {width:50px; height: 100%; position: absolute; top:0; left:0; z-index: 100;}
+.ico-prev-02:before {content:""; width:15px; height: 15px; position: absolute; top:17px; left:16px; 
 	background: url("../images/ico-home-basic.png") no-repeat -76px -74px;
 	-webkit-background-size: 147px;
 	background-size: 147px;
@@ -310,6 +334,53 @@ button {border: 0 none; background-color: transparent;}
 .tab-area.type03>ul>li.on>a {color:#ff8711; border-color:#ff8711; font-weight: 500;}
 .tab-area.type03>ul>li>a:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #d7d7d7; position: absolute; top:50%; left:0; margin-top: -5px;}
 .tab-area.type03>ul>li:first-child>a:before {content: none;}
+
+.step-area-blue {padding: 18px 15px 11px;}
+.step-area-blue ul {position: relative; height: 5px; margin: 43px 5px 29px; 
+	background-color: #eaeaea; border-top: 1px solid #c4c4c4;
+}
+.step-area-blue ul:before,
+.step-area-blue ul:after {content:''; display: block; width: 9px; height: 9px; 
+	position: absolute; top: -3px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.step-area-blue ul:before {background-color: #375490; left:-5px; }
+.step-area-blue ul:after {background-color: #eaeaea; right:-5px; }
+
+.step-area-blue ul li {position: relative; float: left; margin-top: -43px;}
+.step-area-blue ul li>* {display: block; text-align: center;}
+.step-area-blue ul li span {position: relative; width:26px; height: 52px; margin:0 auto; padding-top:7px;
+	color:#fff; font-size: 13px; 
+ }
+.step-area-blue ul li span:after {content: ""; display: block; width: 7px; height: 7px; 
+	position: absolute; bottom:2px; left:50%;	z-index: 100; margin-left: -5px;
+	background-color: #fff; border: 2px solid #dadada;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+/* on */
+.step ul li.on:before,
+.step ul li.on:after {content:''; display: block; position: absolute; top:42px; height: 4px; }
+.step ul li.on:before {width:50%; left:0; background-color: #375490; border-top: 1px solid #2e4679;}
+.step ul li.on:after {width:50%; right:0; background-color: #375490; border-top: 1px solid #2e4679;}
+
+.step ul li.on.this:after {content:none;}
+
+.step ul li.on span {
+	background: url("../images/img-step.png") no-repeat 0 0; 
+	-webkit-background-size: 26px;
+	background-size: 26px;
+}
+.step ul li.on span:after { width: 8px; height: 8px; 
+	border: 3px solid #163e8f; bottom:0; left:50%;	margin-left: -7px;
+}
+
+.step-area-blue ul li strong {color:#797979; font-size: 11px; padding-top: 5px; font-weight: 500;}
+.step-area-blue ul li.on strong {color:#303e91;}
+
+.step-area-blue.ea3 ul li {width:33.33%;}
 
 .btn-area {display: table; width:100%; table-layout: fixed; border-collapse: separate; border-spacing: 5px;}
 .btn-area [class^="btn"] {display: table-cell; height: 46px; padding-top: 14px; font-size: 18px; text-align: center;
@@ -669,15 +740,6 @@ background-size: 12px;}
 .coupon-area .coupon-post .txt-coupon-detail {margin: 6px 0 0 6px;}
 .coupon-area .ico-coupon-down {width:64px; height: 100%; background-color: #fa464c;}
 .coupon-area .coupon-detail {margin-top: -10px; padding: 25px 20px 18px; border: 1px solid #ddd; border-top: 0 none; background-color: #fff;}
-.detail-txt li {display: table; table-layout: fixed; position: relative; padding-left: 6px;  }
-.detail-txt li:before {content: ""; position: absolute; left:0; top:6px; display: block; width: 2px; height: 2px; 
-	background-color: #888888; 
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-}
-.detail-txt li>span {display: table-cell; vertical-align: top; font-size: 11px; color:#888888; line-height: 1.4em;}
-.detail-txt li .title {position: relative; width:50px; padding-right: 9px;}
-.detail-txt li .title:before {content: ":"; position: absolute; right:4px; top:-1px; display: block; }
 
 .info-simple .title.no-badge {padding-bottom: 6px;}
 .event-date {padding-top: 5px; font-size: 13px; color:#797979; font-weight: 300;}
@@ -792,6 +854,8 @@ background-size: 12px;}
 .personal-content {padding: 0 10px 17px 10px}
 .personal-content .content-title {padding:14px 0 12px 10px; font-size: 13px;}
 .content-box-white {border-bottom: 1px solid #dadada; background-color: #fff;}
+.content-box-white+.content-box-white {margin-top: 10px;}
+
 .personal-content .edu-info-area ul {overflow: hidden;}
 .personal-content .edu-info-area li {width:25%; float: left; border-left: 1px solid #efefef;}
 .personal-content .edu-info-area li:first-child {border: 0 none;}
@@ -827,7 +891,7 @@ background-size: 12px;}
 
 /* popup */
 .deam {position: absolute; top:0; right:0; bottom:0; left:0; min-height: 500px; background-color: rgba(0,0,0,0.6);	z-index: 0;}
-.layer-popup-area {position: absolute; top:50px; right:0; bottom:0; left:0; overflow: auto; }
+.layer-popup-area {position: absolute; top:50px; right:0; bottom:0; left:0; }
 .layer-popup-area .popup-content {position: relative; z-index: 100;}
 .layer-popup-area .notice-popup {position: absolute; right: 15px; left: 15px; top:50%; margin: -68px auto 0;
     padding-bottom:57px; max-width: 331px; background-color: #fff; z-index: 100;}
@@ -844,12 +908,16 @@ background-size: 12px;}
  }
 .layer-popup-area .btn-area-popup a.orange {color:#ff8711; border-color:#ff8711 }
 
-.layer-popup-area.page {top:0; }
+.layer-popup-area.page {top:0; padding-top: 50px; }
+.layer-popup-area.page .page-title-area {position: absolute; top:0; left:0; width:100%; }
+.layer-popup-area.page .page-content {position: absolute; top:50px; left:0; bottom:0; width:100%; overflow: auto;}
+.layer-popup-area.page .page-content.step {padding-bottom: 56px;}
+.layer-popup-area.page .page-content.step .btn-area {position: absolute; bottom:0; left:0; width:100%;}
 
 /* 맞춤검색 */
-.page-title-area {height: 50px; padding: 15px 44px 0; background-color: #fff; border-bottom: 1px solid #dadada;}
+.page-title-area {height: 50px; padding: 15px 50px 0; background-color: #fff; border-bottom: 1px solid #dadada;}
 .page-title-area h2 {text-align: center; font-size: 18px; letter-spacing: -1px;}
-.page-title-area [class^="ico-"] {top:17px;}
+/*.page-title-area [class^="ico-"] {top:17px;}*/
 .search-condition {padding: 6px 16px;background-color: #e7e7e7; border-bottom: 1px solid #dadada;}
 .search-condition .sc-word {display: inline-block; position: relative; padding:9px 38px 9px 10px; margin:4px 14px 4px 0; 
 	background-color: #fff;
@@ -866,6 +934,13 @@ background-size: 12px;}
 .condition-area .form-radio.ea4 {margin-right:12px; margin-left: 12px;}
 .condition-area .btn-area {padding: 10px 10px 40px; background-color: #fff; margin-top: -2px; }
 
+/* 주문결제 */
+.layer-popup-area.page .page-title-area.orange {border-color:#ff8711 }
+
+
+
+
+/* 공유팝업 */
 .share-popup {margin: 0 32px;}
 .share-title {padding: 14px; margin: 75px 13px 0; border-bottom:3px solid #fff; font-size: 21px; color:#fff; font-weight: bold; text-align: center;}
 .share-ico-list {padding-top:18px;}
