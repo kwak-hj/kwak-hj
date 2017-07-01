@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>주문결제 step 03 - ajaschool</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<div class="layer-popup-area page">
+		<div class="page-title-area orange">
+			<h2 class="page-title">신청/결제하기</h2>
+			<a href="#none" class="ico-close dark">닫기</a>
+		</div>
+		
+		<div class="page-content step">
+			<!-- step -->
+			<div class="content-box-white">
+				<div class="step-area-blue ea3">
+					<ul>
+						<li class="on"><span>1</span><strong>교육정보 확인</strong></li>
+						<li class="on"><span>2</span><strong>수강생정보 입력</strong></li>
+						<li class="on this"><span>3</span><strong>금액확인</strong></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 할인받기 -->
+			<div class="content-box-white">
+				<p class="program-title">할인받기</p>
+				<div class="range pay-info">
+					<div class="left">
+						<div class="pay-title">포인트</div>
+						<div class="pay-cont">
+							<button class="btn-pay-point">적용/변경</button>
+							<p class="point-info">
+								<span>보유포인트 <span class="black">120,000</span>점</span>
+								<span>최대 <span class="orange">30,000점</span> 사용가능</span>
+							</p>
+						</div>
+					</div>
+					<div class="right pay-money">10,000 P</div>
+				</div>
+				<div class="range pay-info">
+					<div class="left">
+						<div class="pay-title">쿠폰</div>
+						<div class="pay-cont">
+							<button class="btn-pay-point">쿠폰적용</button>
+							<p class="point-info">
+								<span>5개</span>
+							</p>
+						</div>
+					</div>
+					<div class="right pay-money">20,000 원</div>
+				</div>
+				<div class="pay-total">
+					<div class="range">
+						<div class="left"><div class="pay-title">총 할인금액</div></div>
+						<div class="right pay-money">20,000 원</div>
+					</div>
+				</div>
+			</div>
+			<!-- 최종 결제금액 -->
+			<div class="content-box-white">
+				<p class="program-title">최종 결제금액</p>
+				<div class="range pay-info">
+					<div class="left"><div class="pay-title">결제금액</div></div>
+					<div class="right pay-money">33,000 원</div>
+				</div>
+				<div class="range pay-info">
+					<div class="left"><div class="pay-title">총 할인금액</div></div>
+					<div class="right pay-money">-30,000 원</div>
+				</div>
+				<div class="range pay-info">
+					<div class="left"><div class="pay-title">보험료</div></div>
+					<div class="right pay-money">3,000 원</div>
+				</div>
+				<div class="pay-total big">
+					<div class="range">
+						<div class="left"><div class="pay-title">최종 결제금액</div></div>
+						<div class="right pay-money">20,000 원</div>
+					</div>
+				</div>
+			</div>
+			<!-- 결제수단 -->
+			<div class="content-box-white">
+				<p class="program-title">결제수단</p>
+				<div class="pay-system">
+					<div class="form-box left ea3">
+						<ul>
+							<li class="f"><input type="radio" name="pay-system" id="pay-system-01"><label for="pay-system-01"><span>신용카드</span></label></li>
+							<li class="f"><input type="radio" name="pay-system" id="pay-system-02"><label for="pay-system-02"><span>무통장 입금</span></label></li>
+							<li class="f"><input type="radio" name="pay-system" id="pay-system-03"><label for="pay-system-03"><span>카카오페이</span></label></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="btn-area full">
+				<a href="#none" class="btn-full-cancel"><span>취소</span></a>
+				<a href="#none" class="btn-full-next"><span>결제하기</span></a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+

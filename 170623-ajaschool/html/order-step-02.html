@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>주문결제 step 02 - ajaschool</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<div class="layer-popup-area page">
+		<div class="page-title-area orange">
+			<h2 class="page-title">신청/결제하기</h2>
+			<a href="#none" class="ico-close dark">닫기</a>
+		</div>
+		
+		<div class="page-content step">
+			<!-- step -->
+			<div class="content-box-white">
+				<div class="step-area-blue ea3">
+					<ul>
+						<li class="on"><span>1</span><strong>교육정보 확인</strong></li>
+						<li class="on this"><span>2</span><strong>수강생정보 입력</strong></li>
+						<li><span>3</span><strong>금액확인</strong></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 체험수강생 정보 -->
+			<div class="content-box-white">
+				<!-- 제목 -->
+				<p class="program-title">체험수강생 정보</p>
+				<div class="form-radio big ">
+					<div class="f"><input type="radio" name="cate" id="cate-01"><label for="cate-01">구매자 정보와 동일시</label></div>
+				</div>
+				<div class="info-input">
+					<div class="info-line"><label class="info-title" for="orderman-name">이름</label><input type="text" class="info-cont" name="" id="orderman-name" placeholder="이름을 입력해주세요"></div>
+					<div class="info-line"><label class="info-title" for="orderman-phone">연락처</label><input type="text" class="info-cont" name="" id="orderman-phone" placeholder="'-'를 빼고 연락처를 입력하세요"></div>
+					<div class="info-line"><label class="info-title" for="orderman-email">E-Mail</label><input type="email" class="info-cont" name="" id="orderman-email" placeholder="qwerty123@naver.com"></div>
+				</div>
+			</div>
+			<!-- 보험가입 신청 -->
+			<div class="content-box-white">
+				<p class="program-title">보험가입 신청</p>
+				<div class="form-radio big ">
+					<div class="f"><input type="radio" name="aa" id="aa-01"><label for="aa-01">보험가입에 동의합니다.</label></div>
+				</div>
+				<div class="range">
+					<div class="left number-title">개인신청 인원수</div>
+					<div class="right number-updown">
+						<button type="button" class="ico-down">빼기</button>
+						<input type="text" name="" value="3명">
+						<button type="button" class="ico-up">더하기</button>
+					</div>
+				</div>
+				<div class="box-in">
+					<p class="noti-02">
+						상기 체험교육 프로그램은 수강하기 위해서는 <span class="orange">[행사보험] 가입을 신청</span> 하셔야합니다.
+					</p>
+				</div>
+			</div>
+			<!-- 동반수강생 정보 -->
+			<div class="content-box-white">
+				<p class="program-title">동반수강생 정보</p>
+				<div class="join-member">
+					<ul>
+						<li class="join-box">
+							<div class="range join-member-title">
+								<div class="left">동반수강생 <p>수강생정보를 입력해주세요!</p></div>
+								<div class="right"><button type="button" class="btn-input">입력하기</button></div>
+							</div>
+						</li>
+						<li class="join-box write">
+							<div class="range join-member-title">
+								<div class="left">동반수강생 <p>홍길동</p></div>
+								<div class="right"><button type="button" class="btn-input">입력하기</button></div>
+							</div>
+							<div class="input-box" style="display: block">
+								<div class="info-input">
+									<div class="info-line">
+										<label class="info-title" for="join-member-name">이름</label><input type="text" class="info-cont" name="" id="join-member-name" placeholder="이름을 입력해주세요">
+									</div>
+									<div class="info-line">
+										<label class="info-title" for="join-member-phone">연락처</label><input type="text" class="info-cont"name="" id="join-member-phone" placeholder="'-'를 빼고 연락처를 입력하세요">
+									</div>
+									<div class="info-line">
+										<div class="info-title">부모확인</div>
+										<div class="info-cont">
+											<ul class="form-radio left">
+												<li class="f"><input type="radio" name="confirm" id="confirm-01"><label for="confirm-01">부</label></li>
+												<li class="f"><input type="radio" name="confirm" id="confirm-02"><label for="confirm-02">모</label></li>
+												<li class="f"><input type="radio" name="confirm" id="confirm-03"><label for="confirm-03">선생님</label></li>
+												<li class="f"><input type="radio" name="confirm" id="confirm-04"><label for="confirm-04">교육생</label></li>
+											</ul>
+										</div>
+									</div>	
+									<div class="info-line">
+										<label class="info-title black" for="join-member-level">교육생학년</label><input type="text" class="info-cont"name="" id="join-member-level" placeholder="예)초등 4학년">
+									</div>
+									<div class="info-line">
+										<label class="info-title black" for="join-member-age">나이</label><input type="text" class="info-cont"name="" id="join-member-age" placeholder="예)4살">
+									</div>
+									<div class="info-line">
+										<div class="info-title black">성별</div>
+										<div class="info-cont">
+											<ul class="form-radio left">
+												<li class="f"><input type="radio" name="gender" id="gender-01"><label for="gender-01">남</label></li>
+												<li class="f"><input type="radio" name="gender" id="gender-02"><label for="gender-02">여</label></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="btn-area full">
+				<a href="#none" class="btn-full-prev"><span>이전</span></a>
+				<a href="#none" class="btn-full-next"><span>다음단계</span></a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
