@@ -170,6 +170,16 @@ button {border: 0 none; background-color: transparent;}
 	position: absolute; top:0; left:0;	
 }
 
+.noti-smile {display: inline-block; position: relative; margin: 20px 0 50px; padding-left:43px; font-size: 13px; color:#797979; }
+.noti-smile:before {content:''; display: block; width:33px; height: 33px;
+	position: absolute; top:-9px; left:0;
+
+	background: url("../images/noti-smile.png") no-repeat 0 0;
+	-webkit-background-size: 33px;
+	background-size: 33px;
+}
+
+
 /* sns */
 .sns-area {padding: 20px 0;text-align: center; font-size: 0;}
 
@@ -411,8 +421,16 @@ button {border: 0 none; background-color: transparent;}
 
 .step-area-blue ul li strong {color:#797979; font-size: 11px; padding-top: 5px; font-weight: 500;}
 .step-area-blue ul li.on strong {color:#303e91;}
-
 .step-area-blue.ea3 ul li {width:33.33%;}
+
+/* step end */
+.step-area-blue.end ul:after {background-color:#375490; }
+.step-area-blue.end ul li.on span {
+	background: url("../images/img-step.png") no-repeat 0 0; 
+	-webkit-background-size: 26px;
+	background-size: 26px;
+}
+
 
 .btn-area {display: table; width:100%; table-layout: fixed; border-collapse: separate; border-spacing: 5px;}
 .btn-area [class^="btn"] {display: table-cell; height: 46px; vertical-align:middle; font-size: 18px; text-align: center;
@@ -421,6 +439,7 @@ button {border: 0 none; background-color: transparent;}
 	overflow: hidden; 
 }
 .btn-area .btn-white {background-color: #fff; color:#797979;}
+.btn-area .btn-gray {background-color: #999999; color:#fff;}
 .btn-area .btn-w-orange {background-color: #fff; color:#ff8711;}
 .btn-area .btn-orange {background-color: #ff8711; color:#fff;}
 .btn-area [class^="btn"].bold {font-weight: bold;}
@@ -434,7 +453,7 @@ button {border: 0 none; background-color: transparent;}
 	color:#fff; font-size: 21px; font-weight: 500;	
 }
 .btn-area.full [class^="btn"] span:before {
-	content: ""; display: block; width:18px; height: 37px;
+	content: ""; display: block; width:18px; height: 27px;
 	position: absolute; top:-2px;	
 	background: url("../images/btn-step.png") no-repeat 0 0;
 	-webkit-background-size: 33px ;
@@ -1081,8 +1100,7 @@ background-size: 12px;}
 .join-member .join-box .input-box {border-top: 1px solid #ecebeb;}
 .join-member .join-box.write p {color:#ff8711; font-size: 13px;}
 
-.pay-info+.pay-info {margin-top: 15px;}
-/*.pay-info+.pay-info {margin-top: 15px;}*/
+.pay-info+.pay-info {margin-top: 10px;}
 .pay-info .left {width:75%;}
 .pay-title {display: inline-block; width:35%; padding-top: 5px; float: left; font-size: 13px; color:#444;}
 .pay-money {padding-top: 5px; font-size: 13px; font-weight: bold;}
@@ -1103,19 +1121,26 @@ background-size: 12px;}
 
 .pay-total.big .pay-title {font-size: 18px; width:auto; color:#000 !important;}
 .pay-total.big .pay-money {font-size: 18px; color:#ed1b24 !important;}
-
-.pay-system .form-box .f input+label {
+.pay-system .form-box {margin-top: 11px;}
+.pay-system .form-box .f {height: 40px; }
+.pay-system .form-box .f input+label { padding-top: 11px; font-size: 12px;
+	border: 1px solid #dadada;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 }
-.pay-system .form-box .f input+label span {display: inline-block; padding-right:17px;
-	position: relative; right:0; top:0; 
-	background: url("../images/btn-step.png") no-repeat 0 0;
-}
+.pay-system .form-box .f input+label span {display: inline-block; padding-right:25px; position: relative; }
 .pay-system .form-box .f input+label span:before {content:''; display: block; 
-	position: absolute; left:0; top:50%; margin-top: -5px; width:0; height: 10px; border-left: 1px solid #dadada; 
+	position: absolute; right:0; top:1px; width:11px; height: 11px; 
+	background: url("../images/btn-step.png") no-repeat -13px -42px;
+	-webkit-background-size: 33px;
+	background-size: 33px;
 }
+.pay-system .form-box .f input:checked+label {border: 1px solid #ff8711;}
+.pay-system .form-box .f input:checked+label span:before {right:2px; background-position:-22px -42px; }
+.pay-system .form-radio {margin-top: 5px;}
+.pay-system .form-radio input:checked+label {color:#444444;}
 
+.end-message {padding: 30px 0 240px;text-align: center; font-size: 19px; color:#000; line-height: 1.5em;}
 
 /* 공유팝업 */
 .share-popup {margin: 0 32px;}
