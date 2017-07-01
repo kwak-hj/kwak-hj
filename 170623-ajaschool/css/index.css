@@ -149,6 +149,13 @@ button {border: 0 none; background-color: transparent;}
 	border-radius: 0;
 }
 
+.detail-txt.type01	li {padding-left: 11px;  }
+.detail-txt.type01 li:before {top:8px; width: 2px; height: 2px; background-color: #444; }
+.detail-txt.type01 li>span {color:#444; font-size: 12px; line-height: 1.5em;}
+.detail-txt.type01 li .title {width:65px; padding-right: 15px;}
+.detail-txt.type01 li .title:before {content: none; }
+
+
 /* 정렬 */
 .tal { text-align: left !important; }
 .tac { text-align: center !important; }
@@ -470,6 +477,12 @@ button {border: 0 none; background-color: transparent;}
 .btn-area.full .btn-full-cancel span {padding-left: 0;}
 .btn-area.full .btn-full-cancel span:before {content:none;}
 
+.order-btn-area {height: 87px; padding-top: 19px; position: fixed; bottom:0; left:0;}
+.btn-area.order {border-top: 1px solid #ff8711; border-spacing:7px 10px; /*padding: 10px;*/ background-color: #fff; }
+.btn-area.order a {-webkit-border-radius: 0; border-radius: 0;}
+.btn-area.order .btn-select {width:74px; padding-top: 16px; background-color: #fff; border: 1px solid #dadada;
+	font-size: 11px; color:#797979;
+}
 
 .btn-input {position: relative; height: 23px; font-size: 11px; color:#fff; padding: 0 30px 0 10px; 
 	background-color: #ff8711;
@@ -496,6 +509,14 @@ button {border: 0 none; background-color: transparent;}
 	background: url("../images/btn-step.png") no-repeat 0 -42px;
 	-webkit-background-size: 33px;
 	background-size: 33px;
+}
+
+a.btn-pink {position: relative; display: inline-block; height: 20px; padding: 4px 20px 0 7px; background-color: #fb5b61; color:#fff; font-size: 9px; }
+a.btn-pink:before {content:''; display: block; width:5px; height: 8px; 
+	position: absolute; right:7px; top:5px;	
+	background: url("../images/ico-home-basic.png") no-repeat 0 -94px;
+	-webkit-background-size: 147px;
+	background-size: 147px;
 }
 
 /*  --------
@@ -974,22 +995,22 @@ background-size: 12px;}
 .personal-content .benefit-list li {margin-top: 10px;}
 .personal-content .benefit-list li:first-child {margin-top:0;}
 
-.personal-content .share-ico-lists {padding: 10px 0 8px;}
-.personal-content .share-ico-lists ul {padding: 0 3px; overflow: hidden;}
-.personal-content .share-ico-lists li {width:14.2%; float: left; margin: 0; padding: 0;}
-.personal-content .share-ico-lists li a {display: block; width: 30px; height: 30px; margin: 0 auto;
+.share-ico-lists {padding: 10px 0 8px;}
+.share-ico-lists ul {padding: 0 3px; overflow: hidden;}
+.share-ico-lists li {width:14.2%; float: left; margin: 0; padding: 0;}
+.share-ico-lists li a {display: block; width: 30px; height: 30px; margin: 0 auto;
     background: url(../images/ico-sns-medium.png) no-repeat 0 0;
     -webkit-background-size: 272px;
     background-size: 272px;
 }
 
-.personal-content .share-ico-lists a.ico-sns-medium-facebook {background-position:0 0 }
-.personal-content .share-ico-lists a.ico-sns-medium-instagram {background-position: -40px 0 }
-.personal-content .share-ico-lists a.ico-sns-medium-cafe {background-position: -81px 0 }
-.personal-content .share-ico-lists a.ico-sns-medium-blog {background-position: -121px 0 }
-.personal-content .share-ico-lists a.ico-sns-medium-p {background-position: -162px 0 ;}
-.personal-content .share-ico-lists a.ico-sns-medium-story {background-position:-202px 0 ; }
-.personal-content .share-ico-lists a.ico-sns-medium-kakao {background-position: -242px 0 ; }
+.share-ico-lists a.ico-sns-medium-facebook {background-position:0 0 }
+.share-ico-lists a.ico-sns-medium-instagram {background-position: -40px 0 }
+.share-ico-lists a.ico-sns-medium-cafe {background-position: -81px 0 }
+.share-ico-lists a.ico-sns-medium-blog {background-position: -121px 0 }
+.share-ico-lists a.ico-sns-medium-p {background-position: -162px 0 ;}
+.share-ico-lists a.ico-sns-medium-story {background-position:-202px 0 ; }
+.share-ico-lists a.ico-sns-medium-kakao {background-position: -242px 0 ; }
 
 /* popup */
 .deam {position: absolute; top:0; right:0; bottom:0; left:0; min-height: 500px; background-color: rgba(0,0,0,0.6);	z-index: 0;}
@@ -1161,6 +1182,50 @@ background-size: 12px;}
 .share-ico-list a.ico-sns-big-cafe {background-position: -197px -98px}
 .share-ico-list a.ico-sns-big-blog {background-position: 0 -194px }
 .share-ico-list a.ico-sns-big-url {background-position: -98px -194px }
+
+/* 교육후기 */
+.edu-detail-info-area {margin-bottom: 100px;}
+.edu-detail-info-area .edu-box {border-top: 1px solid #eee; background-color: #fff;}
+.edu-detail-info-area .movie-view {margin-bottom: 0;}
+.edu-detail-info-area .import-title {font-size: 18px;}
+.edu-detail-info-area .little-title {font-size: 11px;}
+.edu-detail-info-area .price-title {float: none;}
+.edu-detail-info-area .info-area {position: relative; border-color: #eeeeee;}
+.edu-detail-info-area .info-area>div,
+.edu-detail-info-area .edu-box,
+.edu-detail-info-area .content-box-white {padding: 11px 10px;}
+.edu-detail-info-area .info-area .etc-info {border-top: 0 none; border-bottom: 1px solid #eeeeee}
+.edu-detail-info-area .info-area .etc-info .feature {height: 20px; font-size: 11px;}
+.edu-detail-info-area .info-area .imp-info .price-info {padding: 10px 0}
+.edu-detail-info-area .info-area .imp-info .price-info .sale {font-size: 27px; float: none;}
+.edu-detail-info-area .info-area .imp-info .price-info .price {font-size: 27px; }
+.edu-detail-info-area .info-area .imp-info .price-info .price span {font-size: 17px; }
+.edu-detail-info-area .info-area .imp-info .price-info .before-price {margin-left: 5px; display: inline-block; font-size:17px !important;  }
+
+.edu-detail-txt li {display: table; table-layout: fixed; position: relative; padding-left: 6px;  }
+.edu-detail-txt li:before {content: ""; position: absolute; left:0; top:0; display: block; width: 12px; height: 12px; }
+.edu-detail-txt li>div {display: table-cell; vertical-align: top; font-size: 13px; color:#797979; line-height: 1.4em;}
+.edu-detail-txt li .title {position: relative; width:90px; padding-right: 18px; color:#000;}
+
+.edu-detail-info-area .edu-box .share-ico-lists {padding:8px 10px;}
+.edu-detail-info-area .edu-box .share-ico-lists li a {width:33px; height: 33px;    
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-background-size: 300px;
+    background-size: 300px;
+}
+
+.edu-detail-info-area .edu-box .share-ico-lists a.ico-sns-medium-facebook {background-color: #375490;background-position:0 0 }
+.edu-detail-info-area .edu-box .share-ico-lists a.ico-sns-medium-instagram {background-color: #d92e7f;background-position: -44px 0 }
+.edu-detail-info-area .edu-box .share-ico-lists a.ico-sns-medium-cafe {background-color: #00c83c;background-position: -89px 0 }
+.edu-detail-info-area .edu-box .share-ico-lists a.ico-sns-medium-blog {background-color: #00c83c;background-position: -133px 0 }
+.edu-detail-info-area .edu-box .share-ico-lists a.ico-sns-medium-p {background-color: #f34544;background-position: -178px 0 ;}
+.edu-detail-info-area .edu-box .share-ico-lists a.ico-sns-medium-story {background-color: #ffc412;background-position:-223px 0 ; }
+.edu-detail-info-area .edu-box .share-ico-lists a.ico-sns-medium-kakao {background-color: #ffde00;background-position: -267px 0 ; }
+
+.edu-detail-info-area .content-box-white {margin: 10px 0;}
+.edu-noti * {font-size: 13px; color:#444; line-height: 1.2em;}
+
 
 /* footer */
 #footer {background-color: #fff;}
