@@ -31,11 +31,7 @@ a,
 a:hover,a:active,a:visited {color:inherit; text-decoration: none;}
 caption {display: none;}
 /* base */
-body {
-	background-color: #eceaeb;
-	-webkit-background-size: cover;
-	background-size: cover; 
-}
+body {background-color: #eceaeb; }
 
 /* font */
 .red {color:#ed1b24 !important;}
@@ -464,9 +460,9 @@ button {border: 0 none; background-color: transparent;}
 	border-radius:3px;
 	overflow: hidden; 
 }
-.btn-area .btn-white {background-color: #fff; color:#797979;}
+.btn-area .btn-white {background-color: #fff; color:#797979; border: 1px solid #cbcaca; }
 .btn-area .btn-gray {background-color: #999999; color:#fff;}
-.btn-area .btn-w-orange {background-color: #fff; color:#ff8711;}
+.btn-area .btn-w-orange {background-color: #fff; color:#ff8711; border: 1px solid #cbcaca; }
 .btn-area .btn-orange {background-color: #ff8711; color:#fff;}
 .btn-area [class^="btn"].bold {font-weight: bold;}
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>맞춤검색 - ajaschool</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+	<div class="layer-popup-area page join">
+		<div class="page-title-area">
+			<a href="#none" class="ico-close">닫기</a>
+		</div>
+		<h3><img src="../images/logo2.png" title="체험교육 플랫폼 아자스쿨"></h3>
+
+		<div class="input-wrap">
+			<div class="input-area">
+				<label for="frm-id">아이디</label><input id="frm-id" type="text" placeholder="회원님의 이메일을 입력하세요."/>
+			</div>
+			<div class="input-area">
+				<label for="frm-pass">비밀번호</label><input id="frm-pass" type="password" placeholder="영문+숫자 조합 8자리 이상"/>
+			</div>
+			<div class="input-area">
+				<label for="frm-pass-ck">비밀번호 확인</label><input id="frm-pass-ck" type="password" placeholder="영문+숫자 조합 8자리 이상"/>
+			</div>
+		</div>
+
+		<div class="input-wrap">
+			<div class="input-area">
+				<label for="frm-name">이름</label><input id="frm-name" type="text" placeholder="회원님의 이름을 입력하세요."/>
+			</div>
+            <div class="form-radio big box-area">
+                <strong>성별</strong>
+                <span><input type="radio" name="sex" id="men" ><label for="men">남자</label></span>
+                <span><input type="radio" name="sex" id="woman"><label for="woman">여자</label></span>
+            </div>
+			<div class="input-area">
+				<label for="frm-borth">생년월일</label><input id="frm-borth" type="text" placeholder="예) 1980-07-28"/>
+			</div>
+		</div>
+
+		<div class="input-wrap">
+			<div class="input-area">
+				<label for="frm-id">휴대전화</label><input id="frm-id" type="text"/><button class="btn-box-conform">인증</button>
+			</div>
+			<div class="input-area">
+				<label for="frm-pass">인증번호</label><input id="frm-pass" type="text"/><button class="btn-box-check">확인</button>
+			</div>
+		</div>
+
+		<div class="input-wrap  no-border">
+			<div class="input-area">
+				<label for="frm-select">선택항목 입력</label>  <!-- 선택전 display:block;  항목 선택시 display:none 처리 -->
+                <span class="point-txt">선택항목 입력시 추가포인트 지급</span>
+                <select name="" id="frm-select">
+                    <option value=""></option>  <!--가이드 문구(disc-txt) 사용시  첫번째 option 빈값 사용-->
+				<option value="">선택항목 01</option>
+			</select>
+			</div>
+			<div class="form-radio  box-area radio-list">
+                <strong>관심분야</strong>
+				<span><input type="radio" name="field" id="fld01" ><label for="fld01">문화/예술</label></span>
+				<span><input type="radio" name="field" id="fld02"><label for="fld02">과학/IT</label></span>
+				<span><input type="radio" name="field" id="fld03" ><label for="fld03">경제/진로</label></span>
+				<span><input type="radio" name="field" id="fld04"><label for="fld04">요리/웰빙</label></span>
+				<span><input type="radio" name="field" id="fld05" ><label for="fld05">역사/전통</label></span>
+				<span><input type="radio" name="field" id="fld06"><label for="fld06">인성/봉사</label></span>
+				<span><input type="radio" name="field" id="fld07" ><label for="fld07">영어/외국어</label></span>
+				<span><input type="radio" name="field" id="fld08"><label for="fld08">영재/창의력</label></span>
+				<span><input type="radio" name="field" id="fld09" ><label for="fld09">영재/창의력</label></span>
+			</div>
+			<div class="input-area">
+				<label for="frm-pass-ck">추천인 ID</label><input id="frm-pass-ck" type="text" placeholder="추천인 이메일 주소를 입력하세요"/><button class="btn-box-check">확인</button>
+			</div>
+		</div>
+		<div class="input-wrap">
+			<div class="btn-area">
+				<a href="#none" class="btn-orange">회원가입</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

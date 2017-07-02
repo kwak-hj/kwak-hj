@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>아아디/비번 찾기 - ajaschool</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+	<div class="layer-popup-area page find">
+		<div class="page-title-area">
+			<h2 class="page-title">아이디/비밀번호 찾기</h2>
+			<a href="#none" class="ico-close dark">닫기</a>
+		</div>
+
+		<ul class="tab-wrap tab01"> <!--아이디찾기 tab01 클래스 추가 , tab-con 첫번째  컨텐츠 display:block;  -->
+			<li><a href="#">아이디 찾기</a></li>
+			<li><a href="#">비밀번호 찾기</a></li>
+		</ul>
+
+		<div class="tab-con" style="display:block;">
+			<p class="disc-txt">회원가입시 등록하신 이름과 휴대폰 번호를 입력해 주세요.</p>
+			<div class="input-wrap">
+				<div class="input-area">
+					<label for="frm-name">이름</label><input id="frm-name" type="text"/><button class="btn-remove">지우기</button>
+				</div>
+				<div class="input-area">
+					<label for="frm-cell">휴대번호</label><input id="frm-cell" type="text" placeholder="가입당시 사용한 휴대폰 번호를 입력하세요."/>
+				</div>
+			</div>
+			<div class="input-wrap">
+				<div class="btn-area">
+					<a href="#none" class="btn-orange r-arrow"><span>ID 검색</span></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab-con">
+			<p class="disc-txt">회원가입 시 등록하신 이름과 휴대폰 번호를 입력해 주세요. <br>
+				해당 이메일로 비밀번호 정보를 보내드립니다.</p>
+			<div class="input-wrap">
+				<div class="input-area">
+					<label for="frm-mail">ID(E-mail)</label><input id="frm-mail" type="text" placeholder="가입당시의 이메일 주소를 입력해 주세요"/>
+				</div>
+			</div>
+			<p class="disc-txt"><span class="point-txt">자동등록방지</span> 숫자를 순서대로 입력하세요.</p>
+			<div class="input-wrap code-box">
+				<div class="code-view"><img src="../images/@code.jpg" alt=""></div>
+				<div class="code-input">
+					<label for="ipt-code">숫자입력 폼</label><input id="ipt-code" type="text"/>
+					<div class="btn-code-box">
+						<button>숫자음성듣기</button>
+						<button>새로고침</button>
+					</div>
+				</div>
+			</div>
+			<div class="input-wrap">
+				<div class="btn-area">
+					<a href="#none" class="btn-orange r-arrow"><span>확인</span></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
+
