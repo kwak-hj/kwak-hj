@@ -1356,10 +1356,8 @@ background-size: 12px;}
 .edu-reply .reply {height: 34px; overflow: hidden;}
 .edu-reply .img-area {margin-bottom: 10px;}
 .edu-reply .img-area ul {overflow: hidden; margin: 0 -5px;}
-.edu-reply .img-area ul li {float: left; width:33.3%; padding: 0 5px; overflow: hidden;}
-.edu-reply .img-area.file input[type="file"] {width:100%; height: 100%; background-color: #ebebeb;
-
-}
+.edu-reply .img-area ul li {position: relative; float: left; width:33.3%; padding: 0 5px; overflow: hidden;}
+.edu-reply .img-area.file input[type="file"] {width: 93%; opacity:0; position: absolute; top:0; left:5px; right:10px; bottom:0; font-size: 2px; letter-spacing: -10px; }
 
 .edu-detail-reply .txt-more-bar-03 {padding-bottom: 0; margin-bottom: -5px;}
 
@@ -1367,7 +1365,7 @@ background-size: 12px;}
 .edu-after-title {padding-bottom: 15px;}
 .write-content {padding: 20px 0;  border-top: 1px solid #dadada}
 .write-content .medium-title {margin-bottom: 10px; }
-.write-content .range .edu-reply-noti {margin-top: 0}
+.write-content .range .edu-reply-noti {margin-top: 3px}
 .score-list li {margin: 5px 0; position: relative; padding-left:9px; } 
 .score-list li:before {content: ""; position: absolute; left:0; top:11px; display: block; width: 2px; height: 2px; 
 	background-color: #888888; 
