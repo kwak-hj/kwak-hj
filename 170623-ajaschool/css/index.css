@@ -202,7 +202,7 @@ button {border: 0 none; background-color: transparent;}
 	-webkit-background-size: 50px;
 	background-size: 50px;
 }
-.ico-top {position: fixed; bottom:17px; right:10px; z-index: 100; width:42px; height: 42px;
+.ico-top {position: absolute; top:0; right:13px; z-index: 100; width:42px; height: 42px;
 	border: 1px solid #ff9100;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -528,7 +528,7 @@ a.btn-pink:before {content:''; display: block; width:5px; height: 8px;
 /*  --------
 	page css 
 	--------  */	
-#wrap {position: relative; height: 100%; }
+#wrap {position: relative; /*height: 100%; */padding-bottom: 80px; }
 
 #header {position: relative; z-index: 10;}
 #header header {position: relative; height: 50px; border-bottom: 1px solid #dadada; background-color: #f5f5f5; text-align: center;}
@@ -551,6 +551,33 @@ a.btn-pink:before {content:''; display: block; width:5px; height: 8px;
 #header nav.menu ul li.on a {color:#ff8711; border-bottom:3px solid #ff8711;}
 
 #content>.home-menu:first-child {margin-top: 10px;}
+
+#navi-area {position: fixed; bottom:0; left:0; width:100%; height: 112px; z-index: 200;}
+#navi-area .home-navi {position: absolute; top:55px; left:0; width:100%; height: 58px;
+	border-top: 2px solid #ff8711; background-color:#fff;
+}
+#navi-area .home-navi ul {height: 100%; overflow: hidden;}
+#navi-area .home-navi ul li {position: relative; float: left; width:25%; height: 100%; }
+#navi-area .home-navi ul li a {position: relative; display: block; height: 100%; padding-top:38px; text-align: center; font-size: 10px; color:#000;}
+#navi-area .home-navi ul li a:before {content:''; display: block; position: absolute; top:11px; left:50%; margin-left: -11px;
+	width: 22px; height: 22px;
+	background: url("../images/home-navi.png") no-repeat 0 0;
+	-webkit-background-size: 100px;
+	background-size: 100px;
+	
+}
+#navi-area .home-navi ul li.home a:before {background-position: 0 0}
+#navi-area .home-navi ul li.cate a:before {background-position: -28px 0}
+#navi-area .home-navi ul li.mine a:before {background-position: -53px 0}
+#navi-area .home-navi ul li.cart a:before {background-position: -79px 0}
+
+#navi-area .home-navi ul li.point:before {content: ''; display: block; width:4px; height: 4px;
+	position: absolute; top:10px; left:50%; margin-left: 13px;
+	background-color: #ff8711;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
 
 [class^="bn-area"] a {display: block; font-size: 0; }
 .bn-area-top {margin-bottom: 10px; border-bottom: 1px solid #dadada;}
@@ -575,7 +602,7 @@ a.btn-pink:before {content:''; display: block; width:5px; height: 8px;
 .home-menu ul li {width:20%; height: 50%; float: left; border-left: 1px solid #f5f5f5; border-bottom: 1px solid #f5f5f5}
 .home-menu ul li a {position: relative; display: block;width:100%; height: 100%; padding-top: 42px; text-align: center; font-size: 10px; color:#000;}
 .home-menu ul li a:before {content: ""; display: block; position: absolute;  top:15px; left:50%; 
-	background: url("../images/ico-menus.png") no-repeat 0 0; overflow: hidden;
+	background: url("../images/ico-category.png") no-repeat 0 0; overflow: hidden;
 	-webkit-background-size: 167px;
 	background-size: 167px;
     letter-spacing: 0px;
@@ -594,6 +621,20 @@ a.btn-pink:before {content:''; display: block; width:5px; height: 8px;
 .home-menu .h-menu10 a:before {width:18px; height: 19px; margin-left: -9px; background-position:-150px -30px }
 
 .home-menu ul li.on a {background-color:#ff8711; color:#fff; }
+
+.home-menu .h-menu01.on a:before {background-position:0 -67px }
+.home-menu .h-menu02.on a:before {background-position:-39px -67px }
+.home-menu .h-menu03.on a:before {background-position:-73px -67px }
+.home-menu .h-menu04.on a:before {background-position:-109px -67px }
+.home-menu .h-menu05.on a:before {background-position:-148px -67px }
+.home-menu .h-menu06.on a:before {background-position:-3px -97px }
+.home-menu .h-menu07.on a:before {background-position:-42px -97px }
+.home-menu .h-menu08.on a:before {background-position:-80px -93px }
+.home-menu .h-menu09.on a:before {background-position:-114px -97px }
+.home-menu .h-menu10.on a:before {background-position:-150px -97px }
+
+
+
 
 .list-area {margin: 10px 7px 10px 0;}
 .list-area>div>ul>li {position: relative; margin-top:10px; padding-left: 7px;}
@@ -1028,8 +1069,8 @@ background-size: 12px;}
 
 /* popup */
 .deam {position: absolute; top:0; right:0; bottom:0; left:0; min-height: 500px; background-color: rgba(0,0,0,0.6);	z-index: 0;}
-.layer-popup-area {position: absolute; top:50px; right:0; bottom:0; left:0; }
-.layer-popup-area .popup-content {position: relative; z-index: 100;}
+.layer-popup-area {position: absolute; top:0; right:0; bottom:0; left:0; }
+.layer-popup-area .popup-content {position: relative; z-index: 100; height: 100%;}
 .layer-popup-area .notice-popup {position: absolute; right: 15px; left: 15px; top:50%; margin: -68px auto 0;
     padding-bottom:57px; max-width: 331px; background-color: #fff; z-index: 100;}
 .layer-popup-area .notice-popup .txt-area {display: table; width:100%; height: 80px; padding: 14px 18px;}
@@ -1045,7 +1086,7 @@ background-size: 12px;}
  }
 .layer-popup-area .btn-area-popup a.orange {color:#ff8711; border-color:#ff8711 }
 
-.layer-popup-area.page {top:0; padding-top: 50px; }
+.layer-popup-area.page {padding-top: 50px; }
 .page-title-area {position: absolute; top:0; left:0; width:100%; }
 .page-content {position: absolute; top:50px; left:0; bottom:0; width:100%; overflow: auto;}
 
@@ -1174,7 +1215,7 @@ background-size: 12px;}
 
 /* 공유팝업 */
 .share-popup {margin: 0 32px;}
-.share-title {padding: 14px; margin: 75px 13px 0; border-bottom:3px solid #fff; font-size: 21px; color:#fff; font-weight: bold; text-align: center;}
+.share-title {padding: 90px 13px 14px; border-bottom:3px solid #fff; font-size: 21px; color:#fff; font-weight: bold; text-align: center;}
 .share-ico-list {padding-top:18px;}
 .share-ico-list ul {overflow: hidden;}
 .share-ico-list li {float: left; width:33.3%; padding: 12px 0;text-align: center;}
@@ -1192,6 +1233,13 @@ background-size: 12px;}
 .share-ico-list a.ico-sns-big-blog {background-position: 0 -194px }
 .share-ico-list a.ico-sns-big-url {background-position: -98px -194px }
 
+/* 이벤트 배너모음 팝업 */
+.banner-popup {margin: 0 15px;}
+.banner-title {padding: 30px 13px; font-size: 21px; color:#fff; text-align: center;}
+.banner-list {position: absolute; top: 81px; right:15px; bottom: 0; left:15px; overflow: auto;}
+.banner-list ul {overflow: hidden;}
+.banner-list li {margin-bottom: 10px;}
+
 /* 교육후기 */
 .edu-detail-info-area {padding-bottom: 100px;}
 .edu-detail-info-area .edu-box {border-top: 1px solid #eee; background-color: #fff;}
@@ -1199,7 +1247,7 @@ background-size: 12px;}
 .edu-detail-info-area .movie-view .import-title {font-size: 18px;}
 .edu-detail-info-area .movie-view .little-title {font-size: 11px;}
 .edu-detail-info-area .movie-view .price-title {float: none;}
-.edu-detail-info-area .movie-view .info-area {position: relative; border-color: #eeeeee;}
+.edu-detail-info-area .movie-view .info-area {position: relative; border: 0 none;}
 .edu-detail-info-area .movie-view .info-area>div,
 .edu-detail-info-area .edu-box,
 .edu-detail-info-area .content-box-white {padding: 11px 15px;}
@@ -1380,19 +1428,35 @@ background-size: 12px;}
 .layer-popup-area.page .input-wrap.code-box .code-input input { border-radius: 3px; border: 1px solid #cbcaca; width: 100%; height: 37px; padding: 5px; line-height: 37px; }
 .layer-popup-area.page .input-wrap.code-box .code-input .btn-code-box button { width: 53%; height: 20px; margin-top: 10px; text-align: center; font-size: 10px; color: #797979; background: #f5f5f5; border: 1px solid #d4d4d4; border-radius: 3px; }
 .layer-popup-area.page .input-wrap.code-box .code-input .btn-code-box button:nth-child(2) { width: 45%; }
-.layer-popup-area.page .input-wrap .acc-area { position: relative; padding: 13px 0 0px; border: 1px solid #cbcaca; border-radius: 3px; min-height: 44px; margin-bottom: 10px; }
-.layer-popup-area.page .input-wrap .acc-area input { margin-right: 5px; }
-.layer-popup-area.page .input-wrap .acc-area span { display: block; padding:0 80px 13px 33px; text-indent: -23px;  }
-.layer-popup-area.page .input-wrap .acc-area button { position: absolute; top: 12px; right: 10px; padding: 0 22px 0 5px; font-size: 9px; border-radius: 3px; border: 1px solid #cbcaca; height: 19px; color: #797979; background: url("../images/ico-all.png") no-repeat 48px 6px; -webkit-background-size: 11px; background-size: 11px; }
-.layer-popup-area.page .input-wrap .acc-area .acc-detail { display: none; overflow-y: auto; max-height: 70px; padding: 10px; background: #f5f5f5; color: #9fa2a9; border-top: 1px solid #eeeeee; font-size: 10px; line-height: 1.4; }
-.layer-popup-area.page .input-wrap .acc-area.active button { background-position: 48px -8px; }
-.layer-popup-area.page .input-wrap .acc-area.active .acc-detail { display: block; }
+.layer-popup-area.page .acc-area { position: relative; padding: 13px 0 0px; border: 1px solid #cbcaca; border-radius: 3px; min-height: 44px; margin-bottom: 10px; }
+.layer-popup-area.page .acc-area input { margin-right: 5px; }
+.layer-popup-area.page .acc-area span { display: block; padding:0 80px 13px 33px; text-indent: -23px;  }
+.layer-popup-area.page .acc-area button { position: absolute; top: 12px; right: 10px; padding: 0 22px 0 5px; font-size: 9px; border-radius: 3px; border: 1px solid #cbcaca; height: 19px; color: #797979; background: url("../images/ico-all.png") no-repeat 48px 6px; -webkit-background-size: 11px; background-size: 11px; }
+.layer-popup-area.page .acc-area .acc-detail { display: none; overflow-y: auto; max-height: 70px; padding: 10px; background: #f5f5f5; color: #9fa2a9; border-top: 1px solid #eeeeee; font-size: 10px; line-height: 1.4; }
+.layer-popup-area.page .acc-area.active button { background-position: 48px -8px; }
+.layer-popup-area.page .acc-area.active .acc-detail { display: block; }
 .layer-popup-area.page .btn-orange { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 46px; /*padding-top: 14px; */}
 .layer-popup-area.page .btn-orange.r-arrow { position: relative; }
 .layer-popup-area.page .btn-orange.r-arrow span { position: relative; padding-right: 35px; }
 .layer-popup-area.page .btn-orange.r-arrow span:before { content: ""; display: block; width: 11px; height: 18px; position: absolute; right: 0; background: url("../images/btn-step.png") no-repeat 0 0; -webkit-background-size: 22px; background-size: 22px; }
 
-.layer-popup-area.page.find, .layer-popup-area.page.terms {position: relative;  background: #fff; }
+/* 공지사항*/
+.layer-popup-area.page .board .acc-area {margin-top: 5px; padding-top: 0; -webkit-border-radius: 0; border-radius: 0;} 
+.layer-popup-area.page .board .acc-area .acc-title {position: relative; display: block; padding: 13px 38px 0 10px; }
+.layer-popup-area.page .board .acc-area .acc-title:after {content:''; display: block; width:15px; height: 10px;
+	position: absolute; top:50%; right:11px; margin-top: -7px;	
+	background: url("../images/ico-board-toggle.png") no-repeat 0 0;
+	-webkit-background-size:67px ;
+	background-size:67px ;
+}
+.layer-popup-area.page .board .acc-area .acc-title p {font-size: 13px; color:#444; line-height: 1.3em;} 
+.layer-popup-area.page .board .acc-area .acc-title>span {margin-top: 3px; padding-left: 0; font-size: 9px; color:#888; text-indent:0;} 
+.layer-popup-area.page .board .acc-area .acc-detail {max-height:215px; font-size: 11px; color:#444;}
+
+.layer-popup-area.page .board .acc-area.active .acc-title:after {background-position: 100% 0}
+
+.layer-popup-area.page.find {background: #fff; }
+.layer-popup-area.page.terms,
 .layer-popup-area.page.join {position: relative; background: #fff; }
 .layer-popup-area.page.join .input-wrap { padding-top: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
 .layer-popup-area.page.join .input-wrap.no-border { border: none; }
@@ -1434,6 +1498,9 @@ background-size: 12px;}
 .input-wrap.type02 .box-area.radio-list .form-radio {padding-top: 9px;}
 .input-wrap.type02 .box-area.radio-list .f {margin-bottom: 0; padding-right: 0; padding-left: 18px;}
 
+@media screen and (max-width:359px) {
+	.input-wrap.type02 .box-area.radio-list .f {width:33.3% !important;}
+}
 
 .input-wrap .input-area input::-webkit-input-placeholder { font-size: 11px !important; color: #9fa2a9; }
 
