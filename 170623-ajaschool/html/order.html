@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>주문결제 - ajaschool</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<div class="layer-popup-area page">
+		<div class="page-title-area orange">
+			<h2 class="page-title">신청/결제하기</h2>
+			<a href="#none" class="ico-close dark">닫기</a>
+		</div>
+		
+		<div class="page-content step">
+			<!-- 알림 -->
+			<div class="content-box-white">
+				<p class="noti">주문 전에 확인하세요</p>
+				<div class="detail-txt dash">
+					<ul>
+						<li>상정에 따라 교육이 변동될 수 있으며 품절인 경우 교육신청이 불가 합니다.</li>
+						<li>로그인 후 신청한 교육은 PC와 모바일 상호 연동됩니다.</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 프로그램 정보 -->
+			<div class="content-box-white">
+				<!-- 제목 -->
+				<p class="program-title">교육프로그램 정보</p>
+				<!-- 내용 -->
+				<div class="program-con">
+					<div class="title">
+						<p class="little-title">종이로봇 만들기</p>
+						<p class="import-title">소리담 체험학교(유치원&어린이집 전용)</p>
+					</div>
+					<div class="program">
+						<div class="img-area">
+							<img src="../images/@img-program.png" alt="">
+						</div>
+						<div class="program-info-area">
+							
+							<div class="detail-txt">
+								<ul>
+									<li><span class="title">교육인원</span><span class="cont">1명</span></li>
+									<li><span class="title">보험금액</span><span class="cont">3000원</span></li>
+									<li>
+										<span class="title">결제금액</span>
+										<span class="cont">
+											<span class="price red">3,000원</span>
+											<span class="price-info">
+												<span class="price-title">
+													<span class="before-price">30,000원</span>
+												</span>
+											</span>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div><!-- //내용 -->
+			</div><!-- //프로그램 정보 -->
+			<!-- 구매자 정보 -->
+			<div class="content-box-white">
+				<!-- 제목 -->
+				<p class="program-title">구매자 정보</p>
+				<div class="info-input">
+					<div class="info-line"><label class="info-title" for="orderman-name">이름</label><input type="text" class="info-cont" name="" id="orderman-name" placeholder="홍길동"></div>
+					<div class="info-line"><label class="info-title" for="orderman-phone">연락처</label><input type="text" class="info-cont" name="" id="orderman-phone" placeholder="010-2323-3333"></div>
+					<div class="info-line"><label class="info-title" for="orderman-email">E-Mail</label><input type="email" class="info-cont" name="" id="orderman-email" placeholder="qwerty123@naver.com"></div>
+				</div>
+			</div>
+
+			<!-- 체험수강생 정보 -->
+			<div class="content-box-white">
+				<!-- 제목 -->
+				<p class="program-title">체험수강생 정보</p>
+				<div class="form-radio big ">
+					<div class="f"><input type="radio" name="cate" id="cate-01"><label for="cate-01">구매자 정보와 동일시</label></div>
+				</div>
+				<div class="info-input">
+					<div class="info-line"><label class="info-title" for="orderman-name">이름</label><input type="text" class="info-cont" name="" id="orderman-name" placeholder="이름을 입력해주세요"></div>
+					<div class="info-line"><label class="info-title" for="orderman-phone">연락처</label><input type="text" class="info-cont" name="" id="orderman-phone" placeholder="'-'를 빼고 연락처를 입력하세요"></div>
+					<div class="info-line"><label class="info-title" for="orderman-email">E-Mail</label><input type="email" class="info-cont" name="" id="orderman-email" placeholder="qwerty123@naver.com"></div>
+				</div>
+			</div>
+			<!-- 보험가입 신청 -->
+			<div class="content-box-white">
+				<p class="program-title">보험가입 신청</p>
+				<div class="form-radio big ">
+					<div class="f"><input type="radio" name="aa" id="aa-01"><label for="aa-01">보험가입에 동의합니다.</label></div>
+				</div>
+				<div class="range">
+					<div class="left number-title">개인신청 인원수</div>
+					<div class="right number-updown">
+						<button type="button" class="ico-down">빼기</button>
+						<input type="text" name="" value="3명">
+						<button type="button" class="ico-up">더하기</button>
+					</div>
+				</div>
+				<div class="box-in">
+					<p class="noti-02">
+						상기 체험교육 프로그램은 수강하기 위해서는 <span class="orange">[행사보험] 가입을 신청</span> 하셔야합니다.
+					</p>
+				</div>
+			</div>
+			<!-- 동반수강생 정보 -->
+			<div class="content-box-white">
+				<p class="program-title">동반수강생 정보</p>
+				<div class="join-member">
+					<ul>
+						<li class="join-box">
+							<div class="range join-member-title">
+								<div class="left">동반수강생 <p>수강생정보를 입력해주세요!</p></div>
+								<div class="right"><button type="button" class="btn-input">입력하기</button></div>
+							</div>
+						</li>
+						<li class="join-box write">
+							<div class="range join-member-title">
+								<div class="left">동반수강생 <p>홍길동</p></div>
+								<div class="right"><button type="button" class="btn-input">입력하기</button></div>
+							</div>
+							<div class="input-box" style="display: block">
+								<div class="info-input">
+									<div class="info-line">
+										<label class="info-title" for="join-member-name">이름</label><input type="text" class="info-cont" name="" id="join-member-name" placeholder="이름을 입력해주세요">
+									</div>
+									<div class="info-line">
+										<label class="info-title" for="join-member-phone">연락처</label><input type="text" class="info-cont"name="" id="join-member-phone" placeholder="'-'를 빼고 연락처를 입력하세요">
+									</div>
+									<div class="info-line">
+										<div class="info-title">부모확인</div>
+										<div class="info-cont">
+											<ul class="form-radio left">
+												<li class="f"><input type="radio" name="confirm" id="confirm-01"><label for="confirm-01">부</label></li>
+												<li class="f"><input type="radio" name="confirm" id="confirm-02"><label for="confirm-02">모</label></li>
+												<li class="f"><input type="radio" name="confirm" id="confirm-03"><label for="confirm-03">선생님</label></li>
+												<li class="f"><input type="radio" name="confirm" id="confirm-04"><label for="confirm-04">교육생</label></li>
+											</ul>
+										</div>
+									</div>	
+									<div class="info-line">
+										<label class="info-title black" for="join-member-level">교육생학년</label><input type="text" class="info-cont"name="" id="join-member-level" placeholder="예)초등 4학년">
+									</div>
+									<div class="info-line">
+										<label class="info-title black" for="join-member-age">나이</label><input type="text" class="info-cont"name="" id="join-member-age" placeholder="예)4살">
+									</div>
+									<div class="info-line">
+										<div class="info-title black">성별</div>
+										<div class="info-cont">
+											<ul class="form-radio left">
+												<li class="f"><input type="radio" name="gender" id="gender-01"><label for="gender-01">남</label></li>
+												<li class="f"><input type="radio" name="gender" id="gender-02"><label for="gender-02">여</label></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 할인받기 -->
+			<div class="content-box-white">
+				<p class="program-title">할인받기</p>
+				<div class="range pay-info">
+					<div class="left">
+						<div class="pay-title">포인트</div>
+						<div class="pay-cont">
+							<button class="btn-pay-point">적용/변경</button>
+							<p class="point-info">
+								<span>보유포인트 <span class="black">120,000</span>점</span>
+								<span>최대 <span class="orange">30,000점</span> 사용가능</span>
+							</p>
+						</div>
+					</div>
+					<div class="right pay-money">10,000 P</div>
+				</div>
+				<div class="range pay-info">
+					<div class="left">
+						<div class="pay-title">쿠폰</div>
+						<!-- <div class="pay-cont">
+							<button class="btn-pay-point">쿠폰적용</button>
+							<p class="point-info">
+								<span>5개</span>
+							</p>
+						</div> -->
+						<div class="pay-cont">
+							<p class="point-info">
+								<span>5개</span>
+							</p>
+							<button class="btn-pay-point">쿠폰적용</button>
+							<button class="btn-pay-point">쿠폰</button>
+							<ul class="pay-coupon-list">
+								<li><div class="point-info"><span>교육상품 30% 할인쿠폰 9,000원</span></div><button class="btn-pay-point">적용</button></li>
+								<li><div class="point-info"><span>교육상품 30% 할인쿠폰 9,000원</span></div><button class="btn-pay-point">적용</button></li>
+							</ul>
+							
+						</div>
+					</div>
+					<div class="right pay-money">20,000 원</div>
+				</div>
+				<div class="pay-total">
+					<div class="range">
+						<div class="left"><div class="pay-title">총 할인금액</div></div>
+						<div class="right pay-money">20,000 원</div>
+					</div>
+				</div>
+			</div>
+			<!-- 최종 결제금액 -->
+			<div class="content-box-white">
+				<p class="program-title">최종 결제금액</p>
+				<div class="range pay-info">
+					<div class="left"><div class="pay-title">결제금액</div></div>
+					<div class="right pay-money">33,000 원</div>
+				</div>
+				<div class="range pay-info">
+					<div class="left"><div class="pay-title">총 할인금액</div></div>
+					<div class="right pay-money">-30,000 원</div>
+				</div>
+				<div class="range pay-info">
+					<div class="left"><div class="pay-title">보험료</div></div>
+					<div class="right pay-money">3,000 원</div>
+				</div>
+				<div class="pay-total big">
+					<div class="range">
+						<div class="left"><div class="pay-title">최종 결제금액</div></div>
+						<div class="right pay-money">20,000 원</div>
+					</div>
+				</div>
+			</div>
+			<!-- 결제수단 -->
+			<div class="content-box-white">
+				<p class="program-title">결제수단</p>
+				<div class="pay-system">
+					<div class="form-box left ea3">
+						<ul>
+							<li class="f"><input type="radio" name="pay-system" id="pay-system-01"><label for="pay-system-01"><span>신용카드</span></label></li>
+							<li class="f"><input type="radio" name="pay-system" id="pay-system-02"><label for="pay-system-02"><span>무통장 입금</span></label></li>
+							<li class="f"><input type="radio" name="pay-system" id="pay-system-03"><label for="pay-system-03"><span>카카오페이</span></label></li>
+						</ul>
+					</div>
+					<div class="pay-system-content">
+						<!-- 신용카드 -->
+						<div class="card">
+							<p class="big-txt"><span class="orange">신용카드</span>를 선택하셨습니다.</p>
+							<p class="little-txt">신용카드 결제를 원하시면 <br> 하단의 <span class="orange">주문하기 버튼</span>을 클릭해주세요.</p>
+						</div>
+						<!-- 무통장입금 -->
+						<div class="bank">
+							<div class="bank-list">
+								<ul>
+									<li><span class="title">예금주</span>아자스쿨 주식회사</li"">
+									<li><span class="title">부모확인</span>
+										<div class="form-radio">
+											<div class="f">
+												<input type="radio" name="bank" id="bank-01">
+												<label for="bank-01">국민은행 421701-04-174028</label>
+											</div>
+										</div>	
+										<div class="form-radio">
+											<div class="f">
+												<input type="radio" name="bank" id="bank-02">
+												<label for="bank-02">농협은행 301-0195-4111-11</label>
+											</div>
+										</div>	
+										<div class="form-radio">
+											<div class="f">
+												<input type="radio" name="bank" id="bank-03">
+												<label for="bank-03">우리은행 1005-903-021293</label>
+											</div>
+										</div>	
+										<div class="form-radio">
+											<div class="f">
+												<input type="radio" name="bank" id="bank-04">
+												<label for="bank-04">신한은행 100-031-611363</label>
+											</div>
+										</div>	
+									</li>
+									<li><span class="title">입금자명</span><input type="text"  class="info-cont" name="" placeholder="입금자명을 입력해주세요"></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 카카오페이 -->
+						<div class="kakao-pay">
+							<p class="big-txt">카카오페이 카드간편결제를 <br> 선택하셨습니다.</p>
+							<p class="little-txt"><span class="orange">카카오페이 간편결재</span>를 원하시면 <br> 하단의 <span class="orange">주문하기 버튼</span>을 클릭해주세요.</p>
+						</div>
+					</div>
+					<div class="form-radio">
+						<div class="f"><input type="radio" name="cate" id="cate-021"><label for="cate-021">위 신청한 교육, 금액 할인, 수강생 정보에 동의합니다</label></div>
+					</div>
+				</div>
+			</div>
+			<div class="btn-area full">
+				<a href="#none" class="btn-full-gray ico-prev"><span>이전</span></a>
+				<a href="#none" class="btn-full-orange ico-next"><span>다음단계</span></a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
