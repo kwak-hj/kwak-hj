@@ -3,6 +3,7 @@
 
 /* reset css */
 html,body {height: 100%; font-size:10px; }
+/*html,body,header,footer,section,article,div,p,table,td,th,thead,tbody,tfoot,form,dl,dt,dd,ul,ol,li,img,a,span,strong,em,i,input,label,h1,h2,h3,h4,h5,h6,button*/
 * {
 	font-family:'Noto Sans Korean',sans-serif; font-style: normal; font-weight: normal; line-height: 1em; word-wrap:break-word;word-break: keep-all; letter-spacing:0; 
 	padding:0; margin: 0; border:0; background-color: transparent; text-align: left; 
@@ -119,6 +120,7 @@ button {border: 0 none; background-color: transparent;}
 /* radio in checkbox */
 .form-radio.big input[type="checkbox"] {background-position: 2px 3px;}
 .form-radio.big input[type="checkbox"]:checked {background-position: 2px -20px;}
+
 
  /* form-select */
 .form-select {position: relative; min-width:155px; height: 23px; border: 1px solid #bbb;}
@@ -268,12 +270,6 @@ button {border: 0 none; background-color: transparent;}
 	-webkit-background-size: 147px;
 	background-size: 147px;
 }
-/* 추가 */
-.ico-popup-menu {width:21px; height: 21px; position: absolute; top:24px; left:16px; z-index: 100;
-	background: url("../images/ico-home-basic.png") no-repeat -126px -46px;
-	-webkit-background-size: 147px;
-	background-size: 147px;
-}
 
 .ico-prev-02 {width:50px; height: 100%; position: absolute; top:0; left:0; z-index: 100;}
 .ico-prev-02:before {content:""; width:15px; height: 15px; position: absolute; top:17px; left:16px; 
@@ -290,7 +286,6 @@ button {border: 0 none; background-color: transparent;}
 }
 
 [class^="txt-"] {display: inline-block; }
-/* 수정 
 .txt-more {
 	position: relative;	background-color: #fff;	font-size: 7px; color:#797979 !important; border: 1px solid #dadada; 
 	padding: 3px 21px 4px 13px;
@@ -298,14 +293,7 @@ button {border: 0 none; background-color: transparent;}
 	border-radius: 10px;
 	margin-top: -3px;
 }
-*/
-.txt-more {
-	position: relative;	background-color: #fff;	font-size: 7px; color:#797979 !important; border: 1px solid #dadada; 
-	padding: 2px 21px 2px 13px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
-}
-.txt-more:after {content: ""; display: block; position: absolute; right:7px; top:50%; margin-top: -3px;
+.txt-more:after {content: ""; display: block; position: absolute; right:7px; top:50%; margin-top: -4px;
 	width:6px; height: 7px; overflow: hidden;
 	background: #fff url("../images/ico-home-basic.png") no-repeat 0 -60px;
 	-webkit-background-size: 147px;
@@ -365,7 +353,7 @@ button {border: 0 none; background-color: transparent;}
 .feature.red {color:#fb5b61;}
 .feature.red-all {color:#fb5b61; border:1px solid #fb5b61;}
 
-.badge {display: block; width:40px; height: 39px; padding-top:12px; border: 2px solid #ed1b24; color:#ed1b24; font-weight: bold; font-size: 11px; text-align: center;
+.badge {display: block; width:40px; height: 39px; padding-top:6px; border: 2px solid #ed1b24; color:#ed1b24; font-weight: bold; font-size: 11px; text-align: center;
 	background-color: #fff;
 	border-radius:50%; 
 	-webkit-border-radius:50%;
@@ -511,6 +499,8 @@ button {border: 0 none; background-color: transparent;}
 	-webkit-background-size: 67px;
 	background-size: 67px;
 }
+.btn-endding {background: #888; color: #fff !important;}
+
 .order-btn-area .ico-order-select {position: absolute; top:0; left:50%; margin-left: -33px; 
 	width:67px; height: 24px; 
 	background:url("../images/ico-order-select.png") no-repeat 0 0;
@@ -532,7 +522,7 @@ button {border: 0 none; background-color: transparent;}
 .write .btn-input {background-color: #cbcaca; }
 .write .btn-input:before {background-position:  -17px -30px;}
 
-.btn-pay-point {position: relative; width: 80px; height: 22px; padding: 0 20px 1px 10px; font-size: 11px; color:#797979; 
+.btn-pay-point {position: relative; height: 22px; padding: 0 20px 1px 7px; font-size: 11px; color:#797979; 
 	background-color: #fff;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
@@ -924,7 +914,7 @@ background-size: 12px;}
 .category-area .detail-list>ul>li a {position: relative; display: block;  }
 .category-area .detail-list>ul>li a .title {position: absolute; top:0; left:0; right:0; bottom:0; color:#fff; text-align: center; background-color: rgba(0,0,0,0.6);}
 .category-area .detail-list>ul>li a .title:before {content:''; display: inline-block; height: 100%; vertical-align: middle;}
-.category-area .detail-list>ul>li a .title strong {display: inline-block; padding: 0 30px; text-align: center; vertical-align: middle; font-size: 12px; line-height: 1.3em;}
+.category-area .detail-list>ul>li a .title strong {display: inline-block; padding: 0 30px; text-align: center; vertical-align: middle; font-size: 12px;line-height: 1.3em;}
 
 /* coupon */
 .list-coupon>ul>li {margin: 10px 19px;}
@@ -1099,14 +1089,9 @@ background-size: 12px;}
 .share-ico-lists li {display:inline-block; margin: 0; padding:0 3px;}
 .share-ico-lists li a {display: block; width: 30px; height: 30px; margin: 0 auto;
     background: url(../images/ico-sns-medium.png) no-repeat 0 0;
-    -webkit-background-size: 272px;
-    background-size: 272px;
+    -webkit-background-size: 367px;
+    background-size: 367px;
 }
-/* 추가 */
-.share-ico-lists a.ico-sns-facebook {display: inline-block; overflow: hidden; text-indent: -999px;width:35px; height: 35px; margin: 0 7px;  background: url("../images/ico-sns.png") no-repeat 0 0; -webkit-background-size: 140px; background-size: 140px; background-position:0 0 }
-.share-ico-lists a.ico-sns-cafe {display: inline-block; overflow: hidden; text-indent: -999px;width:35px; height: 35px; margin: 0 7px;  background: url("../images/ico-sns.png") no-repeat 0 0; -webkit-background-size: 140px; background-size: 140px; background-position: -70px 0 }
-.share-ico-lists a.ico-sns-blog {display: inline-block; overflow: hidden; text-indent: -999px;width:35px; height: 35px; margin: 0 7px;  background: url("../images/ico-sns.png") no-repeat 0 0; -webkit-background-size: 140px; background-size: 140px; background-position: -105px 0 }
-.share-ico-lists a.ico-sns-story {display: inline-block; overflow: hidden; text-indent: -999px;width:35px; height: 35px; margin: 0 7px;  background: url("../images/ico-sns.png") no-repeat 0 0; -webkit-background-size: 140px; background-size: 140px; background-position:-35px 0 ; }
 
 .share-ico-lists a.ico-sns-medium-facebook {background-position:0 0 }
 .share-ico-lists a.ico-sns-medium-instagram {background-position: -40px 0 }
@@ -1209,7 +1194,7 @@ background-size: 12px;}
 .info-line>* {display: block; height: 100%; float: left; color:#444; font-size: 13px; }
 .info-line .info-title {width:25%; padding-top: 7px;}
 .info-line .info-cont {width:75%; } 
-.info-line input.info-cont {
+input.info-cont {
 	padding-left:10px; border: 1px solid #dadada;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
@@ -1349,7 +1334,7 @@ background-size: 12px;}
 /* 이벤트 배너모음 팝업 */
 .banner-popup {margin: 0 15px;}
 .banner-title {padding: 30px 13px; font-size: 21px; color:#fff; text-align: center;}
-.banner-list {position: absolute; top: 81px; right:15px; bottom: 0; left:15px; overflow: auto;}
+.banner-list {position: absolute; top: 81px; right:15px; bottom: 0; left:15px; overflow: auto; max-width: 330px; margin: 0 auto;}
 .banner-list ul {overflow: hidden;}
 .banner-list li {margin-bottom: 10px;}
 
@@ -1380,8 +1365,6 @@ background-size: 12px;}
 .edu-detail-info-area .movie-view .info-area .imp-info .price-info .price span {font-size: 17px; }
 .edu-detail-info-area .movie-view .info-area .imp-info .price-info .before-price {margin-left: 5px; display: inline-block; font-size:17px !important;  }
 
-
-
 .edu-detail-txt li {display: table; table-layout: fixed; position: relative; margin: 6px 0; padding-left: 18px;  }
 .edu-detail-txt li:before {content: ""; position: absolute; left:0; display: block; width: 12px; height: 12px; 
 	background: url("../images/ico-order-select.png") no-repeat 0 0;
@@ -1393,12 +1376,13 @@ background-size: 12px;}
 .edu-detail-txt li.edu-day:before { top:4px; background-position: -22px -45px;}
 .edu-detail-txt li.edu-other-day {margin-top: 15px;}
 .edu-detail-txt li.edu-other-day:before {top:7px; background-position: -38px -45px;}
-.edu-detail-txt li.edu-number:before {top: 7px;background-position: -52px -45px;}
+.edu-detail-txt li.edu-other-day select {width:215px; font-size: 13px;}
+.edu-detail-txt li.edu-number:before {top:7px; background-position: -52px -45px;}
 .edu-detail-txt li>div {display: table-cell; vertical-align: top; font-size: 13px; color:#797979; line-height: 1.4em;}
 .edu-detail-txt li .title {position: relative; width:75px; color:#000;}
 .edu-detail-txt li.edu-other-day .title,
 .edu-detail-txt li.edu-number .title {padding-top:4px;}
-.edu-detail-txt .form-select select {width:215px; height: 21px !important; border:0 none; font-size: 13px;}
+/*.edu-detail-txt .edu-number {width:100%;}*/
 .edu-number .saleinfo {position:relative; overflow:hidden;}
 .edu-number .saleinfo dt {float:left; width:75px; font-size:13px; color:#000; line-height: 1.4em;}
 .edu-number .saleinfo dd {display:inline-block;}
@@ -1443,6 +1427,8 @@ background-size: 12px;}
 .total-star {padding-top: 15px; text-align: center;}
 .total-star p {margin-bottom: 10px; font-size: 9px; color:#888;  text-align: center;}
 .star {display: inline-block; width: 130px; height: 23px;
+	-webkit-background-size: 130px;
+	background-size: 130px;
 }
 .reply-list .star,
 .total-star .star {background:transparent url("../images/edu-after-star.png") no-repeat 0 0;
@@ -1585,7 +1571,6 @@ background-size: 12px;}
 /* 공지사항*/
 .layer-popup-area.page .board .acc-area {margin-top: 5px; padding-top: 0; -webkit-border-radius: 0; border-radius: 0;} 
 .layer-popup-area.page .board .acc-area .acc-title {position: relative; display: block; padding: 13px 38px 13px 10px; }
-/*.layer-popup-area.page .board .acc-area .acc-title {position: relative; display: block; padding: 13px 38px 0 10px; }*/
 .layer-popup-area.page .board .acc-area .acc-title:after {content:''; display: block; width:15px; height: 10px;
 	position: absolute; top:50%; right:11px; margin-top: -7px;	
 	background: url("../images/ico-board-toggle.png") no-repeat 0 0;
@@ -1594,8 +1579,7 @@ background-size: 12px;}
 }
 .layer-popup-area.page .board .acc-area .acc-title p {font-size: 13px; color:#444; line-height: 1.3em;} 
 .layer-popup-area.page .board .acc-area .acc-title>span {margin-top: 3px; padding-left: 0; font-size: 9px; color:#888; text-indent:0;} 
-/*.layer-popup-area.page .board .acc-area .acc-detail {max-height:215px; font-size: 11px; color:#444;}*/
-.layer-popup-area.page .board .acc-area .acc-detail {/*max-height:215px; */ font-size: 11px; color:#444;}
+.layer-popup-area.page .board .acc-area .acc-detail {font-size: 11px; color:#444;}
 
 .layer-popup-area.page .board .acc-area.active .acc-title:after {background-position: 100% 0}
 
@@ -1700,9 +1684,8 @@ background-size: 12px;}
 	overflow: hidden; background-color: #fff;
 }
 .column-search-box>* {height: 100%; float: left; }
-.column-search-box .column-sort {width:35%; 
-	/*padding:0 30px 0 10px;*/
-	/*background: url('../images/column-sort.png') no-repeat 90% 50%;*/
+.column-search-box .column-sort {width:35%; padding:0 30px 0 10px;
+	background: url('../images/column-sort.png') no-repeat 90% 50%;
 	-webkit-background-size: 14px;
 	background-size: 14px;
 }
@@ -1735,7 +1718,7 @@ background-size: 12px;}
 .column-view-info .right>span:before {content:""; display: block; width:0; height: 10px; border-left: 1px solid #dadada; position: absolute; top:50%; left:0; margin-top: -5px;}
 .column-view-info .right>span:first-child:before {content: none;}
 
-.column {padding: 15px 5px; font-size: 13px; color:#797979; line-height: 1.4em;} 
+.column {padding: 15px 5px; font-size: 13px; color:#797979;line-height: 1.4em;} 
 .column img {margin:8px 0;} 
 .column img:first-child {margin-top:0;} 
 .column * {line-height: 1.4em; }
@@ -1832,46 +1815,6 @@ background-size: 12px;}
 }
 .coupons-area .coupon-detail {margin-top: -10px; padding:20px 15px 15px; border:1px solid #dadada; background-color: #fff;}
 
-/*포인트*/
-.points-info-area {height: 88px; overflow: hidden; background-color: #36467a}
-.points-info-area>* {width:50%}
-.points-info-area .use-point {float: left; text-align: center;}
-.use-point .title  {display: block; padding-top: 20px; text-align: center; font-size: 17px; color:#fff; font-weight: 300;}
-.use-point strong {position: relative; display: inline-block; padding-left: 24px; margin-top: 10px;  font-size: 22px; color:#fff17d; }
-.use-point strong:before {content:""; display: block; width: 17px; height: 12px; 
-	position: absolute; top:6px; left:0;
-	background: url("../images/ico-home-basic.png") no-repeat  -31px -74px;
-	-webkit-background-size: 147px;
-	background-size: 147px;
-}
-.use-point strong span {margin-left: 3px; font-size: 17px; color:inherit; font-weight: 300; letter-spacing: 1px;}
-
-.points-info {height: 100%; float: right; overflow: hidden; border-left: 1px solid #7785b2;}
-.points-info>li {height:50%; padding: 15px 15px 15px 20px; overflow: hidden; border-top: 1px solid #7785b2;}
-.points-info>li:first-child {border-top:0 none;}
-.points-info>li .title {float: left; display: inline-block; font-size: 13px; color:#b0bada;}
-.points-info>li strong {float: right; color:#fff17d; font-size: 13px; }
-.points-info>li strong>* {font-weight: 300}
-.points-info>li strong span {margin-left: 3px; font-size: 11px; color:inherit; }
-
-.list-point-area>ul>li {margin: 10px 15px;}
-.points-area {position: relative; padding:15px 100px 15px 15px; border:1px solid #dadada; background-color: #fff;}
-.points-area:before {content:''; display: block; position: absolute; top:-1px; left:0; bottom:-1px;
-	border-left: 3px solid #fa464c;}
-.points-area .left>span {float: left; position: relative; padding: 0 10px; margin-bottom: 8px; font-size: 11px; color:#888888;}
-.points-area .left>span:before{content: ""; display: block; width: 0; height: 8px; border-left: 1px solid #dadada; position: absolute; top: 50%; left: 0; margin-top: -4px; }
-.points-area .left>span:first-child {padding-left: 0;}
-.points-area .left>span:first-child:before{content: none;}
-.points-area .left>p {clear:both; font-size: 13px;}
-.points-area .right {position: absolute; top:50%; right:10px; margin-top: -10px;}
-.points-area .right .plus {color:#fa464c;}
-.points-area .right i {font-size: 17px;}
-.points-area .right strong {font-size: 20px; font-weight: 500}
-.points-area .right span {padding-left: 2px; font-size: 11px;}
-
-/*유튜브 iframe*/
-.movie-youtube {position: relative; width:100%; padding-top: 58.82352941176471%;}
-.movie-youtube iframe {width:100% !important; height: 100% !important; position: absolute !important; top:0 !important; left:0 !important;}
 
 /* footer */
 #footer {background-color: #fff;}
@@ -1900,5 +1843,3 @@ background-size: 12px;}
 .product-price .text-01 {font-size:16px; color:#000;}
 .product-price .text-02 {font-size:33px; color:#ff502b; margin-left:10px;}
 .product-price .text-03 {font-size:18px; color:#ff502b; margin-left:3px;}
-
-.btn-endding {background: #888; color: #fff !important;}
